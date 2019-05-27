@@ -8,6 +8,7 @@ PennController.Sequence( "practice1", "practice2", "practice3", "practice4", "pr
                            "trialD3",
                            "trialD1",
                            "trialA4",
+                           "trialB3-b",
                            "trialA3",
                            "trialE2",
                            "trialA5",
@@ -17,7 +18,7 @@ PennController.Sequence( "practice1", "practice2", "practice3", "practice4", "pr
                            "trialE1",
                            "trialD5",
                            "trialC1",
-                           "trialB3",
+                           "trialB3-a",
                            "trialC2",
                            "trialE4",
                            "trialD4",
@@ -99,19 +100,21 @@ PennController("practice1",
       .settings.add( getImage("target") , getImage("other") )  //reclass as "target" and "other"
       .wait()
     ,
-    newText("positive", "Good job! I said she drew the yellow nanny, and it was there.")   //update based on trial type, or record audio
+    newAudio("positive", "practice1_feedback_positive.wav")
     ,
-    newText("negative", "Oops, you were wrong. I said she drew the yellow nanny, and it was there!")   //update based on trial type, or record audio
+    newAudio("negative", "practice1_feedback_negative.wav")
     ,
     getSelector("choice")
         .test.selected( getImage("target") )
         .success(
-            getText("positive")
+            getAudio("positive")
                 .print()
+                .wait()
         )
         .failure(
-            getText("negative")
+            getAudio("negative")
                 .print()
+                .wait()
         )
     ,
     newButton("next", "another practice")
@@ -189,19 +192,21 @@ PennController("practice2",
       .settings.add( getImage("target") , getImage("other") )  //reclass as "target" and "other"
       .wait()
     ,
-    newText("positive", "Good job! I said she drew the green archeologist, and there weren't any archeologists there.")   //update based on trial type, or record audio
+    newAudio("positive", "practice2_feedback_positive.wav")
     ,
-    newText("negative", "Oops, you were wrong. I said she drew the green archeologist, but there weren't any archeologists there!")   //update based on trial type, or record audio
+    newAudio("negative", "practice2_feedback_negative.wav")
     ,
     getSelector("choice")
         .test.selected( getImage("target") )
         .success(
-            getText("positive")
+            getAudio("positive")
                 .print()
+                .wait()
         )
         .failure(
-            getText("negative")
+            getAudio("negative")
                 .print()
+                .wait()
         )
     ,
     newButton("next", "another practice")
@@ -284,19 +289,21 @@ PennController("practice3",
       .settings.add( getImage("target") , getImage("other") )  //reclass as "target" and "other"
       .wait()
     ,
-    newText("positive", "Good job! I said she drew the red cobbler, and it was there.")   //update based on trial type, or record audio
+    newAudio("positive", "practice3_feedback_positive.wav")
     ,
-    newText("negative", "Oops, you were wrong. I said she drew the red cobbler, and it was there!")   //update based on trial type, or record audio
+    newAudio("negative", "practice3_feedback_negative.wav")
     ,
     getSelector("choice")
         .test.selected( getImage("target") )
         .success(
-            getText("positive")
+            getAudio("positive")
                 .print()
+                .wait()
         )
         .failure(
-            getText("negative")
+            getAudio("negative")
                 .print()
+                .wait()
         )
     ,
     newButton("next", "another practice")
@@ -374,19 +381,21 @@ PennController("practice4",
       .settings.add( getImage("target") , getImage("other") )  //reclass as "target" and "other"
       .wait()
     ,
-    newText("positive", "Good job! I said she drew the nannies or the archeologists, and the archeologists were there.")   //update based on trial type, or record audio
+    newAudio("positive", "practice4_feedback_positive.wav")
     ,
-    newText("negative", "Oops, you were wrong. I said she drew the nannies or the archeologists, and the archeologists were there!")   //update based on trial type, or record audio
+    newAudio("negative", "practice4_feedback_negative.wav")
     ,
     getSelector("choice")
         .test.selected( getImage("target") )
         .success(
-            getText("positive")
+            getAudio("positive")
                 .print()
+                .wait()
         )
         .failure(
-            getText("negative")
+            getAudio("negative")
                 .print()
+                .wait()
         )
     ,
     newButton("next", "another practice")
@@ -459,19 +468,21 @@ PennController("practice5",
       .settings.add( getImage("target") , getImage("other") )  //reclass as "target" and "other"
       .wait()
     ,
-    newText("positive", "Good job! I said she drew the dentists or firemen, but there was only one of the dentists.")   //update based on trial type, or record audio
+    newAudio("positive", "practice5_feedback_positive.wav")
     ,
-    newText("negative", "Oops, you were wrong. I said she drew the dentists or firemen, but there was only one of the dentists!")   //update based on trial type, or record audio
+    newAudio("negative", "practice5_feedback_negative.wav")
     ,
     getSelector("choice")
         .test.selected( getImage("target") )
         .success(
-            getText("positive")
+            getAudio("positive")
                 .print()
+                .wait()
         )
         .failure(
-            getText("negative")
+            getAudio("negative")
                 .print()
+                .wait()
         )
     ,
     newButton("next", "another practice")
@@ -554,19 +565,21 @@ PennController("practice6",
       .settings.add( getImage("target") , getImage("other") )  //reclass as "target" and "other"
       .wait()
     ,
-    newText("positive", "Good job! I said she drew the green cobbler and the red nanny, and they were both there.")   //update based on trial type, or record audio
+    newAudio("positive", "practice6_feedback_positive.wav")
     ,
-    newText("negative", "Oops, you were wrong. I said she drew he green cobbler and the red nanny, and they were both there!")   //update based on trial type, or record audio
+    newAudio("negative", "practice6_feedback_negative.wav")
     ,
     getSelector("choice")
         .test.selected( getImage("target") )
         .success(
-            getText("positive")
+            getAudio("positive")
                 .print()
+                .wait()
         )
         .failure(
-            getText("negative")
+            getAudio("negative")
                 .print()
+                .wait()
         )
     ,
     newButton("next", "ready to start the game")
@@ -1240,8 +1253,90 @@ PennController.Template("premiseA.image3.csv", //premise A - image 3
           .wait()
     )
   );
-PennController.Template("premiseB.image3.csv", //premise B - image 3
-    row => PennController("trialB3",
+PennController.Template("premiseB.image3.12of4.csv", //premise B - image 3
+    row => PennController("trialB3-a",
+        newImage("domainImage1", row.domainImage1)
+          .settings.size(96,120)
+          .settings.css("border", "solid 1px black")
+        ,
+        newImage("domainImage2", row.domainImage2)
+          .settings.size(96,120)
+          .settings.css("border", "solid 1px black")
+        ,
+        newImage("domainImage3", row.domainImage3)
+          .settings.size(96,120)
+          .settings.css("border", "solid 1px black")
+        ,
+        newImage("domainImage5", row.domainImage5)
+          .settings.size(96,120)
+          .settings.css("border", "solid 1px black")
+        ,
+        newImage("domainImage6", row.domainImage6)
+          .settings.size(96,120)
+          .settings.css("border", "solid 1px black")
+        ,
+        newCanvas("domain", 596, 140) //images need to be shuffled, or no?
+          .settings.add(   10,    10, getImage("domainImage1") )
+          .settings.add(   106,   10, getImage("domainImage2") )
+          .settings.add(   202,   10, getImage("domainImage3") )
+          .settings.add(   394,   10, getImage("domainImage5") )
+          .settings.add(   490,   10, getImage("domainImage6") )
+          .settings.css("border", "solid 2px black")
+          .print()
+        ,
+        newAudio("domain sentence", row.DomainIntro)
+          .play() // Immediately play the audio file
+          .wait()
+        ,
+        newButton("ready", "ready for the clue")
+            .settings.center()
+            .print()
+            .wait()
+            .remove()
+        ,
+        newAudio("test sentence", row.Premises)
+          .play() // Immediately play the audio file
+          .wait() // Wait to display images until after audio file is finished
+        ,
+        newImage("happy", "smile.png")
+          .settings.size(96,96)
+        ,
+        newImage("sad", "frown.png")
+          .settings.size(96,96)
+        ,
+        newImage("judgmentImage1", row.judgmentImage1)
+          .settings.size(96,120)
+        ,
+        newImage("judgmentImage2", row.judgmentImage2)
+          .settings.size(96,120)
+        ,
+        newImage("judgmentImage3", row.judgmentImage3)
+          .settings.size(96,120)
+        ,
+        newImage("judgmentImage4", row.judgmentImage3)
+          .settings.size(96,120)
+        ,
+        newImage("judgmentImage5", row.judgmentImage3)
+          .settings.size(96,120)
+        ,
+        newCanvas("judgment", 596, 220) //images need to be shuffled, or no?
+          .settings.add(   10,    10, getImage("judgmentImage1") )
+          .settings.add(   106,   10, getImage("judgmentImage2") )
+          .settings.add(   202,   10, getImage("judgmentImage3") )
+          .settings.add(   298,   10, getImage("judgmentImage4") )
+          .settings.add(   394,   10, getImage("judgmentImage5") )
+          .settings.add(   490,   10, getImage("judgmentImage6") )
+          .settings.add(   144,  178,  getImage("happy") )
+          .settings.add(   336,  178,  getImage("sad") )
+          .print()
+        ,
+        newSelector("choice")
+          .settings.add( getImage("happy") , getImage("sad") )
+          .wait()
+    )
+  );
+PennController.Template("premiseB.image3.34of4.csv", //premise B - image 3
+    row => PennController("trialB3-b",
         newImage("domainImage1", row.domainImage1)
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
