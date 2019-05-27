@@ -26,7 +26,10 @@ PennController.Sequence( "practice1", "practice2", "practice3", "practice4", "pr
                            "trialA2",
                            "trialC4"));
 PennController.ResetPrefix(null);
-PennController.AddHost("http://web-risc.ens.fr/~rdudley/public_html/iifd/judgment/cards/");
+
+PennController.PreloadZip("https://web-risc.ens.fr/~rdudley/public_html/iifd/judgment/cards/all_resources.zip");
+
+//PennController.AddHost("http://web-risc.ens.fr/~rdudley/public_html/iifd/judgment/cards/");
           //ACTION: check all canvas spacings
           //ACTION: make sure files can be acquired in zipped version
           //ACTION: make scripts
@@ -65,7 +68,7 @@ PennController("practice1",
       .settings.css("border", "solid 2px black")
       .print()
     ,
-    newAudio("practice1domain", "DentistNanny.ogg")
+    newAudio("practice1domain", "DentistRGY_NannyYR.wav")
       .play() // Immediately play the audio file
       .wait()
     ,
@@ -76,7 +79,7 @@ PennController("practice1",
         .remove()
     ,
           //ACTION: change this to french
-    newAudio("practice1clue", "NannyYellow.ogg")
+    newAudio("practice1clue", "NannyYellow.wav")
       .play() // Immediately play the audio file
       .wait() // Wait to display images until after audio file is finished
     ,
@@ -123,23 +126,23 @@ PennController("practice1",
         .wait()
 );
 PennController("practice2",
-    newImage("practice2domainA", "ArcheologistRed.png")
+    newImage("practice2domainA", "DetectiveRed.png")
       .settings.size(96,120)
       .settings.css("border", "solid 1px black")
     ,
-    newImage("practice2domainB", "ArcheologistGreen.png")
+    newImage("practice2domainB", "DetectiveGreen.png")
       .settings.size(96,120)
       .settings.css("border", "solid 1px black")
     ,
-    newImage("practice2domainC", "ArcheologistYellow.png")
+    newImage("practice2domainC", "DetectiveYellow.png")
       .settings.size(96,120)
       .settings.css("border", "solid 1px black")
     ,
-    newImage("practice2domainD", "DentistRed.png")
+    newImage("practice2domainD", "DetectiveRed.png")
       .settings.size(96,120)
       .settings.css("border", "solid 1px black")
     ,
-    newImage("practice2domainE", "DentistYellow.png")
+    newImage("practice2domainE", "DetectiveYellow.png")
       .settings.size(96,120)
       .settings.css("border", "solid 1px black")
     ,
@@ -152,7 +155,7 @@ PennController("practice2",
       .settings.css("border", "solid 2px black")
       .print()
     ,
-    newAudio("practice2domain", "ArcheologistDentist.ogg")
+    newAudio("practice2domain", "DetectiveRGY_DentistRY.wav")
       .play() // Immediately play the audio file
       .wait()
     ,
@@ -163,7 +166,7 @@ PennController("practice2",
         .remove()
     ,
           //ACTION: change this to french
-    newAudio("practice2clue", "ArcheologistGreen.ogg")
+    newAudio("practice2clue", "DetectiveGreen.wav")
       .play() // Immediately play the audio file
       .wait() // Wait to display images until after audio file is finished
     ,
@@ -215,15 +218,15 @@ PennController("practice2",
         .wait()
 );
 PennController("practice3",
-    newImage("practice3domainA", "CobblerBlue.png")
+    newImage("practice3domainA", "ReporterBlue.png")
       .settings.size(96,120)
       .settings.css("border", "solid 1px black")
     ,
-    newImage("practice3domainB", "CobblerYellow.png")
+    newImage("practice3domainB", "ReporterYellow.png")
       .settings.size(96,120)
       .settings.css("border", "solid 1px black")
     ,
-    newImage("practice3domainC", "CobblerRed.png")
+    newImage("practice3domainC", "ReporterRed.png")
       .settings.size(96,120)
       .settings.css("border", "solid 1px black")
     ,
@@ -244,7 +247,7 @@ PennController("practice3",
       .settings.css("border", "solid 2px black")
       .print()
     ,
-    newAudio("practice3domain", "CobblerFireman.ogg")
+    newAudio("practice3domain", "ReporterBYR_FiremanGR.wav")
       .play() // Immediately play the audio file
       .wait()
     ,
@@ -255,7 +258,7 @@ PennController("practice3",
         .remove()
     ,
           //ACTION: change this to french
-    newAudio("practice3clue", "CobblerRed.ogg")
+    newAudio("practice3clue", "ReporterRed.wav")
       .play() // Immediately play the audio file
       .wait() // Wait to display images until after audio file is finished
     ,
@@ -265,15 +268,15 @@ PennController("practice3",
     newImage("other", "frown.png")
       .settings.size(96,96)
     ,
-    newImage("practice3judgmentA", "CobblerBlue.png")
+    newImage("practice3judgmentA", "ReporterBlue.png")
       .settings.size(96,120)
       .settings.css("border", "solid 1px black")
     ,
-    newImage("practice3judgmentB", "CobblerYellow.png")
+    newImage("practice3judgmentB", "ReporterYellow.png")
       .settings.size(96,120)
       .settings.css("border", "solid 1px black")
     ,
-    newImage("practice3judgmentC", "CobblerRed.png")
+    newImage("practice3judgmentC", "ReporterRed.png")
       .settings.size(96,120)
       .settings.css("border", "solid 1px black")
     ,
@@ -324,11 +327,11 @@ PennController("practice4",
       .settings.size(96,120)
       .settings.css("border", "solid 1px black")
     ,
-    newImage("practice4domainD", "ArcheologistYellow.png")
+    newImage("practice4domainD", "DetectiveYellow.png")
       .settings.size(96,120)
       .settings.css("border", "solid 1px black")
     ,
-    newImage("practice4domainE", "ArcheologistBlue.png")
+    newImage("practice4domainE", "DetectiveBlue.png")
       .settings.size(96,120)
       .settings.css("border", "solid 1px black")
     ,
@@ -341,7 +344,7 @@ PennController("practice4",
       .settings.css("border", "solid 2px black")
       .print()
     ,
-    newAudio("practice4domain", "NannyArcheologist.ogg")
+    newAudio("practice4domain", "NannyGRB_DetectiveYB.wav")
       .play() // Immediately play the audio file
       .wait()
     ,
@@ -352,7 +355,7 @@ PennController("practice4",
         .remove()
     ,
           //ACTION: change this to french
-    newAudio("practice4clue", "NannyOrArcheologist.ogg")
+    newAudio("practice4clue", "NannyOrDetective.wav")
       .play() // Immediately play the audio file
       .wait() // Wait to display images until after audio file is finished
     ,
@@ -362,11 +365,11 @@ PennController("practice4",
     newImage("other", "frown.png")
       .settings.size(96,96)
     ,
-    newImage("practice4judgmentA", "ArcheologistYellow.png")
+    newImage("practice4judgmentA", "DetectiveYellow.png")
       .settings.size(96,120)
       .settings.css("border", "solid 1px black")
     ,
-    newImage("practice4judgmentB", "ArcheologistBlue.png")
+    newImage("practice4judgmentB", "DetectiveBlue.png")
       .settings.size(96,120)
       .settings.css("border", "solid 1px black")
     ,
@@ -433,7 +436,7 @@ PennController("practice5",
       .settings.css("border", "solid 2px black")
       .print()
     ,
-    newAudio("practice5domain", "DentistFireman.ogg")
+    newAudio("practice5domain", "DentistYGB_FiremanRY.wav")
       .play() // Immediately play the audio file
       .wait()
     ,
@@ -444,7 +447,7 @@ PennController("practice5",
         .remove()
     ,
           //ACTION: change this to french
-    newAudio("practice5clue", "DentistOrFireman.ogg")
+    newAudio("practice5clue", "DentistOrFireman.wav")
       .play() // Immediately play the audio file
       .wait() // Wait to display images until after audio file is finished
     ,
@@ -491,15 +494,15 @@ PennController("practice5",
         .wait()
 );
 PennController("practice6",
-    newImage("practice6domainA", "CobblerGreen.png")
+    newImage("practice6domainA", "ReporterGreen.png")
       .settings.size(96,120)
       .settings.css("border", "solid 1px black")
     ,
-    newImage("practice6domainB", "CobblerBlue.png")
+    newImage("practice6domainB", "ReporterBlue.png")
       .settings.size(96,120)
       .settings.css("border", "solid 1px black")
     ,
-    newImage("practice6domainC", "CobblerYellow.png")
+    newImage("practice6domainC", "ReporterYellow.png")
       .settings.size(96,120)
       .settings.css("border", "solid 1px black")
     ,
@@ -520,7 +523,7 @@ PennController("practice6",
       .settings.css("border", "solid 2px black")
       .print()
     ,
-    newAudio("practice6domain", "CobblerNanny.ogg")
+    newAudio("practice6domain", "ReporterGBY_NannyRB.wav")
       .play() // Immediately play the audio file
       .wait()
     ,
@@ -531,7 +534,7 @@ PennController("practice6",
         .remove()
     ,
           //ACTION: change this to french
-    newAudio("practice6clue", "CobblerGreen_NannyRed.ogg")
+    newAudio("practice6clue", "ReporterGreen_NannyRed.wav")
       .play() // Immediately play the audio file
       .wait() // Wait to display images until after audio file is finished
     ,
@@ -541,7 +544,7 @@ PennController("practice6",
     newImage("other", "frown.png")
       .settings.size(96,96)
     ,
-    newImage("practice6judgmentA", "CobblerGreen.png")
+    newImage("practice6judgmentA", "ReporterGreen.png")
       .settings.size(96,120)
       .settings.css("border", "solid 1px black")
     ,
