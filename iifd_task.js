@@ -35,23 +35,23 @@ PennController.AddHost("http://web-risc.ens.fr/~rdudley/public_html/iifd/judgmen
           //ACTION: check that results file prints fine
 
 PennController("practice1",
-    newImage("practice1domainA", "ArcheologistRed.png")
+    newImage("practice1domainA", "DentistRed.png")
       .settings.size(96,120)
       .settings.css("border", "solid 1px black")
     ,
-    newImage("practice1domainB", "ArcheologistGreen.png")
+    newImage("practice1domainB", "DentistGreen.png")
       .settings.size(96,120)
       .settings.css("border", "solid 1px black")
     ,
-    newImage("practice1domainC", "ArcheologistYellow.png")
+    newImage("practice1domainC", "DentistYellow.png")
       .settings.size(96,120)
       .settings.css("border", "solid 1px black")
     ,
-    newImage("practice1domainD", "SantaYellow.png")
+    newImage("practice1domainD", "NannyYellow.png")
       .settings.size(96,120)
       .settings.css("border", "solid 1px black")
     ,
-    newImage("practice1domainE", "SantaRed.png")
+    newImage("practice1domainE", "NannyRed.png")
       .settings.size(96,120)
       .settings.css("border", "solid 1px black")
     ,
@@ -64,7 +64,7 @@ PennController("practice1",
       .settings.css("border", "solid 2px black")
       .print()
     ,
-    newAudio("practice1domain", "ArcheologistSanta.ogg")
+    newAudio("practice1domain", "DentistNanny.ogg")
       .play() // Immediately play the audio file
       .wait()
     ,
@@ -75,7 +75,7 @@ PennController("practice1",
         .remove()
     ,
           //ACTION: change this to french
-    newAudio("practice1clue", "SantaYellow.ogg")
+    newAudio("practice1clue", "NannyYellow.ogg")
       .play() // Immediately play the audio file
       .wait() // Wait to display images until after audio file is finished
     ,
@@ -85,7 +85,7 @@ PennController("practice1",
     newImage("other", "frown.png")
       .settings.size(96,96)
     ,
-    newImage("practice1judgmentA", "SantaYellow.png")
+    newImage("practice1judgmentA", "NannyYellow.png")
       .settings.size(96,120)
       .settings.css("border", "solid 1px black")
     ,
@@ -99,9 +99,9 @@ PennController("practice1",
       .settings.add( getImage("target") , getImage("other") )  //reclass as "target" and "other"
       .wait()
     ,
-    newText("positive", "Good job! I said she drew the yellow Santa, and it was there.")   //update based on trial type, or record audio
+    newText("positive", "Good job! I said she drew the yellow nanny, and it was there.")   //update based on trial type, or record audio
     ,
-    newText("negative", "Oops, you were wrong. I said she drew the yellow Santa, and it was there!")   //update based on trial type, or record audio
+    newText("negative", "Oops, you were wrong. I said she drew the yellow nanny, and it was there!")   //update based on trial type, or record audio
     ,
     getSelector("choice")
         .test.selected( getImage("target") )
@@ -120,23 +120,23 @@ PennController("practice1",
         .wait()
 );
 PennController("practice2",
-    newImage("practice2domainA", "SantaRed.png")
+    newImage("practice2domainA", "ArcheologistRed.png")
       .settings.size(96,120)
       .settings.css("border", "solid 1px black")
     ,
-    newImage("practice2domainB", "SantaGreen.png")
+    newImage("practice2domainB", "ArcheologistGreen.png")
       .settings.size(96,120)
       .settings.css("border", "solid 1px black")
     ,
-    newImage("practice2domainC", "SantaYellow.png")
+    newImage("practice2domainC", "ArcheologistYellow.png")
       .settings.size(96,120)
       .settings.css("border", "solid 1px black")
     ,
-    newImage("practice2domainD", "NannyRed.png")
+    newImage("practice2domainD", "DentistRed.png")
       .settings.size(96,120)
       .settings.css("border", "solid 1px black")
     ,
-    newImage("practice2domainE", "NannyYellow.png")
+    newImage("practice2domainE", "DentistYellow.png")
       .settings.size(96,120)
       .settings.css("border", "solid 1px black")
     ,
@@ -149,7 +149,7 @@ PennController("practice2",
       .settings.css("border", "solid 2px black")
       .print()
     ,
-    newAudio("practice2domain", "SantaNanny.ogg")
+    newAudio("practice2domain", "ArcheologistDentist.ogg")
       .play() // Immediately play the audio file
       .wait()
     ,
@@ -160,7 +160,7 @@ PennController("practice2",
         .remove()
     ,
           //ACTION: change this to french
-    newAudio("practice2clue", "SantaGreen.ogg")
+    newAudio("practice2clue", "ArcheologistGreen.ogg")
       .play() // Immediately play the audio file
       .wait() // Wait to display images until after audio file is finished
     ,
@@ -170,11 +170,11 @@ PennController("practice2",
     newImage("other", "frown.png")
       .settings.size(96,96)
     ,
-    newImage("practice2judgmentA", "NannyRed.png")
+    newImage("practice2judgmentA", "DentistRed.png")
       .settings.size(96,120)
       .settings.css("border", "solid 1px black")
     ,
-    newImage("practice2judgmentB", "NannyYellow.png")
+    newImage("practice2judgmentB", "DentistYellow.png")
       .settings.size(96,120)
       .settings.css("border", "solid 1px black")
     ,
@@ -189,9 +189,9 @@ PennController("practice2",
       .settings.add( getImage("target") , getImage("other") )  //reclass as "target" and "other"
       .wait()
     ,
-    newText("positive", "Good job! I said she drew the green Santa, and there weren't any Santas there.")   //update based on trial type, or record audio
+    newText("positive", "Good job! I said she drew the green archeologist, and there weren't any archeologists there.")   //update based on trial type, or record audio
     ,
-    newText("negative", "Oops, you were wrong. I said she drew the green Santa, but there weren't any Santas there!")   //update based on trial type, or record audio
+    newText("negative", "Oops, you were wrong. I said she drew the green archeologist, but there weren't any archeologists there!")   //update based on trial type, or record audio
     ,
     getSelector("choice")
         .test.selected( getImage("target") )
@@ -222,11 +222,11 @@ PennController("practice3",
       .settings.size(96,120)
       .settings.css("border", "solid 1px black")
     ,
-    newImage("practice3domainD", "ArcheologistGreen.png")
+    newImage("practice3domainD", "FiremanGreen.png")
       .settings.size(96,120)
       .settings.css("border", "solid 1px black")
     ,
-    newImage("practice3domainE", "ArcheologistRed.png")
+    newImage("practice3domainE", "FiremanRed.png")
       .settings.size(96,120)
       .settings.css("border", "solid 1px black")
     ,
@@ -239,7 +239,7 @@ PennController("practice3",
       .settings.css("border", "solid 2px black")
       .print()
     ,
-    newAudio("practice3domain", "CobblerArcheologist.ogg")
+    newAudio("practice3domain", "CobblerFireman.ogg")
       .play() // Immediately play the audio file
       .wait()
     ,
@@ -317,11 +317,11 @@ PennController("practice4",
       .settings.size(96,120)
       .settings.css("border", "solid 1px black")
     ,
-    newImage("practice4domainD", "DentistYellow.png")
+    newImage("practice4domainD", "ArcheologistYellow.png")
       .settings.size(96,120)
       .settings.css("border", "solid 1px black")
     ,
-    newImage("practice4domainE", "DentistBlue.png")
+    newImage("practice4domainE", "ArcheologistBlue.png")
       .settings.size(96,120)
       .settings.css("border", "solid 1px black")
     ,
@@ -334,7 +334,7 @@ PennController("practice4",
       .settings.css("border", "solid 2px black")
       .print()
     ,
-    newAudio("practice4domain", "NannyDentist.ogg")
+    newAudio("practice4domain", "NannyArcheologist.ogg")
       .play() // Immediately play the audio file
       .wait()
     ,
@@ -345,7 +345,7 @@ PennController("practice4",
         .remove()
     ,
           //ACTION: change this to french
-    newAudio("practice4clue", "NannyOrDentist.ogg")
+    newAudio("practice4clue", "NannyOrArcheologist.ogg")
       .play() // Immediately play the audio file
       .wait() // Wait to display images until after audio file is finished
     ,
@@ -355,11 +355,11 @@ PennController("practice4",
     newImage("other", "frown.png")
       .settings.size(96,96)
     ,
-    newImage("practice4judgmentA", "DentistYellow.png")
+    newImage("practice4judgmentA", "ArcheologistYellow.png")
       .settings.size(96,120)
       .settings.css("border", "solid 1px black")
     ,
-    newImage("practice4judgmentB", "DentistBlue.png")
+    newImage("practice4judgmentB", "ArcheologistBlue.png")
       .settings.size(96,120)
       .settings.css("border", "solid 1px black")
     ,
@@ -374,9 +374,9 @@ PennController("practice4",
       .settings.add( getImage("target") , getImage("other") )  //reclass as "target" and "other"
       .wait()
     ,
-    newText("positive", "Good job! I said she drew the nannies or the dentists, and the dentists were there.")   //update based on trial type, or record audio
+    newText("positive", "Good job! I said she drew the nannies or the archeologists, and the archeologists were there.")   //update based on trial type, or record audio
     ,
-    newText("negative", "Oops, you were wrong. I said she drew the nannies or the dentists, and the dentists were there!")   //update based on trial type, or record audio
+    newText("negative", "Oops, you were wrong. I said she drew the nannies or the archeologists, and the archeologists were there!")   //update based on trial type, or record audio
     ,
     getSelector("choice")
         .test.selected( getImage("target") )
@@ -480,23 +480,23 @@ PennController("practice5",
         .wait()
 );
 PennController("practice6",
-    newImage("practice6domainA", "FiremanGreen.png")
+    newImage("practice6domainA", "CobblerGreen.png")
       .settings.size(96,120)
       .settings.css("border", "solid 1px black")
     ,
-    newImage("practice6domainB", "FiremanBlue.png")
+    newImage("practice6domainB", "CobblerBlue.png")
       .settings.size(96,120)
       .settings.css("border", "solid 1px black")
     ,
-    newImage("practice6domainC", "FiremanYellow.png")
+    newImage("practice6domainC", "CobblerYellow.png")
       .settings.size(96,120)
       .settings.css("border", "solid 1px black")
     ,
-    newImage("practice6domainD", "CobblerRed.png")
+    newImage("practice6domainD", "NannyRed.png")
       .settings.size(96,120)
       .settings.css("border", "solid 1px black")
     ,
-    newImage("practice6domainE", "CobblerBlue.png")
+    newImage("practice6domainE", "NannyBlue.png")
       .settings.size(96,120)
       .settings.css("border", "solid 1px black")
     ,
@@ -509,7 +509,7 @@ PennController("practice6",
       .settings.css("border", "solid 2px black")
       .print()
     ,
-    newAudio("practice6domain", "FiremanCobbler.ogg")
+    newAudio("practice6domain", "CobblerNanny.ogg")
       .play() // Immediately play the audio file
       .wait()
     ,
@@ -520,7 +520,7 @@ PennController("practice6",
         .remove()
     ,
           //ACTION: change this to french
-    newAudio("practice6clue", "FiremanGreen_CobblerRed.ogg")
+    newAudio("practice6clue", "CobblerGreen_NannyRed.ogg")
       .play() // Immediately play the audio file
       .wait() // Wait to display images until after audio file is finished
     ,
@@ -530,15 +530,15 @@ PennController("practice6",
     newImage("other", "frown.png")
       .settings.size(96,96)
     ,
-    newImage("practice6judgmentA", "FiremanGreen.png")
+    newImage("practice6judgmentA", "CobblerGreen.png")
       .settings.size(96,120)
       .settings.css("border", "solid 1px black")
     ,
-    newImage("practice6judgmentB", "CobblerRed.png")
+    newImage("practice6judgmentB", "NannyRed.png")
       .settings.size(96,120)
       .settings.css("border", "solid 1px black")
     ,
-    newImage("practice6judgmentC", "CobblerBlue.png")
+    newImage("practice6judgmentC", "NannyBlue.png")
       .settings.size(96,120)
       .settings.css("border", "solid 1px black")
     ,
@@ -554,9 +554,9 @@ PennController("practice6",
       .settings.add( getImage("target") , getImage("other") )  //reclass as "target" and "other"
       .wait()
     ,
-    newText("positive", "Good job! I said she drew the green fireman and the red cobbler, and they were both there.")   //update based on trial type, or record audio
+    newText("positive", "Good job! I said she drew the green cobbler and the red nanny, and they were both there.")   //update based on trial type, or record audio
     ,
-    newText("negative", "Oops, you were wrong. I said she drew he green fireman and the red cobbler, and they were both there!")   //update based on trial type, or record audio
+    newText("negative", "Oops, you were wrong. I said she drew he green cobbler and the red nanny, and they were both there!")   //update based on trial type, or record audio
     ,
     getSelector("choice")
         .test.selected( getImage("target") )
