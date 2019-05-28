@@ -197,8 +197,8 @@ PennController("practice2",
     newCanvas("judgment", 576, 220) //images need to be shuffled, or no?
       .settings.add(   0,    10,  getImage("practice2judgmentA") )
       .settings.add(   96,    10,  getImage("practice2judgmentB") )
-      .settings.add(   144,  178, getImage("target") )
-      .settings.add(   336,  178, getImage("other") )
+      .settings.add(   144,  178, getImage("other") )
+      .settings.add(   336,  178, getImage("target") )
       .print()
     ,
     newSelector("choice")
@@ -473,8 +473,8 @@ PennController("practice5",
     ,
     newCanvas("judgment", 576, 220) //images need to be shuffled, or no?
       .settings.add(   0,    10,  getImage("practice5judgmentA") )
-      .settings.add(   144,  178, getImage("target") )
-      .settings.add(   336,  178, getImage("other") )
+      .settings.add(   144,  178, getImage("other") )
+      .settings.add(   336,  178, getImage("target") )
       .print()
     ,
     newSelector("choice")
