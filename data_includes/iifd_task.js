@@ -614,20 +614,20 @@ PennController.Template("premiseA.image1.csv", //premise A - image 1
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
         ,
+        newImage("domainImage4", row.domainImage4)
+          .settings.size(96,120)
+          .settings.css("border", "solid 1px black")
+        ,
         newImage("domainImage5", row.domainImage5)
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
         ,
-        newImage("domainImage6", row.domainImage6)
-          .settings.size(96,120)
-          .settings.css("border", "solid 1px black")
-        ,
         newCanvas("domain", 596, 140) //images need to be shuffled, or no?
-          .settings.add(   10,    10, getImage("domainImage1") )
-          .settings.add(   106,   10, getImage("domainImage2") )
-          .settings.add(   202,   10, getImage("domainImage3") )
-          .settings.add(   394,   10, getImage("domainImage5") )
-          .settings.add(   490,   10, getImage("domainImage6") )
+          .settings.add(   58,    10, getImage("domainImage1") )
+          .settings.add(   154,   10, getImage("domainImage2") )
+          .settings.add(   250,   10, getImage("domainImage3") )
+          .settings.add(   346,   10, getImage("domainImage4") )
+          .settings.add(   442,   10, getImage("domainImage5") )
           .settings.css("border", "solid 2px black")
           .print()
         ,
@@ -687,20 +687,20 @@ PennController.Template("premiseC.image1.csv", //premise C - image 1
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
         ,
+        newImage("domainImage4", row.domainImage4)
+          .settings.size(96,120)
+          .settings.css("border", "solid 1px black")
+        ,
         newImage("domainImage5", row.domainImage5)
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
         ,
-        newImage("domainImage6", row.domainImage6)
-          .settings.size(96,120)
-          .settings.css("border", "solid 1px black")
-        ,
         newCanvas("domain", 596, 140) //images need to be shuffled, or no?
-          .settings.add(   10,    10, getImage("domainImage1") )
-          .settings.add(   106,   10, getImage("domainImage2") )
-          .settings.add(   202,   10, getImage("domainImage3") )
-          .settings.add(   394,   10, getImage("domainImage5") )
-          .settings.add(   490,   10, getImage("domainImage6") )
+          .settings.add(   58,    10, getImage("domainImage1") )
+          .settings.add(   154,   10, getImage("domainImage2") )
+          .settings.add(   250,   10, getImage("domainImage3") )
+          .settings.add(   394,   10, getImage("domainImage4") )
+          .settings.add(   490,   10, getImage("domainImage5") )
           .settings.css("border", "solid 2px black")
           .print()
         ,
@@ -734,9 +734,9 @@ PennController.Template("premiseC.image1.csv", //premise C - image 1
           .settings.size(96,120)
         ,
         newCanvas("judgment", 596, 220) //images need to be shuffled, or no?
-          .settings.add(   58,   10,   getImage("judgmentImage1") )
+          .settings.add(   154,  10,   getImage("judgmentImage1") )
           .settings.add(   250,  10,   getImage("judgmentImage2") )
-          .settings.add(   442,  10,   getImage("judgmentImage3") )
+          .settings.add(   346,  10,   getImage("judgmentImage3") )
           .settings.add(   144,  178,  getImage("happy") )
           .settings.add(   336,  178,  getImage("sad") )
           .print()
@@ -760,20 +760,20 @@ PennController.Template("premiseD.image1.csv", //premise D - image 1
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
         ,
+        newImage("domainImage4", row.domainImage4)
+          .settings.size(96,120)
+          .settings.css("border", "solid 1px black")
+        ,
         newImage("domainImage5", row.domainImage5)
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
         ,
-        newImage("domainImage6", row.domainImage6)
-          .settings.size(96,120)
-          .settings.css("border", "solid 1px black")
-        ,
         newCanvas("domain", 596, 140) //images need to be shuffled, or no?
-          .settings.add(   10,    10, getImage("domainImage1") )
-          .settings.add(   106,   10, getImage("domainImage2") )
-          .settings.add(   202,   10, getImage("domainImage3") )
-          .settings.add(   394,   10, getImage("domainImage5") )
-          .settings.add(   490,   10, getImage("domainImage6") )
+          .settings.add(   58,    10, getImage("domainImage1") )
+          .settings.add(   154,   10, getImage("domainImage2") )
+          .settings.add(   250,   10, getImage("domainImage3") )
+          .settings.add(   346,   10, getImage("domainImage4") )
+          .settings.add(   442,   10, getImage("domainImage5") )
           .settings.css("border", "solid 2px black")
           .print()
         ,
@@ -807,9 +807,9 @@ PennController.Template("premiseD.image1.csv", //premise D - image 1
           .settings.size(96,120)
         ,
         newCanvas("judgment", 596, 220) //images need to be shuffled, or no?
-          .settings.add(   58,   10,   getImage("judgmentImage1") )
+          .settings.add(   154,  10,   getImage("judgmentImage1") )
           .settings.add(   250,  10,   getImage("judgmentImage2") )
-          .settings.add(   442,  10,   getImage("judgmentImage3") )
+          .settings.add(   346,  10,   getImage("judgmentImage3") )
           .settings.add(   144,  178,  getImage("happy") )
           .settings.add(   336,  178,  getImage("sad") )
           .print()
@@ -833,20 +833,20 @@ PennController.Template("premiseE.image1.csv", //premise E - image 1
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
         ,
+        newImage("domainImage4", row.domainImage4)
+          .settings.size(96,120)
+          .settings.css("border", "solid 1px black")
+        ,
         newImage("domainImage5", row.domainImage5)
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
         ,
-        newImage("domainImage6", row.domainImage6)
-          .settings.size(96,120)
-          .settings.css("border", "solid 1px black")
-        ,
         newCanvas("domain", 596, 140) //images need to be shuffled, or no?
-          .settings.add(   10,    10, getImage("domainImage1") )
-          .settings.add(   106,   10, getImage("domainImage2") )
-          .settings.add(   202,   10, getImage("domainImage3") )
-          .settings.add(   394,   10, getImage("domainImage5") )
-          .settings.add(   490,   10, getImage("domainImage6") )
+          .settings.add(   58,    10, getImage("domainImage1") )
+          .settings.add(   154,   10, getImage("domainImage2") )
+          .settings.add(   250,   10, getImage("domainImage3") )
+          .settings.add(   346,   10, getImage("domainImage4") )
+          .settings.add(   442,   10, getImage("domainImage5") )
           .settings.css("border", "solid 2px black")
           .print()
         ,
@@ -880,9 +880,9 @@ PennController.Template("premiseE.image1.csv", //premise E - image 1
           .settings.size(96,120)
         ,
         newCanvas("judgment", 596, 220) //images need to be shuffled, or no?
-          .settings.add(   58,   10,   getImage("judgmentImage1") )
+          .settings.add(   154,   10,   getImage("judgmentImage1") )
           .settings.add(   250,  10,   getImage("judgmentImage2") )
-          .settings.add(   442,  10,   getImage("judgmentImage3") )
+          .settings.add(   346,  10,   getImage("judgmentImage3") )
           .settings.add(   144,  178,  getImage("happy") )
           .settings.add(   336,  178,  getImage("sad") )
           .print()
@@ -906,20 +906,20 @@ PennController.Template("premiseA.image2.csv", //premise A - image 2
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
         ,
+        newImage("domainImage4", row.domainImage4)
+          .settings.size(96,120)
+          .settings.css("border", "solid 1px black")
+        ,
         newImage("domainImage5", row.domainImage5)
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
         ,
-        newImage("domainImage6", row.domainImage6)
-          .settings.size(96,120)
-          .settings.css("border", "solid 1px black")
-        ,
         newCanvas("domain", 596, 140) //images need to be shuffled, or no?
-          .settings.add(   10,    10, getImage("domainImage1") )
-          .settings.add(   106,   10, getImage("domainImage2") )
-          .settings.add(   202,   10, getImage("domainImage3") )
-          .settings.add(   394,   10, getImage("domainImage5") )
-          .settings.add(   490,   10, getImage("domainImage6") )
+          .settings.add(   58,    10, getImage("domainImage1") )
+          .settings.add(   154,   10, getImage("domainImage2") )
+          .settings.add(   250,   10, getImage("domainImage3") )
+          .settings.add(   346,   10, getImage("domainImage4") )
+          .settings.add(   442,   10, getImage("domainImage5") )
           .settings.css("border", "solid 2px black")
           .print()
         ,
@@ -953,9 +953,9 @@ PennController.Template("premiseA.image2.csv", //premise A - image 2
           .settings.size(96,120)
         ,
         newCanvas("judgment", 596, 220) //images need to be shuffled, or no?
-          .settings.add(   58,   10,   getImage("judgmentImage1") )
+          .settings.add(   154,  10,   getImage("judgmentImage1") )
           .settings.add(   250,  10,   getImage("judgmentImage2") )
-          .settings.add(   442,  10,   getImage("judgmentImage3") )
+          .settings.add(   346,  10,   getImage("judgmentImage3") )
           .settings.add(   144,  178,  getImage("happy") )
           .settings.add(   336,  178,  getImage("sad") )
           .print()
@@ -979,20 +979,20 @@ PennController.Template("premiseC.image2.csv", //premise C - image 2
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
         ,
+        newImage("domainImage4", row.domainImage4)
+          .settings.size(96,120)
+          .settings.css("border", "solid 1px black")
+        ,
         newImage("domainImage5", row.domainImage5)
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
         ,
-        newImage("domainImage6", row.domainImage6)
-          .settings.size(96,120)
-          .settings.css("border", "solid 1px black")
-        ,
         newCanvas("domain", 596, 140) //images need to be shuffled, or no?
-          .settings.add(   10,    10, getImage("domainImage1") )
-          .settings.add(   106,   10, getImage("domainImage2") )
-          .settings.add(   202,   10, getImage("domainImage3") )
-          .settings.add(   394,   10, getImage("domainImage5") )
-          .settings.add(   490,   10, getImage("domainImage6") )
+          .settings.add(   58,    10, getImage("domainImage1") )
+          .settings.add(   154,   10, getImage("domainImage2") )
+          .settings.add(   250,   10, getImage("domainImage3") )
+          .settings.add(   346,   10, getImage("domainImage4") )
+          .settings.add(   442,   10, getImage("domainImage5") )
           .settings.css("border", "solid 2px black")
           .print()
         ,
@@ -1026,9 +1026,9 @@ PennController.Template("premiseC.image2.csv", //premise C - image 2
           .settings.size(96,120)
         ,
         newCanvas("judgment", 596, 220) //images need to be shuffled, or no?
-          .settings.add(   58,   10,   getImage("judgmentImage1") )
+          .settings.add(   154,  10,   getImage("judgmentImage1") )
           .settings.add(   250,  10,   getImage("judgmentImage2") )
-          .settings.add(   442,  10,   getImage("judgmentImage3") )
+          .settings.add(   346,  10,   getImage("judgmentImage3") )
           .settings.add(   144,  178,  getImage("happy") )
           .settings.add(   336,  178,  getImage("sad") )
           .print()
@@ -1052,20 +1052,20 @@ PennController.Template("premiseD.image2.csv", //premise D - image 2
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
         ,
+        newImage("domainImage4", row.domainImage4)
+          .settings.size(96,120)
+          .settings.css("border", "solid 1px black")
+        ,
         newImage("domainImage5", row.domainImage5)
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
         ,
-        newImage("domainImage6", row.domainImage6)
-          .settings.size(96,120)
-          .settings.css("border", "solid 1px black")
-        ,
         newCanvas("domain", 596, 140) //images need to be shuffled, or no?
-          .settings.add(   10,    10, getImage("domainImage1") )
-          .settings.add(   106,   10, getImage("domainImage2") )
-          .settings.add(   202,   10, getImage("domainImage3") )
-          .settings.add(   394,   10, getImage("domainImage5") )
-          .settings.add(   490,   10, getImage("domainImage6") )
+          .settings.add(   58,    10, getImage("domainImage1") )
+          .settings.add(   154,   10, getImage("domainImage2") )
+          .settings.add(   250,   10, getImage("domainImage3") )
+          .settings.add(   346,   10, getImage("domainImage4") )
+          .settings.add(   442,   10, getImage("domainImage5") )
           .settings.css("border", "solid 2px black")
           .print()
         ,
@@ -1099,9 +1099,9 @@ PennController.Template("premiseD.image2.csv", //premise D - image 2
           .settings.size(96,120)
         ,
         newCanvas("judgment", 596, 220) //images need to be shuffled, or no?
-          .settings.add(   58,   10,   getImage("judgmentImage1") )
+          .settings.add(   154,  10,   getImage("judgmentImage1") )
           .settings.add(   250,  10,   getImage("judgmentImage2") )
-          .settings.add(   442,  10,   getImage("judgmentImage3") )
+          .settings.add(   346,  10,   getImage("judgmentImage3") )
           .settings.add(   144,  178,  getImage("happy") )
           .settings.add(   336,  178,  getImage("sad") )
           .print()
@@ -1125,20 +1125,20 @@ PennController.Template("premiseE.image2.csv", //premise E - image 2
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
         ,
+        newImage("domainImage4", row.domainImage4)
+          .settings.size(96,120)
+          .settings.css("border", "solid 1px black")
+        ,
         newImage("domainImage5", row.domainImage5)
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
         ,
-        newImage("domainImage6", row.domainImage6)
-          .settings.size(96,120)
-          .settings.css("border", "solid 1px black")
-        ,
         newCanvas("domain", 596, 140) //images need to be shuffled, or no?
-          .settings.add(   10,    10, getImage("domainImage1") )
-          .settings.add(   106,   10, getImage("domainImage2") )
-          .settings.add(   202,   10, getImage("domainImage3") )
-          .settings.add(   394,   10, getImage("domainImage5") )
-          .settings.add(   490,   10, getImage("domainImage6") )
+          .settings.add(   58,    10, getImage("domainImage1") )
+          .settings.add(   154,   10, getImage("domainImage2") )
+          .settings.add(   250,   10, getImage("domainImage3") )
+          .settings.add(   346,   10, getImage("domainImage4") )
+          .settings.add(   442,   10, getImage("domainImage5") )
           .settings.css("border", "solid 2px black")
           .print()
         ,
@@ -1172,9 +1172,9 @@ PennController.Template("premiseE.image2.csv", //premise E - image 2
           .settings.size(96,120)
         ,
         newCanvas("judgment", 596, 220) //images need to be shuffled, or no?
-          .settings.add(   58,   10,   getImage("judgmentImage1") )
+          .settings.add(   154,  10,   getImage("judgmentImage1") )
           .settings.add(   250,  10,   getImage("judgmentImage2") )
-          .settings.add(   442,  10,   getImage("judgmentImage3") )
+          .settings.add(   346,  10,   getImage("judgmentImage3") )
           .settings.add(   144,  178,  getImage("happy") )
           .settings.add(   336,  178,  getImage("sad") )
           .print()
@@ -1198,20 +1198,20 @@ PennController.Template("premiseA.image3.csv", //premise A - image 3
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
         ,
+        newImage("domainImage4", row.domainImage4)
+          .settings.size(96,120)
+          .settings.css("border", "solid 1px black")
+        ,
         newImage("domainImage5", row.domainImage5)
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
         ,
-        newImage("domainImage6", row.domainImage6)
-          .settings.size(96,120)
-          .settings.css("border", "solid 1px black")
-        ,
         newCanvas("domain", 596, 140) //images need to be shuffled, or no?
-          .settings.add(   10,    10, getImage("domainImage1") )
-          .settings.add(   106,   10, getImage("domainImage2") )
-          .settings.add(   202,   10, getImage("domainImage3") )
-          .settings.add(   394,   10, getImage("domainImage5") )
-          .settings.add(   490,   10, getImage("domainImage6") )
+          .settings.add(   58,    10, getImage("domainImage1") )
+          .settings.add(   154,   10, getImage("domainImage2") )
+          .settings.add(   250,   10, getImage("domainImage3") )
+          .settings.add(   346,   10, getImage("domainImage4") )
+          .settings.add(   442,   10, getImage("domainImage5") )
           .settings.css("border", "solid 2px black")
           .print()
         ,
@@ -1244,19 +1244,18 @@ PennController.Template("premiseA.image3.csv", //premise A - image 3
         newImage("judgmentImage3", row.judgmentImage3)
           .settings.size(96,120)
         ,
-        newImage("judgmentImage4", row.judgmentImage3)
+        newImage("judgmentImage4", row.judgmentImage4)
           .settings.size(96,120)
         ,
-        newImage("judgmentImage5", row.judgmentImage3)
+        newImage("judgmentImage5", row.judgmentImage5)
           .settings.size(96,120)
         ,
         newCanvas("judgment", 596, 220) //images need to be shuffled, or no?
-          .settings.add(   10,    10, getImage("judgmentImage1") )
-          .settings.add(   106,   10, getImage("judgmentImage2") )
-          .settings.add(   202,   10, getImage("judgmentImage3") )
-          .settings.add(   298,   10, getImage("judgmentImage4") )
-          .settings.add(   394,   10, getImage("judgmentImage5") )
-          .settings.add(   490,   10, getImage("judgmentImage6") )
+          .settings.add(   58,    10, getImage("judgmentImage1") )
+          .settings.add(   154,   10, getImage("judgmentImage2") )
+          .settings.add(   250,   10, getImage("judgmentImage3") )
+          .settings.add(   346,   10, getImage("judgmentImage4") )
+          .settings.add(   442,   10, getImage("judgmentImage5") )
           .settings.add(   144,  178,  getImage("happy") )
           .settings.add(   336,  178,  getImage("sad") )
           .print()
@@ -1280,20 +1279,20 @@ PennController.Template("premiseB.image3.12of4.csv", //premise B - image 3
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
         ,
+        newImage("domainImage4", row.domainImage4)
+          .settings.size(96,120)
+          .settings.css("border", "solid 1px black")
+        ,
         newImage("domainImage5", row.domainImage5)
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
         ,
-        newImage("domainImage6", row.domainImage6)
-          .settings.size(96,120)
-          .settings.css("border", "solid 1px black")
-        ,
         newCanvas("domain", 596, 140) //images need to be shuffled, or no?
-          .settings.add(   10,    10, getImage("domainImage1") )
-          .settings.add(   106,   10, getImage("domainImage2") )
-          .settings.add(   202,   10, getImage("domainImage3") )
-          .settings.add(   394,   10, getImage("domainImage5") )
-          .settings.add(   490,   10, getImage("domainImage6") )
+          .settings.add(   58,    10, getImage("domainImage1") )
+          .settings.add(   154,   10, getImage("domainImage2") )
+          .settings.add(   250,   10, getImage("domainImage3") )
+          .settings.add(   346,   10, getImage("domainImage4") )
+          .settings.add(   442,   10, getImage("domainImage5") )
           .settings.css("border", "solid 2px black")
           .print()
         ,
@@ -1326,19 +1325,18 @@ PennController.Template("premiseB.image3.12of4.csv", //premise B - image 3
         newImage("judgmentImage3", row.judgmentImage3)
           .settings.size(96,120)
         ,
-        newImage("judgmentImage4", row.judgmentImage3)
+        newImage("judgmentImage4", row.judgmentImage4)
           .settings.size(96,120)
         ,
-        newImage("judgmentImage5", row.judgmentImage3)
+        newImage("judgmentImage5", row.judgmentImage5)
           .settings.size(96,120)
         ,
         newCanvas("judgment", 596, 220) //images need to be shuffled, or no?
-          .settings.add(   10,    10, getImage("judgmentImage1") )
-          .settings.add(   106,   10, getImage("judgmentImage2") )
-          .settings.add(   202,   10, getImage("judgmentImage3") )
-          .settings.add(   298,   10, getImage("judgmentImage4") )
-          .settings.add(   394,   10, getImage("judgmentImage5") )
-          .settings.add(   490,   10, getImage("judgmentImage6") )
+          .settings.add(   58,    10, getImage("judgmentImage1") )
+          .settings.add(   154,   10, getImage("judgmentImage2") )
+          .settings.add(   250,   10, getImage("judgmentImage3") )
+          .settings.add(   346,   10, getImage("judgmentImage4") )
+          .settings.add(   442,   10, getImage("judgmentImage5") )
           .settings.add(   144,  178,  getImage("happy") )
           .settings.add(   336,  178,  getImage("sad") )
           .print()
@@ -1362,20 +1360,20 @@ PennController.Template("premiseB.image3.34of4.csv", //premise B - image 3
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
         ,
+        newImage("domainImage4", row.domainImage4)
+          .settings.size(96,120)
+          .settings.css("border", "solid 1px black")
+        ,
         newImage("domainImage5", row.domainImage5)
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
         ,
-        newImage("domainImage6", row.domainImage6)
-          .settings.size(96,120)
-          .settings.css("border", "solid 1px black")
-        ,
         newCanvas("domain", 596, 140) //images need to be shuffled, or no?
-          .settings.add(   10,    10, getImage("domainImage1") )
-          .settings.add(   106,   10, getImage("domainImage2") )
-          .settings.add(   202,   10, getImage("domainImage3") )
-          .settings.add(   394,   10, getImage("domainImage5") )
-          .settings.add(   490,   10, getImage("domainImage6") )
+          .settings.add(   58,    10, getImage("domainImage1") )
+          .settings.add(   154,   10, getImage("domainImage2") )
+          .settings.add(   250,   10, getImage("domainImage3") )
+          .settings.add(   346,   10, getImage("domainImage4") )
+          .settings.add(   442,   10, getImage("domainImage5") )
           .settings.css("border", "solid 2px black")
           .print()
         ,
@@ -1408,19 +1406,18 @@ PennController.Template("premiseB.image3.34of4.csv", //premise B - image 3
         newImage("judgmentImage3", row.judgmentImage3)
           .settings.size(96,120)
         ,
-        newImage("judgmentImage4", row.judgmentImage3)
+        newImage("judgmentImage4", row.judgmentImage4)
           .settings.size(96,120)
         ,
-        newImage("judgmentImage5", row.judgmentImage3)
+        newImage("judgmentImage5", row.judgmentImage5)
           .settings.size(96,120)
         ,
         newCanvas("judgment", 596, 220) //images need to be shuffled, or no?
-          .settings.add(   10,    10, getImage("judgmentImage1") )
-          .settings.add(   106,   10, getImage("judgmentImage2") )
-          .settings.add(   202,   10, getImage("judgmentImage3") )
-          .settings.add(   298,   10, getImage("judgmentImage4") )
-          .settings.add(   394,   10, getImage("judgmentImage5") )
-          .settings.add(   490,   10, getImage("judgmentImage6") )
+          .settings.add(   58,    10, getImage("judgmentImage1") )
+          .settings.add(   154,   10, getImage("judgmentImage2") )
+          .settings.add(   250,   10, getImage("judgmentImage3") )
+          .settings.add(   346,   10, getImage("judgmentImage4") )
+          .settings.add(   442,   10, getImage("judgmentImage5") )
           .settings.add(   144,  178,  getImage("happy") )
           .settings.add(   336,  178,  getImage("sad") )
           .print()
@@ -1444,20 +1441,20 @@ PennController.Template("premiseC.image3.csv", //premise C - image 3
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
         ,
+        newImage("domainImage4", row.domainImage4)
+          .settings.size(96,120)
+          .settings.css("border", "solid 1px black")
+        ,
         newImage("domainImage5", row.domainImage5)
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
         ,
-        newImage("domainImage6", row.domainImage6)
-          .settings.size(96,120)
-          .settings.css("border", "solid 1px black")
-        ,
         newCanvas("domain", 596, 140) //images need to be shuffled, or no?
-          .settings.add(   10,    10, getImage("domainImage1") )
-          .settings.add(   106,   10, getImage("domainImage2") )
-          .settings.add(   202,   10, getImage("domainImage3") )
-          .settings.add(   394,   10, getImage("domainImage5") )
-          .settings.add(   490,   10, getImage("domainImage6") )
+          .settings.add(   58,    10, getImage("domainImage1") )
+          .settings.add(   154,   10, getImage("domainImage2") )
+          .settings.add(   250,   10, getImage("domainImage3") )
+          .settings.add(   346,   10, getImage("domainImage4") )
+          .settings.add(   442,   10, getImage("domainImage5") )
           .settings.css("border", "solid 2px black")
           .print()
         ,
@@ -1490,19 +1487,18 @@ PennController.Template("premiseC.image3.csv", //premise C - image 3
         newImage("judgmentImage3", row.judgmentImage3)
           .settings.size(96,120)
         ,
-        newImage("judgmentImage4", row.judgmentImage3)
+        newImage("judgmentImage4", row.judgmentImage4)
           .settings.size(96,120)
         ,
-        newImage("judgmentImage5", row.judgmentImage3)
+        newImage("judgmentImage5", row.judgmentImage5)
           .settings.size(96,120)
         ,
         newCanvas("judgment", 596, 220) //images need to be shuffled, or no?
-          .settings.add(   10,    10, getImage("judgmentImage1") )
-          .settings.add(   106,   10, getImage("judgmentImage2") )
-          .settings.add(   202,   10, getImage("judgmentImage3") )
-          .settings.add(   298,   10, getImage("judgmentImage4") )
-          .settings.add(   394,   10, getImage("judgmentImage5") )
-          .settings.add(   490,   10, getImage("judgmentImage6") )
+          .settings.add(   58,    10, getImage("judgmentImage1") )
+          .settings.add(   154,   10, getImage("judgmentImage2") )
+          .settings.add(   250,   10, getImage("judgmentImage3") )
+          .settings.add(   346,   10, getImage("judgmentImage4") )
+          .settings.add(   442,   10, getImage("judgmentImage5") )
           .settings.add(   144,  178,  getImage("happy") )
           .settings.add(   336,  178,  getImage("sad") )
           .print()
@@ -1526,20 +1522,20 @@ PennController.Template("premiseD.image3.csv", //premise D - image 3
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
         ,
+        newImage("domainImage4", row.domainImage4)
+          .settings.size(96,120)
+          .settings.css("border", "solid 1px black")
+        ,
         newImage("domainImage5", row.domainImage5)
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
         ,
-        newImage("domainImage6", row.domainImage6)
-          .settings.size(96,120)
-          .settings.css("border", "solid 1px black")
-        ,
         newCanvas("domain", 596, 140) //images need to be shuffled, or no?
-          .settings.add(   10,    10, getImage("domainImage1") )
-          .settings.add(   106,   10, getImage("domainImage2") )
-          .settings.add(   202,   10, getImage("domainImage3") )
-          .settings.add(   394,   10, getImage("domainImage5") )
-          .settings.add(   490,   10, getImage("domainImage6") )
+          .settings.add(   58,    10, getImage("domainImage1") )
+          .settings.add(   154,   10, getImage("domainImage2") )
+          .settings.add(   250,   10, getImage("domainImage3") )
+          .settings.add(   346,   10, getImage("domainImage4") )
+          .settings.add(   442,   10, getImage("domainImage5") )
           .settings.css("border", "solid 2px black")
           .print()
         ,
@@ -1572,19 +1568,18 @@ PennController.Template("premiseD.image3.csv", //premise D - image 3
         newImage("judgmentImage3", row.judgmentImage3)
           .settings.size(96,120)
         ,
-        newImage("judgmentImage4", row.judgmentImage3)
+        newImage("judgmentImage4", row.judgmentImage4)
           .settings.size(96,120)
         ,
-        newImage("judgmentImage5", row.judgmentImage3)
+        newImage("judgmentImage5", row.judgmentImage5)
           .settings.size(96,120)
         ,
         newCanvas("judgment", 596, 220) //images need to be shuffled, or no?
-          .settings.add(   10,    10, getImage("judgmentImage1") )
-          .settings.add(   106,   10, getImage("judgmentImage2") )
-          .settings.add(   202,   10, getImage("judgmentImage3") )
-          .settings.add(   298,   10, getImage("judgmentImage4") )
-          .settings.add(   394,   10, getImage("judgmentImage5") )
-          .settings.add(   490,   10, getImage("judgmentImage6") )
+          .settings.add(   58,    10, getImage("judgmentImage1") )
+          .settings.add(   154,   10, getImage("judgmentImage2") )
+          .settings.add(   250,   10, getImage("judgmentImage3") )
+          .settings.add(   346,   10, getImage("judgmentImage4") )
+          .settings.add(   442,   10, getImage("judgmentImage5") )
           .settings.add(   144,  178,  getImage("happy") )
           .settings.add(   336,  178,  getImage("sad") )
           .print()
@@ -1608,20 +1603,20 @@ PennController.Template("premiseE.image3.csv", //premise E - image 3
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
         ,
+        newImage("domainImage4", row.domainImage4)
+          .settings.size(96,120)
+          .settings.css("border", "solid 1px black")
+        ,
         newImage("domainImage5", row.domainImage5)
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
         ,
-        newImage("domainImage6", row.domainImage6)
-          .settings.size(96,120)
-          .settings.css("border", "solid 1px black")
-        ,
         newCanvas("domain", 596, 140) //images need to be shuffled, or no?
-          .settings.add(   10,    10, getImage("domainImage1") )
-          .settings.add(   106,   10, getImage("domainImage2") )
-          .settings.add(   202,   10, getImage("domainImage3") )
-          .settings.add(   394,   10, getImage("domainImage5") )
-          .settings.add(   490,   10, getImage("domainImage6") )
+          .settings.add(   58,    10, getImage("domainImage1") )
+          .settings.add(   154,   10, getImage("domainImage2") )
+          .settings.add(   250,   10, getImage("domainImage3") )
+          .settings.add(   346,   10, getImage("domainImage4") )
+          .settings.add(   442,   10, getImage("domainImage5") )
           .settings.css("border", "solid 2px black")
           .print()
         ,
@@ -1654,19 +1649,18 @@ PennController.Template("premiseE.image3.csv", //premise E - image 3
         newImage("judgmentImage3", row.judgmentImage3)
           .settings.size(96,120)
         ,
-        newImage("judgmentImage4", row.judgmentImage3)
+        newImage("judgmentImage4", row.judgmentImage4)
           .settings.size(96,120)
         ,
-        newImage("judgmentImage5", row.judgmentImage3)
+        newImage("judgmentImage5", row.judgmentImage5)
           .settings.size(96,120)
         ,
         newCanvas("judgment", 596, 220) //images need to be shuffled, or no?
-          .settings.add(   10,    10, getImage("judgmentImage1") )
-          .settings.add(   106,   10, getImage("judgmentImage2") )
-          .settings.add(   202,   10, getImage("judgmentImage3") )
-          .settings.add(   298,   10, getImage("judgmentImage4") )
-          .settings.add(   394,   10, getImage("judgmentImage5") )
-          .settings.add(   490,   10, getImage("judgmentImage6") )
+          .settings.add(   58,    10, getImage("judgmentImage1") )
+          .settings.add(   154,   10, getImage("judgmentImage2") )
+          .settings.add(   250,   10, getImage("judgmentImage3") )
+          .settings.add(   346,   10, getImage("judgmentImage4") )
+          .settings.add(   442,   10, getImage("judgmentImage5") )
           .settings.add(   144,  178,  getImage("happy") )
           .settings.add(   336,  178,  getImage("sad") )
           .print()
@@ -1690,20 +1684,20 @@ PennController.Template("premiseA.image4.csv", //premise A - image 4
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
         ,
+        newImage("domainImage4", row.domainImage4)
+          .settings.size(96,120)
+          .settings.css("border", "solid 1px black")
+        ,
         newImage("domainImage5", row.domainImage5)
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
         ,
-        newImage("domainImage6", row.domainImage6)
-          .settings.size(96,120)
-          .settings.css("border", "solid 1px black")
-        ,
         newCanvas("domain", 596, 140) //images need to be shuffled, or no?
-          .settings.add(   10,    10, getImage("domainImage1") )
-          .settings.add(   106,   10, getImage("domainImage2") )
-          .settings.add(   202,   10, getImage("domainImage3") )
-          .settings.add(   394,   10, getImage("domainImage5") )
-          .settings.add(   490,   10, getImage("domainImage6") )
+          .settings.add(   58,    10, getImage("domainImage1") )
+          .settings.add(   154,   10, getImage("domainImage2") )
+          .settings.add(   250,   10, getImage("domainImage3") )
+          .settings.add(   346,   10, getImage("domainImage4") )
+          .settings.add(   442,   10, getImage("domainImage5") )
           .settings.css("border", "solid 2px black")
           .print()
         ,
@@ -1734,8 +1728,8 @@ PennController.Template("premiseA.image4.csv", //premise A - image 4
           .settings.size(96,120)
         ,
         newCanvas("judgment", 596, 220) //images need to be shuffled, or no?
-          .settings.add(   202,    10, getImage("judgmentImage1") )
-          .settings.add(   288,   10, getImage("judgmentImage2") )
+          .settings.add(   202,  10,   getImage("judgmentImage1") )
+          .settings.add(   298,  10,   getImage("judgmentImage2") )
           .settings.add(   144,  178,  getImage("happy") )
           .settings.add(   336,  178,  getImage("sad") )
           .print()
@@ -1759,20 +1753,20 @@ PennController.Template("premiseC.image4.csv", //premise C - image 4
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
         ,
+        newImage("domainImage4", row.domainImage4)
+          .settings.size(96,120)
+          .settings.css("border", "solid 1px black")
+        ,
         newImage("domainImage5", row.domainImage5)
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
         ,
-        newImage("domainImage6", row.domainImage6)
-          .settings.size(96,120)
-          .settings.css("border", "solid 1px black")
-        ,
         newCanvas("domain", 596, 140) //images need to be shuffled, or no?
-          .settings.add(   10,    10, getImage("domainImage1") )
-          .settings.add(   106,   10, getImage("domainImage2") )
-          .settings.add(   202,   10, getImage("domainImage3") )
-          .settings.add(   394,   10, getImage("domainImage5") )
-          .settings.add(   490,   10, getImage("domainImage6") )
+          .settings.add(   58,    10, getImage("domainImage1") )
+          .settings.add(   154,   10, getImage("domainImage2") )
+          .settings.add(   250,   10, getImage("domainImage3") )
+          .settings.add(   346,   10, getImage("domainImage4") )
+          .settings.add(   442,   10, getImage("domainImage5") )
           .settings.css("border", "solid 2px black")
           .print()
         ,
@@ -1803,8 +1797,8 @@ PennController.Template("premiseC.image4.csv", //premise C - image 4
           .settings.size(96,120)
         ,
         newCanvas("judgment", 596, 220) //images need to be shuffled, or no?
-          .settings.add(   202,    10, getImage("judgmentImage1") )
-          .settings.add(   288,   10, getImage("judgmentImage2") )
+          .settings.add(   202,  10,   getImage("judgmentImage1") )
+          .settings.add(   298,  10,   getImage("judgmentImage2") )
           .settings.add(   144,  178,  getImage("happy") )
           .settings.add(   336,  178,  getImage("sad") )
           .print()
@@ -1828,20 +1822,20 @@ PennController.Template("premiseD.image4.csv", //premise D - image 4
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
         ,
+        newImage("domainImage4", row.domainImage4)
+          .settings.size(96,120)
+          .settings.css("border", "solid 1px black")
+        ,
         newImage("domainImage5", row.domainImage5)
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
         ,
-        newImage("domainImage6", row.domainImage6)
-          .settings.size(96,120)
-          .settings.css("border", "solid 1px black")
-        ,
         newCanvas("domain", 596, 140) //images need to be shuffled, or no?
-          .settings.add(   10,    10, getImage("domainImage1") )
-          .settings.add(   106,   10, getImage("domainImage2") )
-          .settings.add(   202,   10, getImage("domainImage3") )
-          .settings.add(   394,   10, getImage("domainImage5") )
-          .settings.add(   490,   10, getImage("domainImage6") )
+          .settings.add(   58,    10, getImage("domainImage1") )
+          .settings.add(   154,   10, getImage("domainImage2") )
+          .settings.add(   250,   10, getImage("domainImage3") )
+          .settings.add(   346,   10, getImage("domainImage4") )
+          .settings.add(   442,   10, getImage("domainImage5") )
           .settings.css("border", "solid 2px black")
           .print()
         ,
@@ -1872,8 +1866,8 @@ PennController.Template("premiseD.image4.csv", //premise D - image 4
           .settings.size(96,120)
         ,
         newCanvas("judgment", 596, 220) //images need to be shuffled, or no?
-          .settings.add(   202,    10, getImage("judgmentImage1") )
-          .settings.add(   288,   10, getImage("judgmentImage2") )
+          .settings.add(   202,  10,   getImage("judgmentImage1") )
+          .settings.add(   298,  10,   getImage("judgmentImage2") )
           .settings.add(   144,  178,  getImage("happy") )
           .settings.add(   336,  178,  getImage("sad") )
           .print()
@@ -1897,20 +1891,20 @@ PennController.Template("premiseE.image4.csv", //premise E - image 4
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
         ,
+        newImage("domainImage4", row.domainImage4)
+          .settings.size(96,120)
+          .settings.css("border", "solid 1px black")
+        ,
         newImage("domainImage5", row.domainImage5)
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
         ,
-        newImage("domainImage6", row.domainImage6)
-          .settings.size(96,120)
-          .settings.css("border", "solid 1px black")
-        ,
         newCanvas("domain", 596, 140) //images need to be shuffled, or no?
-          .settings.add(   10,    10, getImage("domainImage1") )
-          .settings.add(   106,   10, getImage("domainImage2") )
-          .settings.add(   202,   10, getImage("domainImage3") )
-          .settings.add(   394,   10, getImage("domainImage5") )
-          .settings.add(   490,   10, getImage("domainImage6") )
+          .settings.add(   58,    10, getImage("domainImage1") )
+          .settings.add(   154,   10, getImage("domainImage2") )
+          .settings.add(   250,   10, getImage("domainImage3") )
+          .settings.add(   346,   10, getImage("domainImage4") )
+          .settings.add(   442,   10, getImage("domainImage5") )
           .settings.css("border", "solid 2px black")
           .print()
         ,
@@ -1941,8 +1935,8 @@ PennController.Template("premiseE.image4.csv", //premise E - image 4
           .settings.size(96,120)
         ,
         newCanvas("judgment", 596, 220) //images need to be shuffled, or no?
-          .settings.add(   202,    10, getImage("judgmentImage1") )
-          .settings.add(   288,   10, getImage("judgmentImage2") )
+          .settings.add(   202,  10,   getImage("judgmentImage1") )
+          .settings.add(   298,  10,   getImage("judgmentImage2") )
           .settings.add(   144,  178,  getImage("happy") )
           .settings.add(   336,  178,  getImage("sad") )
           .print()
@@ -1966,20 +1960,20 @@ PennController.Template("premiseA.image5.csv", //premise A - image 5
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
         ,
+        newImage("domainImage4", row.domainImage4)
+          .settings.size(96,120)
+          .settings.css("border", "solid 1px black")
+        ,
         newImage("domainImage5", row.domainImage5)
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
         ,
-        newImage("domainImage6", row.domainImage6)
-          .settings.size(96,120)
-          .settings.css("border", "solid 1px black")
-        ,
         newCanvas("domain", 596, 140) //images need to be shuffled, or no?
-          .settings.add(   10,    10, getImage("domainImage1") )
-          .settings.add(   106,   10, getImage("domainImage2") )
-          .settings.add(   202,   10, getImage("domainImage3") )
-          .settings.add(   394,   10, getImage("domainImage5") )
-          .settings.add(   490,   10, getImage("domainImage6") )
+          .settings.add(   58,    10, getImage("domainImage1") )
+          .settings.add(   154,   10, getImage("domainImage2") )
+          .settings.add(   250,   10, getImage("domainImage3") )
+          .settings.add(   346,   10, getImage("domainImage4") )
+          .settings.add(   442,   10, getImage("domainImage5") )
           .settings.css("border", "solid 2px black")
           .print()
         ,
@@ -2017,9 +2011,9 @@ PennController.Template("premiseA.image5.csv", //premise A - image 5
         ,
         newCanvas("judgment", 596, 220) //images need to be shuffled, or no?
           .settings.add(   106,  10,   getImage("judgmentImage1") )
-          .settings.add(   192,  10,   getImage("judgmentImage2") )
-          .settings.add(   288,  10,   getImage("judgmentImage3") )
-          .settings.add(   384,  10,   getImage("judgmentImage4") )
+          .settings.add(   202,  10,   getImage("judgmentImage2") )
+          .settings.add(   298,  10,   getImage("judgmentImage3") )
+          .settings.add(   394,  10,   getImage("judgmentImage4") )
           .settings.add(   144,  178,  getImage("happy") )
           .settings.add(   336,  178,  getImage("sad") )
           .print()
@@ -2043,20 +2037,20 @@ PennController.Template("premiseC.image5.csv", //premise C - image 5
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
         ,
+        newImage("domainImage4", row.domainImage4)
+          .settings.size(96,120)
+          .settings.css("border", "solid 1px black")
+        ,
         newImage("domainImage5", row.domainImage5)
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
         ,
-        newImage("domainImage6", row.domainImage6)
-          .settings.size(96,120)
-          .settings.css("border", "solid 1px black")
-        ,
         newCanvas("domain", 596, 140) //images need to be shuffled, or no?
-          .settings.add(   10,    10, getImage("domainImage1") )
-          .settings.add(   106,   10, getImage("domainImage2") )
-          .settings.add(   202,   10, getImage("domainImage3") )
-          .settings.add(   394,   10, getImage("domainImage5") )
-          .settings.add(   490,   10, getImage("domainImage6") )
+          .settings.add(   58,    10, getImage("domainImage1") )
+          .settings.add(   154,   10, getImage("domainImage2") )
+          .settings.add(   250,   10, getImage("domainImage3") )
+          .settings.add(   346,   10, getImage("domainImage4") )
+          .settings.add(   442,   10, getImage("domainImage5") )
           .settings.css("border", "solid 2px black")
           .print()
         ,
@@ -2094,9 +2088,9 @@ PennController.Template("premiseC.image5.csv", //premise C - image 5
         ,
         newCanvas("judgment", 596, 220) //images need to be shuffled, or no?
           .settings.add(   106,  10,   getImage("judgmentImage1") )
-          .settings.add(   192,  10,   getImage("judgmentImage2") )
-          .settings.add(   288,  10,   getImage("judgmentImage3") )
-          .settings.add(   384,  10,   getImage("judgmentImage4") )
+          .settings.add(   202,  10,   getImage("judgmentImage2") )
+          .settings.add(   298,  10,   getImage("judgmentImage3") )
+          .settings.add(   394,  10,   getImage("judgmentImage4") )
           .settings.add(   144,  178,  getImage("happy") )
           .settings.add(   336,  178,  getImage("sad") )
           .print()
@@ -2120,20 +2114,20 @@ PennController.Template("premiseD.image5.csv", //premise D - image 5
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
         ,
+        newImage("domainImage4", row.domainImage4)
+          .settings.size(96,120)
+          .settings.css("border", "solid 1px black")
+        ,
         newImage("domainImage5", row.domainImage5)
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
         ,
-        newImage("domainImage6", row.domainImage6)
-          .settings.size(96,120)
-          .settings.css("border", "solid 1px black")
-        ,
         newCanvas("domain", 596, 140) //images need to be shuffled, or no?
-          .settings.add(   10,    10, getImage("domainImage1") )
-          .settings.add(   106,   10, getImage("domainImage2") )
-          .settings.add(   202,   10, getImage("domainImage3") )
-          .settings.add(   394,   10, getImage("domainImage5") )
-          .settings.add(   490,   10, getImage("domainImage6") )
+          .settings.add(   58,    10, getImage("domainImage1") )
+          .settings.add(   154,   10, getImage("domainImage2") )
+          .settings.add(   250,   10, getImage("domainImage3") )
+          .settings.add(   346,   10, getImage("domainImage4") )
+          .settings.add(   442,   10, getImage("domainImage5") )
           .settings.css("border", "solid 2px black")
           .print()
         ,
@@ -2171,9 +2165,9 @@ PennController.Template("premiseD.image5.csv", //premise D - image 5
         ,
         newCanvas("judgment", 596, 220) //images need to be shuffled, or no?
           .settings.add(   106,  10,   getImage("judgmentImage1") )
-          .settings.add(   192,  10,   getImage("judgmentImage2") )
-          .settings.add(   288,  10,   getImage("judgmentImage3") )
-          .settings.add(   384,  10,   getImage("judgmentImage4") )
+          .settings.add(   202,  10,   getImage("judgmentImage2") )
+          .settings.add(   298,  10,   getImage("judgmentImage3") )
+          .settings.add(   394,  10,   getImage("judgmentImage4") )
           .settings.add(   144,  178,  getImage("happy") )
           .settings.add(   336,  178,  getImage("sad") )
           .print()
@@ -2197,20 +2191,20 @@ PennController.Template("premiseE.image5.csv", //premise E - image 5
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
         ,
+        newImage("domainImage4", row.domainImage4)
+          .settings.size(96,120)
+          .settings.css("border", "solid 1px black")
+        ,
         newImage("domainImage5", row.domainImage5)
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
         ,
-        newImage("domainImage6", row.domainImage6)
-          .settings.size(96,120)
-          .settings.css("border", "solid 1px black")
-        ,
         newCanvas("domain", 596, 140) //images need to be shuffled, or no?
-          .settings.add(   10,    10, getImage("domainImage1") )
-          .settings.add(   106,   10, getImage("domainImage2") )
-          .settings.add(   202,   10, getImage("domainImage3") )
-          .settings.add(   394,   10, getImage("domainImage5") )
-          .settings.add(   490,   10, getImage("domainImage6") )
+          .settings.add(   58,    10, getImage("domainImage1") )
+          .settings.add(   154,   10, getImage("domainImage2") )
+          .settings.add(   250,   10, getImage("domainImage3") )
+          .settings.add(   346,   10, getImage("domainImage4") )
+          .settings.add(   442,   10, getImage("domainImage5") )
           .settings.css("border", "solid 2px black")
           .print()
         ,
@@ -2248,9 +2242,9 @@ PennController.Template("premiseE.image5.csv", //premise E - image 5
         ,
         newCanvas("judgment", 596, 220) //images need to be shuffled, or no?
           .settings.add(   106,  10,   getImage("judgmentImage1") )
-          .settings.add(   192,  10,   getImage("judgmentImage2") )
-          .settings.add(   288,  10,   getImage("judgmentImage3") )
-          .settings.add(   384,  10,   getImage("judgmentImage4") )
+          .settings.add(   202,  10,   getImage("judgmentImage2") )
+          .settings.add(   298,  10,   getImage("judgmentImage3") )
+          .settings.add(   394,  10,   getImage("judgmentImage4") )
           .settings.add(   144,  178,  getImage("happy") )
           .settings.add(   336,  178,  getImage("sad") )
           .print()
