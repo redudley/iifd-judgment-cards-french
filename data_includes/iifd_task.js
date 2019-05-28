@@ -69,7 +69,7 @@ PennController("practice1",
       .settings.css("border", "solid 2px black")
       .print()
     ,
-    newAudio("practice1domain", "DentistRGY_NannyYR.wav")
+    newAudio("practice1domain", "DentistRGY_NannyYR.mp3")
       .play() // Immediately play the audio file
       .wait()
     ,
@@ -80,7 +80,7 @@ PennController("practice1",
         .remove()
     ,
           //ACTION: change this to french
-    newAudio("practice1clue", "NannyYellow.wav")
+    newAudio("practice1clue", "NannyYellow.mp3")
       .play() // Immediately play the audio file
       .wait() // Wait to display images until after audio file is finished
     ,
@@ -104,9 +104,9 @@ PennController("practice1",
       .settings.add( getImage("target") , getImage("other") )  //reclass as "target" and "other"
       .wait()
     ,
-    newAudio("positive", "practice1_feedback_positive.wav")
+    newAudio("positive", "practice1_feedback_positive.mp3")
     ,
-    newAudio("negative", "practice1_feedback_negative.wav")
+    newAudio("negative", "practice1_feedback_negative.mp3")
     ,
     getSelector("choice")
         .test.selected( getImage("target") )
@@ -156,7 +156,7 @@ PennController("practice2",
       .settings.css("border", "solid 2px black")
       .print()
     ,
-    newAudio("practice2domain", "DetectiveRGY_DentistRY.wav")
+    newAudio("practice2domain", "DetectiveRGY_DentistRY.mp3")
       .play() // Immediately play the audio file
       .wait()
     ,
@@ -167,7 +167,7 @@ PennController("practice2",
         .remove()
     ,
           //ACTION: change this to french
-    newAudio("practice2clue", "DetectiveGreen.wav")
+    newAudio("practice2clue", "DetectiveGreen.mp3")
       .play() // Immediately play the audio file
       .wait() // Wait to display images until after audio file is finished
     ,
@@ -196,9 +196,9 @@ PennController("practice2",
       .settings.add( getImage("target") , getImage("other") )  //reclass as "target" and "other"
       .wait()
     ,
-    newAudio("positive", "practice2_feedback_positive.wav")
+    newAudio("positive", "practice2_feedback_positive.mp3")
     ,
-    newAudio("negative", "practice2_feedback_negative.wav")
+    newAudio("negative", "practice2_feedback_negative.mp3")
     ,
     getSelector("choice")
         .test.selected( getImage("target") )
@@ -248,7 +248,7 @@ PennController("practice3",
       .settings.css("border", "solid 2px black")
       .print()
     ,
-    newAudio("practice3domain", "ReporterBYR_FiremanGR.wav")
+    newAudio("practice3domain", "ReporterBYR_FiremanGR.mp3")
       .play() // Immediately play the audio file
       .wait()
     ,
@@ -259,7 +259,7 @@ PennController("practice3",
         .remove()
     ,
           //ACTION: change this to french
-    newAudio("practice3clue", "ReporterRed.wav")
+    newAudio("practice3clue", "ReporterRed.mp3")
       .play() // Immediately play the audio file
       .wait() // Wait to display images until after audio file is finished
     ,
@@ -293,9 +293,9 @@ PennController("practice3",
       .settings.add( getImage("target") , getImage("other") )  //reclass as "target" and "other"
       .wait()
     ,
-    newAudio("positive", "practice3_feedback_positive.wav")
+    newAudio("positive", "practice3_feedback_positive.mp3")
     ,
-    newAudio("negative", "practice3_feedback_negative.wav")
+    newAudio("negative", "practice3_feedback_negative.mp3")
     ,
     getSelector("choice")
         .test.selected( getImage("target") )
@@ -345,7 +345,7 @@ PennController("practice4",
       .settings.css("border", "solid 2px black")
       .print()
     ,
-    newAudio("practice4domain", "NannyGRB_DetectiveYB.wav")
+    newAudio("practice4domain", "NannyGRB_DetectiveYB.mp3")
       .play() // Immediately play the audio file
       .wait()
     ,
@@ -356,7 +356,7 @@ PennController("practice4",
         .remove()
     ,
           //ACTION: change this to french
-    newAudio("practice4clue", "NannyOrDetective.wav")
+    newAudio("practice4clue", "NannyOrDetective.mp3")
       .play() // Immediately play the audio file
       .wait() // Wait to display images until after audio file is finished
     ,
@@ -385,9 +385,9 @@ PennController("practice4",
       .settings.add( getImage("target") , getImage("other") )  //reclass as "target" and "other"
       .wait()
     ,
-    newAudio("positive", "practice4_feedback_positive.wav")
+    newAudio("positive", "practice4_feedback_positive.mp3")
     ,
-    newAudio("negative", "practice4_feedback_negative.wav")
+    newAudio("negative", "practice4_feedback_negative.mp3")
     ,
     getSelector("choice")
         .test.selected( getImage("target") )
@@ -437,7 +437,7 @@ PennController("practice5",
       .settings.css("border", "solid 2px black")
       .print()
     ,
-    newAudio("practice5domain", "DentistYGB_FiremanRY.wav")
+    newAudio("practice5domain", "DentistYGB_FiremanRY.mp3")
       .play() // Immediately play the audio file
       .wait()
     ,
@@ -448,7 +448,7 @@ PennController("practice5",
         .remove()
     ,
           //ACTION: change this to french
-    newAudio("practice5clue", "DentistOrFireman.wav")
+    newAudio("practice5clue", "DentistOrFireman.mp3")
       .play() // Immediately play the audio file
       .wait() // Wait to display images until after audio file is finished
     ,
@@ -472,9 +472,9 @@ PennController("practice5",
       .settings.add( getImage("target") , getImage("other") )  //reclass as "target" and "other"
       .wait()
     ,
-    newAudio("positive", "practice5_feedback_positive.wav")
+    newAudio("positive", "practice5_feedback_positive.mp3")
     ,
-    newAudio("negative", "practice5_feedback_negative.wav")
+    newAudio("negative", "practice5_feedback_negative.mp3")
     ,
     getSelector("choice")
         .test.selected( getImage("target") )
@@ -524,7 +524,7 @@ PennController("practice6",
       .settings.css("border", "solid 2px black")
       .print()
     ,
-    newAudio("practice6domain", "ReporterGBY_NannyRB.wav")
+    newAudio("practice6domain", "ReporterGBY_NannyRB.mp3")
       .play() // Immediately play the audio file
       .wait()
     ,
@@ -535,7 +535,7 @@ PennController("practice6",
         .remove()
     ,
           //ACTION: change this to french
-    newAudio("practice6clue", "ReporterGreen_NannyRed.wav")
+    newAudio("practice6clue", "ReporterGreen_NannyRed.mp3")
       .play() // Immediately play the audio file
       .wait() // Wait to display images until after audio file is finished
     ,
@@ -569,9 +569,9 @@ PennController("practice6",
       .settings.add( getImage("target") , getImage("other") )  //reclass as "target" and "other"
       .wait()
     ,
-    newAudio("positive", "practice6_feedback_positive.wav")
+    newAudio("positive", "practice6_feedback_positive.mp3")
     ,
-    newAudio("negative", "practice6_feedback_negative.wav")
+    newAudio("negative", "practice6_feedback_negative.mp3")
     ,
     getSelector("choice")
         .test.selected( getImage("target") )
