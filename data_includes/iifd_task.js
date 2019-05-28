@@ -148,11 +148,11 @@ PennController("practice2",
       .settings.size(96,120)
       .settings.css("border", "solid 1px black")
     ,
-    newImage("practice2domainD", "DetectiveRed.png")
+    newImage("practice2domainD", "DentistRed.png")
       .settings.size(96,120)
       .settings.css("border", "solid 1px black")
     ,
-    newImage("practice2domainE", "DetectiveYellow.png")
+    newImage("practice2domainE", "DentistYellow.png")
       .settings.size(96,120)
       .settings.css("border", "solid 1px black")
     ,
