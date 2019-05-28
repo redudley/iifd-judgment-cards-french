@@ -29,8 +29,9 @@ PennController.Sequence( "practice1", "practice2", "practice3", "practice4", "pr
 PennController.ResetPrefix(null);
 
 //PennController.PreloadZip("https://web-risc.ens.fr/~rdudley/public_html/iifd/judgment/cards/all_resources.zip");
+PennController.PreloadZip("https://web-risc.ens.fr/~rdudley/public_html/iifd/judgment/cards/zipped.zip");
 
-PennController.AddHost("http://web-risc.ens.fr/~rdudley/public_html/iifd/judgment/");
+//PennController.AddHost("http://web-risc.ens.fr/~rdudley/public_html/iifd/judgment/");
           //ACTION: check all canvas spacings
           //ACTION: make sure files can be acquired in zipped version
           //ACTION: make scripts
