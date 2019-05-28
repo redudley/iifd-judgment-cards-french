@@ -70,11 +70,11 @@ PennController("practice1",
       .settings.css("border", "solid 1px black")
     ,
     newCanvas("domain", 596, 140) //images need to be shuffled, or no?
-      .settings.add(   10,    10, getImage("practice1domainA") )
-      .settings.add(   106,   10, getImage("practice1domainB") )
-      .settings.add(   202,   10, getImage("practice1domainC") )
-      .settings.add(   298,   10, getImage("practice1domainD") )
-      .settings.add(   394,   10, getImage("practice1domainE") )
+      .settings.add(   58,    10, getImage("practice1domainA") )
+      .settings.add(   154,   10, getImage("practice1domainB") )
+      .settings.add(   250,   10, getImage("practice1domainC") )
+      .settings.add(   346,   10, getImage("practice1domainD") )
+      .settings.add(   442,   10, getImage("practice1domainE") )
       .settings.css("border", "solid 2px black")
       .print()
     ,
@@ -103,8 +103,8 @@ PennController("practice1",
       .settings.size(96,120)
       .settings.css("border", "solid 1px black")
     ,
-    newCanvas("judgment", 576, 220) //images need to be shuffled, or no?
-      .settings.add(   0,    10,   getImage("practice1judgmentA") )
+    newCanvas("judgment", 596, 220) //images need to be shuffled, or no?
+      .settings.add(   250,  10,   getImage("practice1judgmentA") )
       .settings.add(   144,  178, getImage("target") )
       .settings.add(   336,  178, getImage("other") )
       .print()
