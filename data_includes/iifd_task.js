@@ -16,8 +16,7 @@ PennController.AddHost("http://web-risc.ens.fr/~rdudley/iifd/judgment/");
           //ACTION: sew audio files together
           //ACTION: upload audio
           //ACTION: check that results file prints fine
-PennController.Sequence( "practice1"
-"practice2", "practice3", "practice4", "practice5", "practice6",
+PennController.Sequence( "welcome", "practice1", "practice2", "practice3", "practice4", "practice5", "practice6",
                   rshuffle("trialE5",
                            "trialC5",
                            "trialD3",
@@ -41,6 +40,14 @@ PennController.Sequence( "practice1"
                            "trialA2",
                            "trialC4")
                          );
+PennController( "welcome" ,
+    newText( "message" , "Welcome.")
+        .print()
+    ,
+    newButton("start", "Start")
+        .print()
+        .wait()
+);
 PennController("practice1",
     newImage("practice1domainA", "DentistRed.png")
       .settings.size(96,120)
@@ -114,12 +121,12 @@ PennController("practice1",
         .test.selected( getImage("target") )
         .success(
             getAudio("positive")
-                .print()
+                .play()
                 .wait()
         )
         .failure(
             getAudio("negative")
-                .print()
+                .play()
                 .wait()
         )
     ,
@@ -206,12 +213,12 @@ PennController("practice2",
         .test.selected( getImage("target") )
         .success(
             getAudio("positive")
-                .print()
+                .play()
                 .wait()
         )
         .failure(
             getAudio("negative")
-                .print()
+                .play()
                 .wait()
         )
     ,
@@ -303,12 +310,12 @@ PennController("practice3",
         .test.selected( getImage("target") )
         .success(
             getAudio("positive")
-                .print()
+                .play()
                 .wait()
         )
         .failure(
             getAudio("negative")
-                .print()
+                .play()
                 .wait()
         )
     ,
@@ -395,12 +402,12 @@ PennController("practice4",
         .test.selected( getImage("target") )
         .success(
             getAudio("positive")
-                .print()
+                .play()
                 .wait()
         )
         .failure(
             getAudio("negative")
-                .print()
+                .play()
                 .wait()
         )
     ,
@@ -482,12 +489,12 @@ PennController("practice5",
         .test.selected( getImage("target") )
         .success(
             getAudio("positive")
-                .print()
+                .play()
                 .wait()
         )
         .failure(
             getAudio("negative")
-                .print()
+                .play()
                 .wait()
         )
     ,
@@ -579,12 +586,12 @@ PennController("practice6",
         .test.selected( getImage("target") )
         .success(
             getAudio("positive")
-                .print()
+                .play()
                 .wait()
         )
         .failure(
             getAudio("negative")
-                .print()
+                .play()
                 .wait()
         )
     ,
