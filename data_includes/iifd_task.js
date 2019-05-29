@@ -50,18 +50,18 @@ PennController("intro1" ,
     newAudio("1_hello_message.mp3")
       .play()
     ,
-    // newTimer("wait", 5000)
-    //   .start()
-    //   .wait()
-    // ,
+    newTimer("wait", 5000)
+      .start()
+      .wait()
+    ,
     newImage("1_picture.png")
       .settings.size(400,400)
       .print()
     ,
-    // newTimer("wait", 2600)
-    //   .start()
-    //   .wait()
-    // ,
+    newTimer("wait", 2600)
+      .start()
+      .wait()
+    ,
     newButton("start", "Apprendre le jeu")
         .settings.center()
         .print()
@@ -71,10 +71,10 @@ PennController("intro2",
     newAudio("2_card_introduction.mp3")
       .play()
     ,
-    // newTimer("wait", 4500)
-    //   .start()
-    //   .wait()
-    // ,
+    newTimer("wait", 4500)
+      .start()
+      .wait()
+    ,
     newImage("police_blue", "PolicemanBlue.png")
       .settings.size(96,120)
       .settings.css("border", "solid 1px black")
@@ -129,30 +129,30 @@ PennController("intro2",
       .settings.add(   192,  0, getImage("snowman_blue") )
       .print()
     ,
-    // newTimer("wait", 7000)
-    //   .start()
-    //   .wait()
-    // ,
+    newTimer("wait", 7000)
+      .start()
+      .wait()
+    ,
     newCanvas("reds", 288, 120)
       .settings.add(   0,    0, getImage("police_red") )
       .settings.add(   96,   0, getImage("dancer_red") )
       .settings.add(   192,  0, getImage("snowman_red") )
       .print()
     ,
-    // newTimer("wait", 500)
-    //   .start()
-    //   .wait()
-    // ,
+    newTimer("wait", 500)
+      .start()
+      .wait()
+    ,
     newCanvas("greens", 288, 120)
       .settings.add(   0,    0, getImage("police_green") )
       .settings.add(   96,   0, getImage("dancer_green") )
       .settings.add(   192,  0, getImage("snowman_green") )
       .print()
     ,
-    // newTimer("wait", 500)
-    //   .start()
-    //   .wait()
-    // ,
+    newTimer("wait", 500)
+      .start()
+      .wait()
+    ,
     newCanvas("yellows", 288, 120)
       .settings.add(   0,    0, getImage("police_yellow") )
       .settings.add(   96,   0, getImage("dancer_yellow") )
@@ -221,8 +221,6 @@ PennController("intro6",
         .wait()
 );
 PennController("intro8",
-      //show sample Domain
-      //click to advance
     newAudio("8_domain_then_click_for_clue.mp3")
       .play()
       .wait()
