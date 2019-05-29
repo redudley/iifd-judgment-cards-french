@@ -42,271 +42,271 @@ PennController( "welcome" ,
         .print()
         .wait()
 );
-PennController("intro1" ,
-    newImage("4_picture.png")
-      .settings.size(400,400)
-      .print()
-    ,
-    newAudio("1_hello_message.mp3")
-      .play()
-    ,
-    newTimer("wait", 5000)
-      .start()
-      .wait()
-    ,
-    newImage("1_picture.png")
-      .settings.size(400,400)
-      .print()
-    ,
-    newTimer("wait", 2600)
-      .start()
-      .wait()
-    ,
-    newButton("start", "Apprendre le jeu")
-        .settings.center()
-        .print()
-        .wait()
-);
-PennController("intro2",
-    newAudio("2_card_introduction.mp3")
-      .play()
-    ,
-    newTimer("wait", 4500)
-      .start()
-      .wait()
-    ,
-    newImage("police_blue", "PolicemanBlue.png")
-      .settings.size(96,120)
-      .settings.css("border", "solid 1px black")
-    ,
-    newImage("dancer_blue", "DancerBlue.png")
-      .settings.size(96,120)
-      .settings.css("border", "solid 1px black")
-    ,
-    newImage("snowman_blue", "SnowmanBlue.png")
-      .settings.size(96,120)
-      .settings.css("border", "solid 1px black")
-    ,
-    newImage("police_blue", "PolicemanRed.png")
-      .settings.size(96,120)
-      .settings.css("border", "solid 1px black")
-    ,
-    newImage("dancer_blue", "DancerRed.png")
-      .settings.size(96,120)
-      .settings.css("border", "solid 1px black")
-    ,
-    newImage("snowman_blue", "SnowmanRed.png")
-      .settings.size(96,120)
-      .settings.css("border", "solid 1px black")
-    ,
-    newImage("police_blue", "PolicemanYellow.png")
-      .settings.size(96,120)
-      .settings.css("border", "solid 1px black")
-    ,
-    newImage("dancer_blue", "DancerYellow.png")
-      .settings.size(96,120)
-      .settings.css("border", "solid 1px black")
-    ,
-    newImage("snowman_blue", "SnowmanYellow.png")
-      .settings.size(96,120)
-      .settings.css("border", "solid 1px black")
-    ,
-    newImage("police_blue", "PolicemanGreen.png")
-      .settings.size(96,120)
-      .settings.css("border", "solid 1px black")
-    ,
-    newImage("dancer_blue", "DancerGreen.png")
-      .settings.size(96,120)
-      .settings.css("border", "solid 1px black")
-    ,
-    newImage("snowman_blue", "SnowmanGreen.png")
-      .settings.size(96,120)
-      .settings.css("border", "solid 1px black")
-    ,
-    newCanvas("blues", 288, 120)
-      .settings.add(   0,    0, getImage("police_blue") )
-      .settings.add(   96,   0, getImage("dancer_blue") )
-      .settings.add(   192,  0, getImage("snowman_blue") )
-      .print()
-    ,
-    newTimer("wait", 7000)
-      .start()
-      .wait()
-    ,
-    newCanvas("reds", 288, 120)
-      .settings.add(   0,    0, getImage("police_red") )
-      .settings.add(   96,   0, getImage("dancer_red") )
-      .settings.add(   192,  0, getImage("snowman_red") )
-      .print()
-    ,
-    newTimer("wait", 500)
-      .start()
-      .wait()
-    ,
-    newCanvas("greens", 288, 120)
-      .settings.add(   0,    0, getImage("police_green") )
-      .settings.add(   96,   0, getImage("dancer_green") )
-      .settings.add(   192,  0, getImage("snowman_green") )
-      .print()
-    ,
-    newTimer("wait", 500)
-      .start()
-      .wait()
-    ,
-    newCanvas("yellows", 288, 120)
-      .settings.add(   0,    0, getImage("police_yellow") )
-      .settings.add(   96,   0, getImage("dancer_yellow") )
-      .settings.add(   192,  0, getImage("snowman_yellow") )
-      .print()
-    ,
-    newButton("start", "Apprendre le jeu")
-        .settings.center()
-        .print()
-        .wait()
-);
-PennController("intro3",
-    newImage("3_picture.png")
-      .settings.size(400,400)
-      .print()
-    ,
-    newAudio("3_game_rules.mp3")
-      .play()
-      .wait()
-    ,
-    newButton("start", "Apprendre le jeu")
-        .settings.center()
-        .print()
-        .wait()
-);
-PennController("intro4",
-    newImage("4_picture.png")
-      .settings.size(400,400)
-      .print()
-    ,
-    newAudio("4_transition_to_task.mp3")
-      .play()
-      .wait()
-    ,
-    newButton("start", "Apprendre le jeu")
-        .settings.center()
-        .print()
-        .wait()
-);
-PennController("intro5",
-    newImage("5_picture.png")
-      .settings.size(400,400)
-      .print()
-    ,
-    newAudio("5_show_domain_give_clues.mp3")
-      .play()
-      .wait()
-    ,
-    newButton("start", "Apprendre le jeu")
-        .settings.center()
-        .print()
-        .wait()
-);
-PennController("intro6",
-    newImage("6_picture.png")
-      .settings.size(400,400)
-      .print()
-    ,
-    newAudio("6_task_instructions.mp3")
-      .play()
-      .wait()
-    ,
-    newButton("start", "Apprendre le jeu")
-        .settings.center()
-        .print()
-        .wait()
-);
-PennController("intro8",
-      //show sample Domain
-      //click to advance
-    newAudio("8_domain_then_click_for_clue.mp3")
-      .play()
-      .wait()
-    ,
-    newButton("start", "Apprendre le jeu")
-        .settings.center()
-        .print()
-        .wait()
-);
-PennController("intro9",
-    newAudio("9_good_click_happy.mp3")
-      .play()
-      .wait()
-    ,
-    newImage("happy", "smile.png")
-      .settings.size(96,96)
-    ,
-    newCanvas("judgment", 96, 96)
-      .settings.add(   0,  0, getImage("happy") )
-      .print()
-    ,
-    newSelector("choice")
-      .settings.add( getImage("happy") )
-      .wait()
-);
-PennController("intro10",
-    newAudio("10_bad_click_sad.mp3")
-      .play()
-      .wait()
-    ,
-    newImage("sad", "frown.png")
-      .settings.size(96,96)
-    ,
-    newCanvas("judgment", 96, 96)
-      .settings.add(   0,  0, getImage("sad") )
-      .print()
-    ,
-    newSelector("choice")
-      .settings.add( getImage("sad") )
-      .wait()
-);
-PennController("intro7",
-    newImage("7_picture.png")
-      .settings.size(400,400)
-      .print()
-    ,
-    newAudio("7_first lets practice.mp3")
-      .play()
-      .wait()
-    ,
-    newButton("start", "Commencer l'entraînement")
-        .settings.center()
-        .print()
-        .wait()
-);
-PennController("intro11",
-    newImage("filename.png")
-      .settings.size(400,400)
-      .print()
-    ,
-    newAudio("11_start_test_phase.mp3")
-      .play()
-      .wait()
-    ,
-    newButton("start", "Commencer le jeu")
-        .settings.center()
-        .print()
-        .wait()
-);
-PennController("intro12",
-    newImage("12_picture.png")
-      .settings.size(400,400)
-      .print()
-    ,
-    newAudio("12_congratulations.mp3")
-      .play()
-      .wait()
-    ,
-    //need a timer here
-    newButton("subj_info", "Cliquer ici pour enregister les info d'enfant")
-      .settings.center()
-      .print()
-      .wait()
-);
+// PennController("intro1" ,
+//     newImage("4_picture.png")
+//       .settings.size(400,400)
+//       .print()
+//     ,
+//     newAudio("1_hello_message.mp3")
+//       .play()
+//     ,
+//     newTimer("wait", 5000)
+//       .start()
+//       .wait()
+//     ,
+//     newImage("1_picture.png")
+//       .settings.size(400,400)
+//       .print()
+//     ,
+//     newTimer("wait", 2600)
+//       .start()
+//       .wait()
+//     ,
+//     newButton("start", "Apprendre le jeu")
+//         .settings.center()
+//         .print()
+//         .wait()
+// );
+// PennController("intro2",
+//     newAudio("2_card_introduction.mp3")
+//       .play()
+//     ,
+//     newTimer("wait", 4500)
+//       .start()
+//       .wait()
+//     ,
+//     newImage("police_blue", "PolicemanBlue.png")
+//       .settings.size(96,120)
+//       .settings.css("border", "solid 1px black")
+//     ,
+//     newImage("dancer_blue", "DancerBlue.png")
+//       .settings.size(96,120)
+//       .settings.css("border", "solid 1px black")
+//     ,
+//     newImage("snowman_blue", "SnowmanBlue.png")
+//       .settings.size(96,120)
+//       .settings.css("border", "solid 1px black")
+//     ,
+//     newImage("police_blue", "PolicemanRed.png")
+//       .settings.size(96,120)
+//       .settings.css("border", "solid 1px black")
+//     ,
+//     newImage("dancer_blue", "DancerRed.png")
+//       .settings.size(96,120)
+//       .settings.css("border", "solid 1px black")
+//     ,
+//     newImage("snowman_blue", "SnowmanRed.png")
+//       .settings.size(96,120)
+//       .settings.css("border", "solid 1px black")
+//     ,
+//     newImage("police_blue", "PolicemanYellow.png")
+//       .settings.size(96,120)
+//       .settings.css("border", "solid 1px black")
+//     ,
+//     newImage("dancer_blue", "DancerYellow.png")
+//       .settings.size(96,120)
+//       .settings.css("border", "solid 1px black")
+//     ,
+//     newImage("snowman_blue", "SnowmanYellow.png")
+//       .settings.size(96,120)
+//       .settings.css("border", "solid 1px black")
+//     ,
+//     newImage("police_blue", "PolicemanGreen.png")
+//       .settings.size(96,120)
+//       .settings.css("border", "solid 1px black")
+//     ,
+//     newImage("dancer_blue", "DancerGreen.png")
+//       .settings.size(96,120)
+//       .settings.css("border", "solid 1px black")
+//     ,
+//     newImage("snowman_blue", "SnowmanGreen.png")
+//       .settings.size(96,120)
+//       .settings.css("border", "solid 1px black")
+//     ,
+//     newCanvas("blues", 288, 120)
+//       .settings.add(   0,    0, getImage("police_blue") )
+//       .settings.add(   96,   0, getImage("dancer_blue") )
+//       .settings.add(   192,  0, getImage("snowman_blue") )
+//       .print()
+//     ,
+//     newTimer("wait", 7000)
+//       .start()
+//       .wait()
+//     ,
+//     newCanvas("reds", 288, 120)
+//       .settings.add(   0,    0, getImage("police_red") )
+//       .settings.add(   96,   0, getImage("dancer_red") )
+//       .settings.add(   192,  0, getImage("snowman_red") )
+//       .print()
+//     ,
+//     newTimer("wait", 500)
+//       .start()
+//       .wait()
+//     ,
+//     newCanvas("greens", 288, 120)
+//       .settings.add(   0,    0, getImage("police_green") )
+//       .settings.add(   96,   0, getImage("dancer_green") )
+//       .settings.add(   192,  0, getImage("snowman_green") )
+//       .print()
+//     ,
+//     newTimer("wait", 500)
+//       .start()
+//       .wait()
+//     ,
+//     newCanvas("yellows", 288, 120)
+//       .settings.add(   0,    0, getImage("police_yellow") )
+//       .settings.add(   96,   0, getImage("dancer_yellow") )
+//       .settings.add(   192,  0, getImage("snowman_yellow") )
+//       .print()
+//     ,
+//     newButton("start", "Apprendre le jeu")
+//         .settings.center()
+//         .print()
+//         .wait()
+// );
+// PennController("intro3",
+//     newImage("3_picture.png")
+//       .settings.size(400,400)
+//       .print()
+//     ,
+//     newAudio("3_game_rules.mp3")
+//       .play()
+//       .wait()
+//     ,
+//     newButton("start", "Apprendre le jeu")
+//         .settings.center()
+//         .print()
+//         .wait()
+// );
+// PennController("intro4",
+//     newImage("4_picture.png")
+//       .settings.size(400,400)
+//       .print()
+//     ,
+//     newAudio("4_transition_to_task.mp3")
+//       .play()
+//       .wait()
+//     ,
+//     newButton("start", "Apprendre le jeu")
+//         .settings.center()
+//         .print()
+//         .wait()
+// );
+// PennController("intro5",
+//     newImage("5_picture.png")
+//       .settings.size(400,400)
+//       .print()
+//     ,
+//     newAudio("5_show_domain_give_clues.mp3")
+//       .play()
+//       .wait()
+//     ,
+//     newButton("start", "Apprendre le jeu")
+//         .settings.center()
+//         .print()
+//         .wait()
+// );
+// PennController("intro6",
+//     newImage("6_picture.png")
+//       .settings.size(400,400)
+//       .print()
+//     ,
+//     newAudio("6_task_instructions.mp3")
+//       .play()
+//       .wait()
+//     ,
+//     newButton("start", "Apprendre le jeu")
+//         .settings.center()
+//         .print()
+//         .wait()
+// );
+// PennController("intro8",
+//       //show sample Domain
+//       //click to advance
+//     newAudio("8_domain_then_click_for_clue.mp3")
+//       .play()
+//       .wait()
+//     ,
+//     newButton("start", "Apprendre le jeu")
+//         .settings.center()
+//         .print()
+//         .wait()
+// );
+// PennController("intro9",
+//     newAudio("9_good_click_happy.mp3")
+//       .play()
+//       .wait()
+//     ,
+//     newImage("happy", "smile.png")
+//       .settings.size(96,96)
+//     ,
+//     newCanvas("judgment", 96, 96)
+//       .settings.add(   0,  0, getImage("happy") )
+//       .print()
+//     ,
+//     newSelector("choice")
+//       .settings.add( getImage("happy") )
+//       .wait()
+// );
+// PennController("intro10",
+//     newAudio("10_bad_click_sad.mp3")
+//       .play()
+//       .wait()
+//     ,
+//     newImage("sad", "frown.png")
+//       .settings.size(96,96)
+//     ,
+//     newCanvas("judgment", 96, 96)
+//       .settings.add(   0,  0, getImage("sad") )
+//       .print()
+//     ,
+//     newSelector("choice")
+//       .settings.add( getImage("sad") )
+//       .wait()
+// );
+// PennController("intro7",
+//     newImage("7_picture.png")
+//       .settings.size(400,400)
+//       .print()
+//     ,
+//     newAudio("7_first lets practice.mp3")
+//       .play()
+//       .wait()
+//     ,
+//     newButton("start", "Commencer l'entraînement")
+//         .settings.center()
+//         .print()
+//         .wait()
+// );
+// PennController("intro11",
+//     newImage("filename.png")
+//       .settings.size(400,400)
+//       .print()
+//     ,
+//     newAudio("11_start_test_phase.mp3")
+//       .play()
+//       .wait()
+//     ,
+//     newButton("start", "Commencer le jeu")
+//         .settings.center()
+//         .print()
+//         .wait()
+// );
+// PennController("intro12",
+//     newImage("12_picture.png")
+//       .settings.size(400,400)
+//       .print()
+//     ,
+//     newAudio("12_congratulations.mp3")
+//       .play()
+//       .wait()
+//     ,
+//     //need a timer here
+//     newButton("subj_info", "Cliquer ici pour enregister les info d'enfant")
+//       .settings.center()
+//       .print()
+//       .wait()
+// );
 PennController("practice1",
     newImage("practice1domainA", "DentistRed.png")
       .settings.size(96,120)
