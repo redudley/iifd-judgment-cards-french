@@ -10,12 +10,12 @@ PennController.ResetPrefix(null);
 PennController.AddHost("http://web-risc.ens.fr/~rdudley/iifd/judgment/");
           //ACTION: make sure files can be acquired in zipped version
           //ACTION: check that results file prints fine
-PennController.Sequence( "welcome", "practice1", "practice2", "practice3", "practice4", "practice5", "practice6",//"intro1", "intro2", "intro3", "intro4",
-            //"intro5", "intro6",
-            //"intro8", "intro9", "intro10",
-            //"intro7",
-
-                //"intro11",
+PennController.Sequence( "welcome", "intro1", "intro2", "intro3", "intro4",
+            "intro5", "intro6",
+            "intro8", "intro9", "intro10",
+            "intro7",
+                "practice1", "practice2", "practice3", "practice4", "practice5", "practice6",
+                "intro11",
                   rshuffle("trialE5",
                            "trialC5",
                            "trialD3",
@@ -38,8 +38,8 @@ PennController.Sequence( "welcome", "practice1", "practice2", "practice3", "prac
                            "trialD2",
                            "trialA2",
                            "trialC4"),
-                //"intro12"
-                         );
+                "intro12"
+);
 PennController( "welcome" ,
     newText( "message" , "Welcome.")
         .print()
@@ -65,11 +65,12 @@ PennController("intro1",
 PennController("intro2",
     newAudio("2_card_introduction.mp3")
       .play()
-    ,
-    newTimer("wait", 4500)
-      .start()
       .wait()
     ,
+    // newTimer("wait", 4500)
+    //   .start()
+    //   .wait()
+    // ,
     newImage("police_blue", "PolicemanBlue.png")
       .settings.size(96,120)
       .settings.css("border", "solid 1px black")
@@ -124,38 +125,41 @@ PennController("intro2",
       .settings.add(   192,  0, getImage("snowman_blue") )
       .print()
     ,
-    newTimer("wait", 7000)
-      .start()
-      .wait()
-    ,
-    newCanvas("reds", 288, 120)
-      .settings.add(   0,    0, getImage("police_red") )
-      .settings.add(   96,   0, getImage("dancer_red") )
-      .settings.add(   192,  0, getImage("snowman_red") )
+    // newTimer("wait", 7000)
+    //   .start()
+    //   .wait()
+    // // ,
+    // newCanvas("reds", 288, 120)
+    //   .settings.add(   0,    0, getImage("police_red") )
+    //   .settings.add(   96,   0, getImage("dancer_red") )
+    //   .settings.add(   192,  0, getImage("snowman_red") )
+    //   .print()
+    // ,
+    // newTimer("wait", 500)
+    //   .start()
+    //   .wait()
+    // ,
+    // newCanvas("greens", 288, 120)
+    //   .settings.add(   0,    0, getImage("police_green") )
+    //   .settings.add(   96,   0, getImage("dancer_green") )
+    //   .settings.add(   192,  0, getImage("snowman_green") )
+    //   .print()
+    // ,
+    // newTimer("wait", 500)
+    //   .start()
+    //   .wait()
+    // ,
+    // newCanvas("yellows", 288, 120)
+    //   .settings.add(   0,    0, getImage("police_yellow") )
+    //   .settings.add(   96,   0, getImage("dancer_yellow") )
+    //   .settings.add(   192,  0, getImage("snowman_yellow") )
+    //   .print()
+    // ,
+    // newTimer("wait", 3000)
+    //   .start()
+    //   .wait()
+    newButton("continue", "continue")
       .print()
-    ,
-    newTimer("wait", 500)
-      .start()
-      .wait()
-    ,
-    newCanvas("greens", 288, 120)
-      .settings.add(   0,    0, getImage("police_green") )
-      .settings.add(   96,   0, getImage("dancer_green") )
-      .settings.add(   192,  0, getImage("snowman_green") )
-      .print()
-    ,
-    newTimer("wait", 500)
-      .start()
-      .wait()
-    ,
-    newCanvas("yellows", 288, 120)
-      .settings.add(   0,    0, getImage("police_yellow") )
-      .settings.add(   96,   0, getImage("dancer_yellow") )
-      .settings.add(   192,  0, getImage("snowman_yellow") )
-      .print()
-    ,
-    newTimer("wait", 3000)
-      .start()
       .wait()
 );
 PennController("intro3",
