@@ -93,10 +93,10 @@ PennController("practice1",
       .play() // Immediately play the audio file
       .wait() // Wait to display images until after audio file is finished
     ,
-    newImage("target", "smile.png")
+    newImage("happy", "smile.png")
       .settings.size(96,96)
     ,
-    newImage("other", "frown.png")
+    newImage("sad", "frown.png")
       .settings.size(96,96)
     ,
     newImage("practice1judgmentA", "NannyYellow.png")
@@ -105,12 +105,12 @@ PennController("practice1",
     ,
     newCanvas("judgment", 596, 220) //images need to be shuffled, or no?
       .settings.add(   250,  10,   getImage("practice1judgmentA") )
-      .settings.add(   144,  178, getImage("target") )
-      .settings.add(   336,  178, getImage("other") )
+      .settings.add(   144,  178, getImage("happy") )
+      .settings.add(   336,  178, getImage("sad") )
       .print()
     ,
     newSelector("choice")
-      .settings.add( getImage("target") , getImage("other") )  //reclass as "target" and "other"
+      .settings.add( getImage("happy") , getImage("sad") )  //reclass as "target" and "other"
       .wait()
     ,
     newAudio("positive", "practice1_feedback_positive.mp3")
@@ -118,7 +118,7 @@ PennController("practice1",
     newAudio("negative", "practice1_feedback_negative.mp3")
     ,
     getSelector("choice")
-        .test.selected( getImage("target") )
+        .test.selected( getImage("happy") )
         .success(
             getAudio("positive")
                 .play()
@@ -180,10 +180,10 @@ PennController("practice2",
       .play() // Immediately play the audio file
       .wait() // Wait to display images until after audio file is finished
     ,
-    newImage("target", "smile.png")
+    newImage("happy", "smile.png")
       .settings.size(96,96)
     ,
-    newImage("other", "frown.png")
+    newImage("sad", "frown.png")
       .settings.size(96,96)
     ,
     newImage("practice2judgmentA", "DentistRed.png")
@@ -197,12 +197,12 @@ PennController("practice2",
     newCanvas("judgment", 576, 220) //images need to be shuffled, or no?
       .settings.add(   202,  10,  getImage("practice2judgmentA") )
       .settings.add(   298,  10,  getImage("practice2judgmentB") )
-      .settings.add(   144,  178, getImage("other") )
-      .settings.add(   336,  178, getImage("target") )
+      .settings.add(   144,  178, getImage("happy") )
+      .settings.add(   336,  178, getImage("sad") )
       .print()
     ,
     newSelector("choice")
-      .settings.add( getImage("target") , getImage("other") )  //reclass as "target" and "other"
+      .settings.add( getImage("happy") , getImage("sad") )  //reclass as "target" and "other"
       .wait()
     ,
     newAudio("positive", "practice2_feedback_positive.mp3")
@@ -210,7 +210,7 @@ PennController("practice2",
     newAudio("negative", "practice2_feedback_negative.mp3")
     ,
     getSelector("choice")
-        .test.selected( getImage("target") )
+        .test.selected( getImage("sad") )
         .success(
             getAudio("positive")
                 .play()
@@ -272,10 +272,10 @@ PennController("practice3",
       .play() // Immediately play the audio file
       .wait() // Wait to display images until after audio file is finished
     ,
-    newImage("target", "smile.png")
+    newImage("happy", "smile.png")
       .settings.size(96,96)
     ,
-    newImage("other", "frown.png")
+    newImage("sad", "frown.png")
       .settings.size(96,96)
     ,
     newImage("practice3judgmentA", "ReporterBlue.png")
@@ -294,12 +294,12 @@ PennController("practice3",
       .settings.add(   154,  10,  getImage("practice3judgmentA") )
       .settings.add(   250,  10,  getImage("practice3judgmentB") )
       .settings.add(   346,  10,  getImage("practice3judgmentC") )
-      .settings.add(   144,  178, getImage("target") )
-      .settings.add(   336,  178, getImage("other") )
+      .settings.add(   144,  178, getImage("happy") )
+      .settings.add(   336,  178, getImage("sad") )
       .print()
     ,
     newSelector("choice")
-      .settings.add( getImage("target") , getImage("other") )  //reclass as "target" and "other"
+      .settings.add( getImage("happy") , getImage("sad") )  //reclass as "target" and "other"
       .wait()
     ,
     newAudio("positive", "practice3_feedback_positive.mp3")
@@ -307,7 +307,7 @@ PennController("practice3",
     newAudio("negative", "practice3_feedback_negative.mp3")
     ,
     getSelector("choice")
-        .test.selected( getImage("target") )
+        .test.selected( getImage("happy") )
         .success(
             getAudio("positive")
                 .play()
@@ -369,10 +369,10 @@ PennController("practice4",
       .play() // Immediately play the audio file
       .wait() // Wait to display images until after audio file is finished
     ,
-    newImage("target", "smile.png")
+    newImage("happy", "smile.png")
       .settings.size(96,96)
     ,
-    newImage("other", "frown.png")
+    newImage("sad", "frown.png")
       .settings.size(96,96)
     ,
     newImage("practice4judgmentA", "DetectiveYellow.png")
@@ -386,12 +386,12 @@ PennController("practice4",
     newCanvas("judgment", 576, 220) //images need to be shuffled, or no?
       .settings.add(   202,  10,  getImage("practice4judgmentA") )
       .settings.add(   298,  10,  getImage("practice4judgmentB") )
-      .settings.add(   144,  178, getImage("target") )
-      .settings.add(   336,  178, getImage("other") )
+      .settings.add(   144,  178, getImage("happy") )
+      .settings.add(   336,  178, getImage("sad") )
       .print()
     ,
     newSelector("choice")
-      .settings.add( getImage("target") , getImage("other") )  //reclass as "target" and "other"
+      .settings.add( getImage("happy") , getImage("sad") )  //reclass as "target" and "other"
       .wait()
     ,
     newAudio("positive", "practice4_feedback_positive.mp3")
@@ -399,7 +399,7 @@ PennController("practice4",
     newAudio("negative", "practice4_feedback_negative.mp3")
     ,
     getSelector("choice")
-        .test.selected( getImage("target") )
+        .test.selected( getImage("happy") )
         .success(
             getAudio("positive")
                 .play()
@@ -461,10 +461,10 @@ PennController("practice5",
       .play() // Immediately play the audio file
       .wait() // Wait to display images until after audio file is finished
     ,
-    newImage("target", "smile.png")
+    newImage("happy", "smile.png")
       .settings.size(96,96)
     ,
-    newImage("other", "frown.png")
+    newImage("sad", "frown.png")
       .settings.size(96,96)
     ,
     newImage("practice5judgmentA", "DentistGreen.png")
@@ -473,12 +473,12 @@ PennController("practice5",
     ,
     newCanvas("judgment", 576, 220) //images need to be shuffled, or no?
       .settings.add(   250,  10,  getImage("practice5judgmentA") )
-      .settings.add(   144,  178, getImage("other") )
-      .settings.add(   336,  178, getImage("target") )
+      .settings.add(   144,  178, getImage("happy") )
+      .settings.add(   336,  178, getImage("sad") )
       .print()
     ,
     newSelector("choice")
-      .settings.add( getImage("target") , getImage("other") )  //reclass as "target" and "other"
+      .settings.add( getImage("happy") , getImage("sad") )  //reclass as "target" and "other"
       .wait()
     ,
     newAudio("positive", "practice5_feedback_positive.mp3")
@@ -486,7 +486,7 @@ PennController("practice5",
     newAudio("negative", "practice5_feedback_negative.mp3")
     ,
     getSelector("choice")
-        .test.selected( getImage("target") )
+        .test.selected( getImage("sad") )
         .success(
             getAudio("positive")
                 .play()
@@ -548,10 +548,10 @@ PennController("practice6",
       .play() // Immediately play the audio file
       .wait() // Wait to display images until after audio file is finished
     ,
-    newImage("target", "smile.png")
+    newImage("happy", "smile.png")
       .settings.size(96,96)
     ,
-    newImage("other", "frown.png")
+    newImage("sad", "frown.png")
       .settings.size(96,96)
     ,
     newImage("practice6judgmentA", "ReporterGreen.png")
@@ -570,12 +570,12 @@ PennController("practice6",
       .settings.add(   154,  10,  getImage("practice6judgmentA") )
       .settings.add(   250,  10,  getImage("practice6judgmentB") )
       .settings.add(   346,  10,  getImage("practice6judgmentC") )
-      .settings.add(   144,  178, getImage("target") )
-      .settings.add(   336,  178, getImage("other") )
+      .settings.add(   144,  178, getImage("happy") )
+      .settings.add(   336,  178, getImage("sad") )
       .print()
     ,
     newSelector("choice")
-      .settings.add( getImage("target") , getImage("other") )  //reclass as "target" and "other"
+      .settings.add( getImage("happy") , getImage("sad") )  //reclass as "target" and "other"
       .wait()
     ,
     newAudio("positive", "practice6_feedback_positive.mp3")
@@ -583,7 +583,7 @@ PennController("practice6",
     newAudio("negative", "practice6_feedback_negative.mp3")
     ,
     getSelector("choice")
-        .test.selected( getImage("target") )
+        .test.selected( getImage("happy") )
         .success(
             getAudio("positive")
                 .play()
