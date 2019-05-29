@@ -49,12 +49,23 @@ PennController( "welcome" ,
         .wait()
 );
 PennController("intro1",
-    newImage("1_picture.png")
+    newImage("4_picture.png")
       .settings.size(400,400)
       .print()
     ,
     newAudio("1_hello_message.mp3")
       .play()
+    ,
+    newTimer("wait", 5000)
+      .start()
+      .wait()
+    ,
+    newImage("1_picture.png")
+      .settings.size(400,400)
+      .print()
+    ,
+    newTimer("wait", 2600)
+      .start()
       .wait()
     ,
     newButton("start", "Apprendre le jeu")
