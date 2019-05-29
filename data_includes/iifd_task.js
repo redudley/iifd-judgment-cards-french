@@ -8,16 +8,11 @@ PennController.ResetPrefix(null);
 //PennController.PreloadZip("https://web-risc.ens.fr/~rdudley/public_html/iifd/judgment/cards/all_resources.zip");
 
 PennController.AddHost("http://web-risc.ens.fr/~rdudley/iifd/judgment/");
-          //ACTION: check all canvas spacings
           //ACTION: make sure files can be acquired in zipped version
-          //ACTION: make scripts
-          //ACTION: record audio
-          //ACTION: sew audio files together
-          //ACTION: upload audio
           //ACTION: check that results file prints fine
 PennController.Sequence( "welcome", "intro1", "intro2", "intro3", "intro4",
             "intro5", "intro6",
-            "intro8", "intro9","intro10",
+            "intro8", "intro9", "intro10",
             "intro7",
                 "practice1", "practice2", "practice3", "practice4", "practice5", "practice6",
                 "intro11",
@@ -68,6 +63,13 @@ PennController("intro1",
         .wait()
 );
 PennController("intro2",
+    newAudio("2_card_introduction.mp3")
+      .play()
+    ,
+    newTimer("wait", 4500)
+      .start()
+      .wait()
+    ,
     newImage("police_blue", "PolicemanBlue.png")
       .settings.size(96,120)
       .settings.css("border", "solid 1px black")
@@ -115,13 +117,6 @@ PennController("intro2",
     newImage("snowman_blue", "SnowmanGreen.png")
       .settings.size(96,120)
       .settings.css("border", "solid 1px black")
-    ,
-    newAudio("2_card_introduction.mp3")
-      .play()
-    ,
-    newTimer("wait", 4500)
-      .start()
-      .wait()
     ,
     newCanvas("blues", 288, 120)
       .settings.add(   0,    0, getImage("police_blue") )
