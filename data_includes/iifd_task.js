@@ -87,39 +87,39 @@ PennController("intro2",
       .settings.size(96,120)
       .settings.css("border", "solid 1px black")
     ,
-    newImage("police_blue", "PolicemanRed.png")
+    newImage("police_red", "PolicemanRed.png")
       .settings.size(96,120)
       .settings.css("border", "solid 1px black")
     ,
-    newImage("dancer_blue", "DancerRed.png")
+    newImage("dancer_red", "DancerRed.png")
       .settings.size(96,120)
       .settings.css("border", "solid 1px black")
     ,
-    newImage("snowman_blue", "SnowmanRed.png")
+    newImage("snowman_red", "SnowmanRed.png")
       .settings.size(96,120)
       .settings.css("border", "solid 1px black")
     ,
-    newImage("police_blue", "PolicemanYellow.png")
+    newImage("police_yellow", "PolicemanYellow.png")
       .settings.size(96,120)
       .settings.css("border", "solid 1px black")
     ,
-    newImage("dancer_blue", "DancerYellow.png")
+    newImage("dancer_yellow", "DancerYellow.png")
       .settings.size(96,120)
       .settings.css("border", "solid 1px black")
     ,
-    newImage("snowman_blue", "SnowmanYellow.png")
+    newImage("snowman_yellow", "SnowmanYellow.png")
       .settings.size(96,120)
       .settings.css("border", "solid 1px black")
     ,
-    newImage("police_blue", "PolicemanGreen.png")
+    newImage("police_green", "PolicemanGreen.png")
       .settings.size(96,120)
       .settings.css("border", "solid 1px black")
     ,
-    newImage("dancer_blue", "DancerGreen.png")
+    newImage("dancer_green", "DancerGreen.png")
       .settings.size(96,120)
       .settings.css("border", "solid 1px black")
     ,
-    newImage("snowman_blue", "SnowmanGreen.png")
+    newImage("snowman_green", "SnowmanGreen.png")
       .settings.size(96,120)
       .settings.css("border", "solid 1px black")
     ,
