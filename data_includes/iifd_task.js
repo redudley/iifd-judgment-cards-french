@@ -65,12 +65,11 @@ PennController("intro1",
 PennController("intro2",
     newAudio("2_card_introduction.mp3")
       .play()
+    ,
+    newTimer("wait", 4500)
+      .start()
       .wait()
     ,
-    // newTimer("wait", 4500)
-    //   .start()
-    //   .wait()
-    // ,
     newImage("police_blue", "PolicemanBlue.png")
       .settings.size(96,120)
       .settings.css("border", "solid 1px black")
@@ -125,42 +124,40 @@ PennController("intro2",
       .settings.add(   192,  0, getImage("snowman_blue") )
       .print()
     ,
-    // newTimer("wait", 7000)
-    //   .start()
-    //   .wait()
-    // // ,
-    // newCanvas("reds", 288, 120)
-    //   .settings.add(   0,    0, getImage("police_red") )
-    //   .settings.add(   96,   0, getImage("dancer_red") )
-    //   .settings.add(   192,  0, getImage("snowman_red") )
-    //   .print()
-    // ,
-    // newTimer("wait", 500)
-    //   .start()
-    //   .wait()
-    // ,
-    // newCanvas("greens", 288, 120)
-    //   .settings.add(   0,    0, getImage("police_green") )
-    //   .settings.add(   96,   0, getImage("dancer_green") )
-    //   .settings.add(   192,  0, getImage("snowman_green") )
-    //   .print()
-    // ,
-    // newTimer("wait", 500)
-    //   .start()
-    //   .wait()
-    // ,
-    // newCanvas("yellows", 288, 120)
-    //   .settings.add(   0,    0, getImage("police_yellow") )
-    //   .settings.add(   96,   0, getImage("dancer_yellow") )
-    //   .settings.add(   192,  0, getImage("snowman_yellow") )
-    //   .print()
-    // ,
-    // newTimer("wait", 3000)
-    //   .start()
-    //   .wait()
-    newButton("continue", "continue")
-      .print()
+    newTimer("wait", 7000)
+      .start()
       .wait()
+    ,
+    newCanvas("reds", 288, 120)
+      .settings.add(   0,    0, getImage("police_red") )
+      .settings.add(   96,   0, getImage("dancer_red") )
+      .settings.add(   192,  0, getImage("snowman_red") )
+      .print()
+    ,
+    newTimer("wait", 500)
+      .start()
+      .wait()
+    ,
+    newCanvas("greens", 288, 120)
+      .settings.add(   0,    0, getImage("police_green") )
+      .settings.add(   96,   0, getImage("dancer_green") )
+      .settings.add(   192,  0, getImage("snowman_green") )
+      .print()
+    ,
+    newTimer("wait", 500)
+      .start()
+      .wait()
+    ,
+    newCanvas("yellows", 288, 120)
+      .settings.add(   0,    0, getImage("police_yellow") )
+      .settings.add(   96,   0, getImage("dancer_yellow") )
+      .settings.add(   192,  0, getImage("snowman_yellow") )
+      .print()
+    ,
+    newButton("start", "Apprendre le jeu")
+        .settings.center()
+        .print()
+        .wait()
 );
 PennController("intro3",
     newImage("3_picture.png")
@@ -171,9 +168,10 @@ PennController("intro3",
       .play()
       .wait()
     ,
-    newTimer("wait", 3000)
-      .start()
-      .wait()
+    newButton("start", "Apprendre le jeu")
+        .settings.center()
+        .print()
+        .wait()
 );
 PennController("intro4",
     newImage("4_picture.png")
@@ -184,9 +182,10 @@ PennController("intro4",
       .play()
       .wait()
     ,
-    newTimer("wait", 3000)
-      .start()
-      .wait()
+    newButton("start", "Apprendre le jeu")
+        .settings.center()
+        .print()
+        .wait()
 );
 PennController("intro5",
     newImage("5_picture.png")
@@ -197,9 +196,10 @@ PennController("intro5",
       .play()
       .wait()
     ,
-    newTimer("wait", 3000)
-      .start()
-      .wait()
+    newButton("start", "Apprendre le jeu")
+        .settings.center()
+        .print()
+        .wait()
 );
 PennController("intro6",
     newImage("6_picture.png")
@@ -210,9 +210,10 @@ PennController("intro6",
       .play()
       .wait()
     ,
-    newTimer("wait", 3000)
-      .start()
-      .wait()
+    newButton("start", "Apprendre le jeu")
+        .settings.center()
+        .print()
+        .wait()
 );
 PennController("intro8",
       //show sample Domain
@@ -221,9 +222,10 @@ PennController("intro8",
       .play()
       .wait()
     ,
-    newTimer("wait", 3000)
-      .start()
-      .wait()
+    newButton("start", "Apprendre le jeu")
+        .settings.center()
+        .print()
+        .wait()
 );
 PennController("intro9",
     newAudio("9_good_click_happy.mp3")
@@ -266,9 +268,11 @@ PennController("intro7",
       .play()
       .wait()
     ,
-    newTimer("wait", 3000)
-      .start()
-      .wait()
+    ,
+    newButton("start", "Commencer l'entraînement")
+        .settings.center()
+        .print()
+        .wait()
 );
 PennController("intro11",
     newImage("filename.png")
@@ -279,9 +283,10 @@ PennController("intro11",
       .play()
       .wait()
     ,
-    newTimer("wait", 3000)
-      .start()
-      .wait()
+    newButton("start", "Commencer le jeu")
+        .settings.center()
+        .print()
+        .wait()
 );
 PennController("intro12",
     newImage("12_picture.png")
@@ -293,7 +298,7 @@ PennController("intro12",
       .wait()
     ,
     //need a timer here
-    newButton("enter subj info", "Cliquer ici pour enregister les info d'enfant")
+    newButton("subj_info", "Cliquer ici pour enregister les info d'enfant")
       .settings.center()
       .print()
       .wait()
