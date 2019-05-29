@@ -56,7 +56,7 @@ PennController( "welcome" ,
 );
 PennController("intro1",
     newImage("1_picture.png")
-      .settings.size(200,200)
+      .settings.size(400,400)
       .print()
     ,
     newAudio("1_hello_message.mp3")
@@ -166,7 +166,7 @@ PennController("intro2",
 );
 PennController("intro3",
     newImage("3_picture.png")
-      .settings.size(200,200)
+      .settings.size(400,400)
       .print()
     ,
     newAudio("3_game_rules.mp3")
@@ -180,7 +180,7 @@ PennController("intro3",
 );
 PennController("intro4",
     newImage("4_picture.png")
-      .settings.size(200,200)
+      .settings.size(400,400)
       .print()
     ,
     newAudio("4_transition_to_task.mp3")
@@ -194,7 +194,7 @@ PennController("intro4",
 );
 PennController("intro5",
     newImage("5_picture.png")
-      .settings.size(200,200)
+      .settings.size(400,400)
       .print()
     ,
     newAudio("5_show_domain_give_clues.mp3")
@@ -208,7 +208,7 @@ PennController("intro5",
 );
 PennController("intro6",
     newImage("6_picture.png")
-      .settings.size(200,200)
+      .settings.size(400,400)
       .print()
     ,
     newAudio("6_task_instructions.mp3")
@@ -268,7 +268,7 @@ PennController("intro10",
 );
 PennController("intro7",
     newImage("7_picture.png")
-      .settings.size(200,200)
+      .settings.size(400,400)
       .print()
     ,
     newAudio("7_first lets practice.mp3")
@@ -282,7 +282,7 @@ PennController("intro7",
 );
 PennController("intro11",
     newImage("filename.png")
-      .settings.size(200,200)
+      .settings.size(400,400)
       .print()
     ,
     newAudio("11_start_test_phase.mp3")
@@ -296,7 +296,7 @@ PennController("intro11",
 );
 PennController("intro12",
     newImage("12_picture.png")
-      .settings.size(200,200)
+      .settings.size(400,400)
       .print()
     ,
     newAudio("12_congratulations.mp3")
