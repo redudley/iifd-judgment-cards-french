@@ -42,7 +42,7 @@ PennController( "welcome" ,
         .print()
         .wait()
 );
-PennController("intro1",
+PennController("intro1" ,
     newImage("4_picture.png")
       .settings.size(400,400)
       .print()
