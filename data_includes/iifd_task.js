@@ -268,7 +268,6 @@ PennController("intro7",
       .play()
       .wait()
     ,
-    ,
     newButton("start", "Commencer l'entraînement")
         .settings.center()
         .print()
