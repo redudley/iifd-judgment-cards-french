@@ -6,7 +6,6 @@
 PennController.ResetPrefix(null);
 
 //PennController.PreloadZip("https://web-risc.ens.fr/~rdudley/public_html/iifd/judgment/cards/all_resources.zip");
-//PennController.PreloadZip("https://web-risc.ens.fr/~rdudley/public_html/iifd/judgment/cards/zipped.zip");
 
 PennController.AddHost("http://web-risc.ens.fr/~rdudley/iifd/judgment/");
           //ACTION: check all canvas spacings
@@ -120,10 +119,10 @@ PennController("intro2",
     newAudio("2_card_introduction.mp3")
       .play()
     ,
-    newTimer("wait", 4500)
-      .start()
-      .wait()
-    ,
+    // newTimer("wait", 4500)
+    //   .start()
+    //   .wait()
+    // ,
     newCanvas("blues", 288, 120)
       .settings.add(   0,    0, getImage("police_blue") )
       .settings.add(   96,   0, getImage("dancer_blue") )
@@ -140,29 +139,29 @@ PennController("intro2",
       .settings.add(   192,  0, getImage("snowman_red") )
       .print()
     ,
-    newTimer("wait", 500)
-      .start()
-      .wait()
-    ,
+    // newTimer("wait", 500)
+    //   .start()
+    //   .wait()
+    // ,
     newCanvas("greens", 288, 120)
       .settings.add(   0,    0, getImage("police_green") )
       .settings.add(   96,   0, getImage("dancer_green") )
       .settings.add(   192,  0, getImage("snowman_green") )
       .print()
     ,
-    newTimer("wait", 500)
-      .start()
-      .wait()
-    ,
+    // newTimer("wait", 500)
+    //   .start()
+    //   .wait()
+    // ,
     newCanvas("yellows", 288, 120)
       .settings.add(   0,    0, getImage("police_yellow") )
       .settings.add(   96,   0, getImage("dancer_yellow") )
       .settings.add(   192,  0, getImage("snowman_yellow") )
       .print()
     ,
-    newTimer("wait", 3000)
-      .start()
-      .wait()
+    // newTimer("wait", 3000)
+    //   .start()
+    //   .wait()
 );
 PennController("intro3",
     newImage("3_picture.png")
