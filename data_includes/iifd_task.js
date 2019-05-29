@@ -63,10 +63,10 @@ PennController("intro1",
       .play()
       .wait()
     ,
-    newTimer("wait", 3000)
-      .start()
-      .wait()
-    ,
+    newButton("start", "Apprendre le jeu")
+        .settings.center()
+        .print()
+        .wait()
 );
 PennController("intro2",
     newImage("police_blue", "PolicemanBlue.png")
