@@ -286,10 +286,6 @@ PennController("intro7",
         .wait()
 );
 PennController("intro11",
-    newImage("filename.png")
-      .settings.size(400,400)
-      .print()
-    ,
     newAudio("11_start_test_phase.mp3")
       .play()
       .wait()
