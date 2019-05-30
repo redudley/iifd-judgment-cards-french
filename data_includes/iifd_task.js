@@ -43,7 +43,7 @@ PennController( "welcome" ,
         .wait()
 );
 PennController("intro1" ,
-    newImage("first_picture","4_picture.png")
+    newImage("4_picture.png")
       .settings.size(400,400)
       .print()
     ,
@@ -54,9 +54,6 @@ PennController("intro1" ,
       .start()
       .wait()
     ,
-    // getImage("first_picture")
-    //   .remove()
-    // ,
     newImage("1_picture.png")
       .settings.size(400,400)
       .print()
