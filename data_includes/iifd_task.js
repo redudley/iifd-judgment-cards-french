@@ -218,7 +218,7 @@ PennController("intro6",
       .play()
       .wait()
     ,
-    newButton("start", "Cliquer ici pour l'indice")
+    newButton("start", "Apprendre le jeu")
         .settings.center()
         .print()
         .wait()
@@ -228,7 +228,7 @@ PennController("intro8",
       .play()
       .wait()
     ,
-    newButton("start", "Apprendre le jeu")
+    newButton("start", "Cliquer ici pour l'indice")
         .settings.center()
         .print()
         .wait()
