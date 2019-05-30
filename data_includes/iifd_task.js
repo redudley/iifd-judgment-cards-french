@@ -218,7 +218,7 @@ PennController("intro6",
       .play()
       .wait()
     ,
-    newButton("start", "Apprendre le jeu")
+    newButton("start", "Cliquer ici pour l'indice")
         .settings.center()
         .print()
         .wait()
@@ -342,7 +342,7 @@ PennController("practice1",
       .play() // Immediately play the audio file
       .wait()
     ,
-    newButton("ready", "ready for the clue")
+    newButton("ready", "Cliquer ici pour l'indice")
         .settings.center()
         .print()
         .wait()
@@ -429,7 +429,7 @@ PennController("practice2",
       .play() // Immediately play the audio file
       .wait()
     ,
-    newButton("ready", "ready for the clue")
+    newButton("ready", "Cliquer ici pour l'indice")
         .settings.center()
         .print()
         .wait()
@@ -521,7 +521,7 @@ PennController("practice3",
       .play() // Immediately play the audio file
       .wait()
     ,
-    newButton("ready", "ready for the clue")
+    newButton("ready", "Cliquer ici pour l'indice")
         .settings.center()
         .print()
         .wait()
@@ -618,7 +618,7 @@ PennController("practice4",
       .play() // Immediately play the audio file
       .wait()
     ,
-    newButton("ready", "ready for the clue")
+    newButton("ready", "Cliquer ici pour l'indice")
         .settings.center()
         .print()
         .wait()
@@ -710,7 +710,7 @@ PennController("practice5",
       .play() // Immediately play the audio file
       .wait()
     ,
-    newButton("ready", "ready for the clue")
+    newButton("ready", "Cliquer ici pour l'indice")
         .settings.center()
         .print()
         .wait()
@@ -797,7 +797,7 @@ PennController("practice6",
       .play() // Immediately play the audio file
       .wait()
     ,
-    newButton("ready", "ready for the clue")
+    newButton("ready", "Cliquer ici pour l'indice")
         .settings.center()
         .print()
         .wait()
@@ -895,7 +895,7 @@ PennController.Template("premiseA.image1.csv", //premise A - image 1
           .play() // Immediately play the audio file
           .wait()
         ,
-        newButton("ready", "ready for the clue")
+        newButton("ready", "Cliquer ici pour l'indice")
             .settings.center()
             .print()
             .wait()
@@ -968,7 +968,7 @@ PennController.Template("premiseC.image1.csv", //premise C - image 1
           .play() // Immediately play the audio file
           .wait()
         ,
-        newButton("ready", "ready for the clue")
+        newButton("ready", "Cliquer ici pour l'indice")
             .settings.center()
             .print()
             .wait()
@@ -1041,7 +1041,7 @@ PennController.Template("premiseD.image1.csv", //premise D - image 1
           .play() // Immediately play the audio file
           .wait()
         ,
-        newButton("ready", "ready for the clue")
+        newButton("ready", "Cliquer ici pour l'indice")
             .settings.center()
             .print()
             .wait()
@@ -1114,7 +1114,7 @@ PennController.Template("premiseE.image1.csv", //premise E - image 1
           .play() // Immediately play the audio file
           .wait()
         ,
-        newButton("ready", "ready for the clue")
+        newButton("ready", "Cliquer ici pour l'indice")
             .settings.center()
             .print()
             .wait()
@@ -1187,7 +1187,7 @@ PennController.Template("premiseA.image2.csv", //premise A - image 2
           .play() // Immediately play the audio file
           .wait()
         ,
-        newButton("ready", "ready for the clue")
+        newButton("ready", "Cliquer ici pour l'indice")
             .settings.center()
             .print()
             .wait()
@@ -1260,7 +1260,7 @@ PennController.Template("premiseC.image2.csv", //premise C - image 2
           .play() // Immediately play the audio file
           .wait()
         ,
-        newButton("ready", "ready for the clue")
+        newButton("ready", "Cliquer ici pour l'indice")
             .settings.center()
             .print()
             .wait()
@@ -1333,7 +1333,7 @@ PennController.Template("premiseD.image2.csv", //premise D - image 2
           .play() // Immediately play the audio file
           .wait()
         ,
-        newButton("ready", "ready for the clue")
+        newButton("ready", "Cliquer ici pour l'indice")
             .settings.center()
             .print()
             .wait()
@@ -1406,7 +1406,7 @@ PennController.Template("premiseE.image2.csv", //premise E - image 2
           .play() // Immediately play the audio file
           .wait()
         ,
-        newButton("ready", "ready for the clue")
+        newButton("ready", "Cliquer ici pour l'indice")
             .settings.center()
             .print()
             .wait()
@@ -1479,7 +1479,7 @@ PennController.Template("premiseA.image3.csv", //premise A - image 3
           .play() // Immediately play the audio file
           .wait()
         ,
-        newButton("ready", "ready for the clue")
+        newButton("ready", "Cliquer ici pour l'indice")
             .settings.center()
             .print()
             .wait()
@@ -1560,7 +1560,7 @@ PennController.Template("premiseB.image3.12of4.csv", //premise B - image 3
           .play() // Immediately play the audio file
           .wait()
         ,
-        newButton("ready", "ready for the clue")
+        newButton("ready", "Cliquer ici pour l'indice")
             .settings.center()
             .print()
             .wait()
@@ -1641,7 +1641,7 @@ PennController.Template("premiseB.image3.34of4.csv", //premise B - image 3
           .play() // Immediately play the audio file
           .wait()
         ,
-        newButton("ready", "ready for the clue")
+        newButton("ready", "Cliquer ici pour l'indice")
             .settings.center()
             .print()
             .wait()
@@ -1722,7 +1722,7 @@ PennController.Template("premiseC.image3.csv", //premise C - image 3
           .play() // Immediately play the audio file
           .wait()
         ,
-        newButton("ready", "ready for the clue")
+        newButton("ready", "Cliquer ici pour l'indice")
             .settings.center()
             .print()
             .wait()
@@ -1803,7 +1803,7 @@ PennController.Template("premiseD.image3.csv", //premise D - image 3
           .play() // Immediately play the audio file
           .wait()
         ,
-        newButton("ready", "ready for the clue")
+        newButton("ready", "Cliquer ici pour l'indice")
             .settings.center()
             .print()
             .wait()
@@ -1884,7 +1884,7 @@ PennController.Template("premiseE.image3.csv", //premise E - image 3
           .play() // Immediately play the audio file
           .wait()
         ,
-        newButton("ready", "ready for the clue")
+        newButton("ready", "Cliquer ici pour l'indice")
             .settings.center()
             .print()
             .wait()
@@ -1965,7 +1965,7 @@ PennController.Template("premiseA.image4.csv", //premise A - image 4
           .play() // Immediately play the audio file
           .wait()
         ,
-        newButton("ready", "ready for the clue")
+        newButton("ready", "Cliquer ici pour l'indice")
             .settings.center()
             .print()
             .wait()
@@ -2034,7 +2034,7 @@ PennController.Template("premiseC.image4.csv", //premise C - image 4
           .play() // Immediately play the audio file
           .wait()
         ,
-        newButton("ready", "ready for the clue")
+        newButton("ready", "Cliquer ici pour l'indice")
             .settings.center()
             .print()
             .wait()
@@ -2103,7 +2103,7 @@ PennController.Template("premiseD.image4.csv", //premise D - image 4
           .play() // Immediately play the audio file
           .wait()
         ,
-        newButton("ready", "ready for the clue")
+        newButton("ready", "Cliquer ici pour l'indice")
             .settings.center()
             .print()
             .wait()
@@ -2172,7 +2172,7 @@ PennController.Template("premiseE.image4.csv", //premise E - image 4
           .play() // Immediately play the audio file
           .wait()
         ,
-        newButton("ready", "ready for the clue")
+        newButton("ready", "Cliquer ici pour l'indice")
             .settings.center()
             .print()
             .wait()
@@ -2241,7 +2241,7 @@ PennController.Template("premiseA.image5.csv", //premise A - image 5
           .play() // Immediately play the audio file
           .wait()
         ,
-        newButton("ready", "ready for the clue")
+        newButton("ready", "Cliquer ici pour l'indice")
             .settings.center()
             .print()
             .wait()
@@ -2318,7 +2318,7 @@ PennController.Template("premiseC.image5.csv", //premise C - image 5
           .play() // Immediately play the audio file
           .wait()
         ,
-        newButton("ready", "ready for the clue")
+        newButton("ready", "Cliquer ici pour l'indice")
             .settings.center()
             .print()
             .wait()
@@ -2395,7 +2395,7 @@ PennController.Template("premiseD.image5.csv", //premise D - image 5
           .play() // Immediately play the audio file
           .wait()
         ,
-        newButton("ready", "ready for the clue")
+        newButton("ready", "Cliquer ici pour l'indice")
             .settings.center()
             .print()
             .wait()
@@ -2472,7 +2472,7 @@ PennController.Template("premiseE.image5.csv", //premise E - image 5
           .play() // Immediately play the audio file
           .wait()
         ,
-        newButton("ready", "ready for the clue")
+        newButton("ready", "Cliquer ici pour l'indice")
             .settings.center()
             .print()
             .wait()
