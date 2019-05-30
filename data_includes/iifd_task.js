@@ -43,7 +43,7 @@ PennController( "welcome" ,
         .wait()
 );
 PennController("intro1" ,
-    newImage("4_picture.png")
+    newImage("first_picture","4_picture.png")
       .settings.size(400,400)
       .print()
     ,
@@ -54,6 +54,9 @@ PennController("intro1" ,
       .start()
       .wait()
     ,
+    getImage("first_picture")
+      .remove()
+    ,
     newImage("1_picture.png")
       .settings.size(400,400)
       .print()
@@ -61,9 +64,6 @@ PennController("intro1" ,
     newTimer("delay2.6", 2600)
       .start()
       .wait()
-    ,
-    getImage("1_picture.png")
-      .remove()
     ,
     newButton("start", "Apprendre le jeu")
         .settings.center()
