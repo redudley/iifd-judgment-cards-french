@@ -62,6 +62,9 @@ PennController("intro1" ,
       .start()
       .wait()
     ,
+    getImage("1_picture.png")
+      .remove()
+    ,
     newButton("start", "Apprendre le jeu")
         .settings.center()
         .print()
