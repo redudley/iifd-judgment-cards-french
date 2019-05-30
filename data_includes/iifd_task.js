@@ -806,7 +806,7 @@ PennController("practice6",
         .remove()
     ,
           //ACTION: change this to french
-    newAudio("practice6clue", "ReporterGreen_NannyRed.mp3")
+    newAudio("practice6clue", "ReporterGreen_AlsoNannyRed.mp3")
       .play() // Immediately play the audio file
       .wait() // Wait to display images until after audio file is finished
     ,
