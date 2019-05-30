@@ -390,7 +390,7 @@ PennController("practice1",
                 .wait()
         )
     ,
-    newButton("next", "another practice")
+    newButton("next", "Continuer")
         .settings.center()
         .print()
         .wait()
@@ -482,7 +482,7 @@ PennController("practice2",
                 .wait()
         )
     ,
-    newButton("next", "another practice")
+    newButton("next", "Continuer")
         .settings.center()
         .print()
         .wait()
@@ -579,7 +579,7 @@ PennController("practice3",
                 .wait()
         )
     ,
-    newButton("next", "another practice")
+    newButton("next", "Continuer")
         .settings.center()
         .print()
         .wait()
@@ -671,7 +671,7 @@ PennController("practice4",
                 .wait()
         )
     ,
-    newButton("next", "another practice")
+    newButton("next", "Continuer")
         .settings.center()
         .print()
         .wait()
@@ -758,7 +758,7 @@ PennController("practice5",
                 .wait()
         )
     ,
-    newButton("next", "another practice")
+    newButton("next", "Continuer")
         .settings.center()
         .print()
         .wait()
@@ -855,7 +855,7 @@ PennController("practice6",
                 .wait()
         )
     ,
-    newButton("next", "ready to start the game")
+    newButton("next", "Commencer le jeu!")
         .settings.center()
         .print()
         .wait()
