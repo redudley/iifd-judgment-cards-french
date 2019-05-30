@@ -50,7 +50,7 @@ PennController("intro1" ,
     newAudio("1_hello_message.mp3")
       .play()
     ,
-    newTimer("delay", 5000)
+    newTimer("delay5", 5000)
       .start()
       .wait()
     ,
@@ -58,7 +58,7 @@ PennController("intro1" ,
       .settings.size(400,400)
       .print()
     ,
-    newTimer("delay", 2600)
+    newTimer("delay2.6", 2600)
       .start()
       .wait()
     ,
