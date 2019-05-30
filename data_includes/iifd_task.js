@@ -5,9 +5,9 @@
 
 PennController.ResetPrefix(null);
 
-//PennController.PreloadZip("https://web-risc.ens.fr/~rdudley/public_html/iifd/judgment/cards/zipped.zip");
+PennController.PreloadZip("https://web-risc.ens.fr/~rdudley/public_html/iifd/judgment/cards/zipped.zip");
 
-PennController.AddHost("http://web-risc.ens.fr/~rdudley/iifd/judgment/");
+//PennController.AddHost("http://web-risc.ens.fr/~rdudley/iifd/judgment/");
           //ACTION: make sure files can be acquired in zipped version
           //ACTION: check that results file prints fine
 PennController.Sequence( "welcome", "intro1", "intro2", "intro3","intro4","intro5", "intro6","intro8", "intro9", "intro10","intro7", "practice1", "practice2", "practice3", "practice4", "practice5", "practice6", "intro11",
@@ -43,7 +43,7 @@ PennController( "welcome" ,
         .wait()
 );
 PennController("intro1" ,
-    newImage("4_picture.png")
+    newImage("first_picture","4_picture.png")
       .settings.size(400,400)
       .print()
     ,
@@ -53,6 +53,9 @@ PennController("intro1" ,
     newTimer("delay5", 5000)
       .start()
       .wait()
+    ,
+    getImage("first_picture")
+      .remove()
     ,
     newImage("1_picture.png")
       .settings.size(400,400)
@@ -123,40 +126,40 @@ PennController("intro2",
       .settings.size(96,120)
       .settings.css("border", "solid 1px black")
     ,
-    newCanvas("blues", 288, 120)
+    newCanvas("blues", 308, 120)
       .settings.add(   0,    0, getImage("police_blue") )
-      .settings.add(   96,   0, getImage("dancer_blue") )
-      .settings.add(   192,  0, getImage("snowman_blue") )
+      .settings.add(   106,  0, getImage("dancer_blue") )
+      .settings.add(   212,  0, getImage("snowman_blue") )
       .print()
     ,
     newTimer("delay7", 7000)
       .start()
       .wait()
     ,
-    newCanvas("reds", 288, 120)
+    newCanvas("reds", 308, 120)
       .settings.add(   0,    0, getImage("police_red") )
-      .settings.add(   96,   0, getImage("dancer_red") )
-      .settings.add(   192,  0, getImage("snowman_red") )
+      .settings.add(   106,  0, getImage("dancer_red") )
+      .settings.add(   212,  0, getImage("snowman_red") )
       .print()
     ,
     newTimer("delay.5a", 500)
       .start()
       .wait()
     ,
-    newCanvas("greens", 288, 120)
+    newCanvas("greens", 308, 120)
       .settings.add(   0,    0, getImage("police_green") )
-      .settings.add(   96,   0, getImage("dancer_green") )
-      .settings.add(   192,  0, getImage("snowman_green") )
+      .settings.add(   106,  0, getImage("dancer_green") )
+      .settings.add(   212,  0, getImage("snowman_green") )
       .print()
     ,
     newTimer("delay.5b", 500)
       .start()
       .wait()
     ,
-    newCanvas("yellows", 288, 120)
+    newCanvas("yellows", 308, 120)
       .settings.add(   0,    0, getImage("police_yellow") )
-      .settings.add(   96,   0, getImage("dancer_yellow") )
-      .settings.add(   192,  0, getImage("snowman_yellow") )
+      .settings.add(   106,  0, getImage("dancer_yellow") )
+      .settings.add(   212,  0, getImage("snowman_yellow") )
       .print()
     ,
     newButton("start", "Apprendre le jeu")
@@ -326,12 +329,12 @@ PennController("practice1",
       .settings.size(96,120)
       .settings.css("border", "solid 1px black")
     ,
-    newCanvas("domain", 596, 140)
+    newCanvas("domain", 606, 140)
       .settings.add(   58,    10, getImage("practice1domainA") )
       .settings.add(   154,   10, getImage("practice1domainB") )
       .settings.add(   250,   10, getImage("practice1domainC") )
-      .settings.add(   346,   10, getImage("practice1domainD") )
-      .settings.add(   442,   10, getImage("practice1domainE") )
+      .settings.add(   356,   10, getImage("practice1domainD") )
+      .settings.add(   452,   10, getImage("practice1domainE") )
       .settings.css("border", "solid 2px black")
       .print()
     ,
@@ -413,12 +416,12 @@ PennController("practice2",
       .settings.size(96,120)
       .settings.css("border", "solid 1px black")
     ,
-    newCanvas("domain", 596, 140)
+    newCanvas("domain", 606, 140)
       .settings.add(   58,    10, getImage("practice2domainA") )
       .settings.add(   154,   10, getImage("practice2domainB") )
       .settings.add(   250,   10, getImage("practice2domainC") )
-      .settings.add(   346,   10, getImage("practice2domainD") )
-      .settings.add(   442,   10, getImage("practice2domainE") )
+      .settings.add(   356,   10, getImage("practice2domainD") )
+      .settings.add(   452,   10, getImage("practice2domainE") )
       .settings.css("border", "solid 2px black")
       .print()
     ,
@@ -505,12 +508,12 @@ PennController("practice3",
       .settings.size(96,120)
       .settings.css("border", "solid 1px black")
     ,
-    newCanvas("domain", 596, 140)
+    newCanvas("domain", 606, 140)
       .settings.add(   58,    10, getImage("practice3domainA") )
       .settings.add(   154,   10, getImage("practice3domainB") )
       .settings.add(   250,   10, getImage("practice3domainC") )
-      .settings.add(   346,   10, getImage("practice3domainD") )
-      .settings.add(   442,   10, getImage("practice3domainE") )
+      .settings.add(   356,   10, getImage("practice3domainD") )
+      .settings.add(   452,   10, getImage("practice3domainE") )
       .settings.css("border", "solid 2px black")
       .print()
     ,
@@ -602,12 +605,12 @@ PennController("practice4",
       .settings.size(96,120)
       .settings.css("border", "solid 1px black")
     ,
-    newCanvas("domain", 596, 140)
+    newCanvas("domain", 606, 140)
       .settings.add(   58,    10, getImage("practice4domainA") )
       .settings.add(   154,   10, getImage("practice4domainB") )
       .settings.add(   250,   10, getImage("practice4domainC") )
-      .settings.add(   346,   10, getImage("practice4domainD") )
-      .settings.add(   442,   10, getImage("practice4domainE") )
+      .settings.add(   356,   10, getImage("practice4domainD") )
+      .settings.add(   452,   10, getImage("practice4domainE") )
       .settings.css("border", "solid 2px black")
       .print()
     ,
@@ -694,12 +697,12 @@ PennController("practice5",
       .settings.size(96,120)
       .settings.css("border", "solid 1px black")
     ,
-    newCanvas("domain", 596, 140)
+    newCanvas("domain", 606, 140)
       .settings.add(   58,    10, getImage("practice5domainA") )
       .settings.add(   154,   10, getImage("practice5domainB") )
       .settings.add(   250,   10, getImage("practice5domainC") )
-      .settings.add(   346,   10, getImage("practice5domainD") )
-      .settings.add(   442,   10, getImage("practice5domainE") )
+      .settings.add(   356,   10, getImage("practice5domainD") )
+      .settings.add(   452,   10, getImage("practice5domainE") )
       .settings.css("border", "solid 2px black")
       .print()
     ,
@@ -781,12 +784,12 @@ PennController("practice6",
       .settings.size(96,120)
       .settings.css("border", "solid 1px black")
     ,
-    newCanvas("domain", 596, 140)
+    newCanvas("domain", 606, 140)
       .settings.add(   58,    10, getImage("practice6domainA") )
       .settings.add(   154,   10, getImage("practice6domainB") )
       .settings.add(   250,   10, getImage("practice6domainC") )
-      .settings.add(   346,   10, getImage("practice6domainD") )
-      .settings.add(   442,   10, getImage("practice6domainE") )
+      .settings.add(   356,   10, getImage("practice6domainD") )
+      .settings.add(   452,   10, getImage("practice6domainE") )
       .settings.css("border", "solid 2px black")
       .print()
     ,
@@ -879,12 +882,12 @@ PennController.Template("premiseA.image1.csv", //premise A - image 1
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
         ,
-        newCanvas("domain", 596, 140)
+        newCanvas("domain", 606, 140)
           .settings.add(   58,    10, getImage("domainImage1") )
           .settings.add(   154,   10, getImage("domainImage2") )
           .settings.add(   250,   10, getImage("domainImage3") )
-          .settings.add(   346,   10, getImage("domainImage4") )
-          .settings.add(   442,   10, getImage("domainImage5") )
+          .settings.add(   356,   10, getImage("domainImage4") )
+          .settings.add(   452,   10, getImage("domainImage5") )
           .settings.css("border", "solid 2px black")
           .print()
         ,
@@ -952,7 +955,7 @@ PennController.Template("premiseC.image1.csv", //premise C - image 1
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
         ,
-        newCanvas("domain", 596, 140)
+        newCanvas("domain", 606, 140)
           .settings.add(   58,    10, getImage("domainImage1") )
           .settings.add(   154,   10, getImage("domainImage2") )
           .settings.add(   250,   10, getImage("domainImage3") )
@@ -1025,12 +1028,12 @@ PennController.Template("premiseD.image1.csv", //premise D - image 1
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
         ,
-        newCanvas("domain", 596, 140)
+        newCanvas("domain", 606, 140)
           .settings.add(   58,    10, getImage("domainImage1") )
           .settings.add(   154,   10, getImage("domainImage2") )
           .settings.add(   250,   10, getImage("domainImage3") )
-          .settings.add(   346,   10, getImage("domainImage4") )
-          .settings.add(   442,   10, getImage("domainImage5") )
+          .settings.add(   356,   10, getImage("domainImage4") )
+          .settings.add(   452,   10, getImage("domainImage5") )
           .settings.css("border", "solid 2px black")
           .print()
         ,
@@ -1098,12 +1101,12 @@ PennController.Template("premiseE.image1.csv", //premise E - image 1
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
         ,
-        newCanvas("domain", 596, 140)
+        newCanvas("domain", 606, 140)
           .settings.add(   58,    10, getImage("domainImage1") )
           .settings.add(   154,   10, getImage("domainImage2") )
           .settings.add(   250,   10, getImage("domainImage3") )
-          .settings.add(   346,   10, getImage("domainImage4") )
-          .settings.add(   442,   10, getImage("domainImage5") )
+          .settings.add(   356,   10, getImage("domainImage4") )
+          .settings.add(   452,   10, getImage("domainImage5") )
           .settings.css("border", "solid 2px black")
           .print()
         ,
@@ -1171,12 +1174,12 @@ PennController.Template("premiseA.image2.csv", //premise A - image 2
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
         ,
-        newCanvas("domain", 596, 140)
+        newCanvas("domain", 606, 140)
           .settings.add(   58,    10, getImage("domainImage1") )
           .settings.add(   154,   10, getImage("domainImage2") )
           .settings.add(   250,   10, getImage("domainImage3") )
-          .settings.add(   346,   10, getImage("domainImage4") )
-          .settings.add(   442,   10, getImage("domainImage5") )
+          .settings.add(   356,   10, getImage("domainImage4") )
+          .settings.add(   452,   10, getImage("domainImage5") )
           .settings.css("border", "solid 2px black")
           .print()
         ,
@@ -1244,12 +1247,12 @@ PennController.Template("premiseC.image2.csv", //premise C - image 2
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
         ,
-        newCanvas("domain", 596, 140)
+        newCanvas("domain", 606, 140)
           .settings.add(   58,    10, getImage("domainImage1") )
           .settings.add(   154,   10, getImage("domainImage2") )
           .settings.add(   250,   10, getImage("domainImage3") )
-          .settings.add(   346,   10, getImage("domainImage4") )
-          .settings.add(   442,   10, getImage("domainImage5") )
+          .settings.add(   356,   10, getImage("domainImage4") )
+          .settings.add(   452,   10, getImage("domainImage5") )
           .settings.css("border", "solid 2px black")
           .print()
         ,
@@ -1317,12 +1320,12 @@ PennController.Template("premiseD.image2.csv", //premise D - image 2
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
         ,
-        newCanvas("domain", 596, 140)
+        newCanvas("domain", 606, 140)
           .settings.add(   58,    10, getImage("domainImage1") )
           .settings.add(   154,   10, getImage("domainImage2") )
           .settings.add(   250,   10, getImage("domainImage3") )
-          .settings.add(   346,   10, getImage("domainImage4") )
-          .settings.add(   442,   10, getImage("domainImage5") )
+          .settings.add(   356,   10, getImage("domainImage4") )
+          .settings.add(   452,   10, getImage("domainImage5") )
           .settings.css("border", "solid 2px black")
           .print()
         ,
@@ -1390,12 +1393,12 @@ PennController.Template("premiseE.image2.csv", //premise E - image 2
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
         ,
-        newCanvas("domain", 596, 140)
+        newCanvas("domain", 606, 140)
           .settings.add(   58,    10, getImage("domainImage1") )
           .settings.add(   154,   10, getImage("domainImage2") )
           .settings.add(   250,   10, getImage("domainImage3") )
-          .settings.add(   346,   10, getImage("domainImage4") )
-          .settings.add(   442,   10, getImage("domainImage5") )
+          .settings.add(   356,   10, getImage("domainImage4") )
+          .settings.add(   452,   10, getImage("domainImage5") )
           .settings.css("border", "solid 2px black")
           .print()
         ,
@@ -1463,12 +1466,12 @@ PennController.Template("premiseA.image3.csv", //premise A - image 3
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
         ,
-        newCanvas("domain", 596, 140)
+        newCanvas("domain", 606, 140)
           .settings.add(   58,    10, getImage("domainImage1") )
           .settings.add(   154,   10, getImage("domainImage2") )
           .settings.add(   250,   10, getImage("domainImage3") )
-          .settings.add(   346,   10, getImage("domainImage4") )
-          .settings.add(   442,   10, getImage("domainImage5") )
+          .settings.add(   356,   10, getImage("domainImage4") )
+          .settings.add(   452,   10, getImage("domainImage5") )
           .settings.css("border", "solid 2px black")
           .print()
         ,
@@ -1544,12 +1547,12 @@ PennController.Template("premiseB.image3.12of4.csv", //premise B - image 3
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
         ,
-        newCanvas("domain", 596, 140)
+        newCanvas("domain", 606, 140)
           .settings.add(   58,    10, getImage("domainImage1") )
           .settings.add(   154,   10, getImage("domainImage2") )
           .settings.add(   250,   10, getImage("domainImage3") )
-          .settings.add(   346,   10, getImage("domainImage4") )
-          .settings.add(   442,   10, getImage("domainImage5") )
+          .settings.add(   356,   10, getImage("domainImage4") )
+          .settings.add(   452,   10, getImage("domainImage5") )
           .settings.css("border", "solid 2px black")
           .print()
         ,
@@ -1625,12 +1628,12 @@ PennController.Template("premiseB.image3.34of4.csv", //premise B - image 3
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
         ,
-        newCanvas("domain", 596, 140)
+        newCanvas("domain", 606, 140)
           .settings.add(   58,    10, getImage("domainImage1") )
           .settings.add(   154,   10, getImage("domainImage2") )
           .settings.add(   250,   10, getImage("domainImage3") )
-          .settings.add(   346,   10, getImage("domainImage4") )
-          .settings.add(   442,   10, getImage("domainImage5") )
+          .settings.add(   356,   10, getImage("domainImage4") )
+          .settings.add(   452,   10, getImage("domainImage5") )
           .settings.css("border", "solid 2px black")
           .print()
         ,
@@ -1706,12 +1709,12 @@ PennController.Template("premiseC.image3.csv", //premise C - image 3
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
         ,
-        newCanvas("domain", 596, 140)
+        newCanvas("domain", 606, 140)
           .settings.add(   58,    10, getImage("domainImage1") )
           .settings.add(   154,   10, getImage("domainImage2") )
           .settings.add(   250,   10, getImage("domainImage3") )
-          .settings.add(   346,   10, getImage("domainImage4") )
-          .settings.add(   442,   10, getImage("domainImage5") )
+          .settings.add(   356,   10, getImage("domainImage4") )
+          .settings.add(   452,   10, getImage("domainImage5") )
           .settings.css("border", "solid 2px black")
           .print()
         ,
@@ -1787,12 +1790,12 @@ PennController.Template("premiseD.image3.csv", //premise D - image 3
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
         ,
-        newCanvas("domain", 596, 140)
+        newCanvas("domain", 606, 140)
           .settings.add(   58,    10, getImage("domainImage1") )
           .settings.add(   154,   10, getImage("domainImage2") )
           .settings.add(   250,   10, getImage("domainImage3") )
-          .settings.add(   346,   10, getImage("domainImage4") )
-          .settings.add(   442,   10, getImage("domainImage5") )
+          .settings.add(   356,   10, getImage("domainImage4") )
+          .settings.add(   452,   10, getImage("domainImage5") )
           .settings.css("border", "solid 2px black")
           .print()
         ,
@@ -1868,12 +1871,12 @@ PennController.Template("premiseE.image3.csv", //premise E - image 3
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
         ,
-        newCanvas("domain", 596, 140)
+        newCanvas("domain", 606, 140)
           .settings.add(   58,    10, getImage("domainImage1") )
           .settings.add(   154,   10, getImage("domainImage2") )
           .settings.add(   250,   10, getImage("domainImage3") )
-          .settings.add(   346,   10, getImage("domainImage4") )
-          .settings.add(   442,   10, getImage("domainImage5") )
+          .settings.add(   356,   10, getImage("domainImage4") )
+          .settings.add(   452,   10, getImage("domainImage5") )
           .settings.css("border", "solid 2px black")
           .print()
         ,
@@ -1949,12 +1952,12 @@ PennController.Template("premiseA.image4.csv", //premise A - image 4
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
         ,
-        newCanvas("domain", 596, 140)
+        newCanvas("domain", 606, 140)
           .settings.add(   58,    10, getImage("domainImage1") )
           .settings.add(   154,   10, getImage("domainImage2") )
           .settings.add(   250,   10, getImage("domainImage3") )
-          .settings.add(   346,   10, getImage("domainImage4") )
-          .settings.add(   442,   10, getImage("domainImage5") )
+          .settings.add(   356,   10, getImage("domainImage4") )
+          .settings.add(   452,   10, getImage("domainImage5") )
           .settings.css("border", "solid 2px black")
           .print()
         ,
@@ -2018,12 +2021,12 @@ PennController.Template("premiseC.image4.csv", //premise C - image 4
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
         ,
-        newCanvas("domain", 596, 140)
+        newCanvas("domain", 606, 140)
           .settings.add(   58,    10, getImage("domainImage1") )
           .settings.add(   154,   10, getImage("domainImage2") )
           .settings.add(   250,   10, getImage("domainImage3") )
-          .settings.add(   346,   10, getImage("domainImage4") )
-          .settings.add(   442,   10, getImage("domainImage5") )
+          .settings.add(   356,   10, getImage("domainImage4") )
+          .settings.add(   452,   10, getImage("domainImage5") )
           .settings.css("border", "solid 2px black")
           .print()
         ,
@@ -2087,12 +2090,12 @@ PennController.Template("premiseD.image4.csv", //premise D - image 4
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
         ,
-        newCanvas("domain", 596, 140)
+        newCanvas("domain", 606, 140)
           .settings.add(   58,    10, getImage("domainImage1") )
           .settings.add(   154,   10, getImage("domainImage2") )
           .settings.add(   250,   10, getImage("domainImage3") )
-          .settings.add(   346,   10, getImage("domainImage4") )
-          .settings.add(   442,   10, getImage("domainImage5") )
+          .settings.add(   356,   10, getImage("domainImage4") )
+          .settings.add(   452,   10, getImage("domainImage5") )
           .settings.css("border", "solid 2px black")
           .print()
         ,
@@ -2156,12 +2159,12 @@ PennController.Template("premiseE.image4.csv", //premise E - image 4
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
         ,
-        newCanvas("domain", 596, 140)
+        newCanvas("domain", 606, 140)
           .settings.add(   58,    10, getImage("domainImage1") )
           .settings.add(   154,   10, getImage("domainImage2") )
           .settings.add(   250,   10, getImage("domainImage3") )
-          .settings.add(   346,   10, getImage("domainImage4") )
-          .settings.add(   442,   10, getImage("domainImage5") )
+          .settings.add(   356,   10, getImage("domainImage4") )
+          .settings.add(   452,   10, getImage("domainImage5") )
           .settings.css("border", "solid 2px black")
           .print()
         ,
@@ -2225,12 +2228,12 @@ PennController.Template("premiseA.image5.csv", //premise A - image 5
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
         ,
-        newCanvas("domain", 596, 140)
+        newCanvas("domain", 606, 140)
           .settings.add(   58,    10, getImage("domainImage1") )
           .settings.add(   154,   10, getImage("domainImage2") )
           .settings.add(   250,   10, getImage("domainImage3") )
-          .settings.add(   346,   10, getImage("domainImage4") )
-          .settings.add(   442,   10, getImage("domainImage5") )
+          .settings.add(   356,   10, getImage("domainImage4") )
+          .settings.add(   452,   10, getImage("domainImage5") )
           .settings.css("border", "solid 2px black")
           .print()
         ,
@@ -2302,12 +2305,12 @@ PennController.Template("premiseC.image5.csv", //premise C - image 5
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
         ,
-        newCanvas("domain", 596, 140)
+        newCanvas("domain", 606, 140)
           .settings.add(   58,    10, getImage("domainImage1") )
           .settings.add(   154,   10, getImage("domainImage2") )
           .settings.add(   250,   10, getImage("domainImage3") )
-          .settings.add(   346,   10, getImage("domainImage4") )
-          .settings.add(   442,   10, getImage("domainImage5") )
+          .settings.add(   356,   10, getImage("domainImage4") )
+          .settings.add(   452,   10, getImage("domainImage5") )
           .settings.css("border", "solid 2px black")
           .print()
         ,
@@ -2379,12 +2382,12 @@ PennController.Template("premiseD.image5.csv", //premise D - image 5
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
         ,
-        newCanvas("domain", 596, 140)
+        newCanvas("domain", 606, 140)
           .settings.add(   58,    10, getImage("domainImage1") )
           .settings.add(   154,   10, getImage("domainImage2") )
           .settings.add(   250,   10, getImage("domainImage3") )
-          .settings.add(   346,   10, getImage("domainImage4") )
-          .settings.add(   442,   10, getImage("domainImage5") )
+          .settings.add(   356,   10, getImage("domainImage4") )
+          .settings.add(   452,   10, getImage("domainImage5") )
           .settings.css("border", "solid 2px black")
           .print()
         ,
@@ -2456,12 +2459,12 @@ PennController.Template("premiseE.image5.csv", //premise E - image 5
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
         ,
-        newCanvas("domain", 596, 140)
+        newCanvas("domain", 606, 140)
           .settings.add(   58,    10, getImage("domainImage1") )
           .settings.add(   154,   10, getImage("domainImage2") )
           .settings.add(   250,   10, getImage("domainImage3") )
-          .settings.add(   346,   10, getImage("domainImage4") )
-          .settings.add(   442,   10, getImage("domainImage5") )
+          .settings.add(   356,   10, getImage("domainImage4") )
+          .settings.add(   452,   10, getImage("domainImage5") )
           .settings.css("border", "solid 2px black")
           .print()
         ,
