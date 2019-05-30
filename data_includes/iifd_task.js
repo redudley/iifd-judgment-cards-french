@@ -36,9 +36,11 @@ PennController.Sequence( "welcome", "intro1", "intro2", "intro3","intro4","intro
 );
 PennController( "welcome" ,
     newText( "message1" , "Aujourd'hui vous nous aiderez en servant de comparatif adulte à la compréhension du langage chez les enfants.")
+        .settings.center()
         .print()
     ,
     newText( "message2" , "Pour cette raison, la tâche sera assez simple et adaptée à des enfants de 5 ans.")
+        .settings.center()
         .print()
     ,
     newButton("start", "Commencer")
