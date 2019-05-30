@@ -142,7 +142,7 @@ PennController("intro2",
       .settings.add(   212,  0, getImage("snowman_red") )
       .print()
     ,
-    newTimer("delay.5a", 500)
+    newTimer("delay.7a", 700)
       .start()
       .wait()
     ,
@@ -152,7 +152,7 @@ PennController("intro2",
       .settings.add(   212,  0, getImage("snowman_green") )
       .print()
     ,
-    newTimer("delay.5b", 500)
+    newTimer("delay.7b", 700)
       .start()
       .wait()
     ,
