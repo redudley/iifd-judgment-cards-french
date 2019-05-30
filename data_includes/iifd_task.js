@@ -270,7 +270,7 @@ PennController("intro7",
       .settings.size(400,400)
       .print()
     ,
-    newAudio("7_first lets practice.mp3")
+    newAudio("7_first_lets_practice.mp3")
       .play()
       .wait()
     ,
