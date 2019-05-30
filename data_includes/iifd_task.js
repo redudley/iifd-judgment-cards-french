@@ -50,7 +50,7 @@ PennController("intro1" ,
     newAudio("1_hello_message.mp3")
       .play()
     ,
-    newTimer("wait", 5000)
+    newTimer("delay", 5000)
       .start()
       .wait()
     ,
@@ -58,7 +58,7 @@ PennController("intro1" ,
       .settings.size(400,400)
       .print()
     ,
-    newTimer("wait", 2600)
+    newTimer("delay", 2600)
       .start()
       .wait()
     ,
@@ -71,7 +71,7 @@ PennController("intro2",
     newAudio("2_card_introduction.mp3")
       .play()
     ,
-    newTimer("wait", 4500)
+    newTimer("delay4.5", 4500)
       .start()
       .wait()
     ,
@@ -129,7 +129,7 @@ PennController("intro2",
       .settings.add(   192,  0, getImage("snowman_blue") )
       .print()
     ,
-    newTimer("wait", 7000)
+    newTimer("delay7", 7000)
       .start()
       .wait()
     ,
@@ -139,7 +139,7 @@ PennController("intro2",
       .settings.add(   192,  0, getImage("snowman_red") )
       .print()
     ,
-    newTimer("wait", 500)
+    newTimer("delay.5a", 500)
       .start()
       .wait()
     ,
@@ -149,7 +149,7 @@ PennController("intro2",
       .settings.add(   192,  0, getImage("snowman_green") )
       .print()
     ,
-    newTimer("wait", 500)
+    newTimer("delay.5b", 500)
       .start()
       .wait()
     ,
