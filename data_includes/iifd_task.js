@@ -32,7 +32,19 @@ PennController.Sequence( "welcome", "intro1", "intro2", "intro3","intro4","intro
                            "trialD4",
                            "trialD2",
                            "trialA2",
-                           "trialC4"), "intro12"
+                           "trialC4"), "intro12", "subject_info", "send"
+);
+PennController.SendResults( "send" );
+PennController( "subject_info" ,
+    newTextInput( "name" , "ton prenom")
+        .settings.log() // Record the participant's feedback
+        .settings.lines(0) // Unlimited number of lines
+        .print()
+    ,
+    newButton("validate", "Envoyer les resultats")
+        .settings.center()
+        .print()
+        .wait()
 );
 PennController( "welcome" ,
     newText( "message1" , "Aujourd'hui vous nous aiderez en servant de comparatif adulte à la compréhension du langage chez les enfants.")
