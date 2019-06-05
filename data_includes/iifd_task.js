@@ -305,7 +305,7 @@ PennController("intro12",
       .wait()
     ,
     //need a timer here
-    newButton("subj_info", "Cliquer ici pour enregister les info d'enfant")
+    newButton("subj_info", "Cliquer ici pour enregister les resultats")
       .settings.center()
       .print()
       .wait()
@@ -373,6 +373,7 @@ PennController("practice1",
     ,
     newSelector("choice")
       .settings.add( getImage("happy") , getImage("sad") )
+      .settings.log()
       .wait()
     ,
     newAudio("positive", "practice1_feedback_positive.mp3")
@@ -465,6 +466,7 @@ PennController("practice2",
     ,
     newSelector("choice")
       .settings.add( getImage("happy") , getImage("sad") )
+      .settings.log().wait()
       .wait()
     ,
     newAudio("positive", "practice2_feedback_positive.mp3")
@@ -562,6 +564,7 @@ PennController("practice3",
     ,
     newSelector("choice")
       .settings.add( getImage("happy") , getImage("sad") )
+      .settings.log()
       .wait()
     ,
     newAudio("positive", "practice3_feedback_positive.mp3")
@@ -654,6 +657,7 @@ PennController("practice4",
     ,
     newSelector("choice")
       .settings.add( getImage("happy") , getImage("sad") )
+      .settings.log()
       .wait()
     ,
     newAudio("positive", "practice4_feedback_positive.mp3")
@@ -741,6 +745,7 @@ PennController("practice5",
     ,
     newSelector("choice")
       .settings.add( getImage("happy") , getImage("sad") )
+      .settings.log()
       .wait()
     ,
     newAudio("positive", "practice5_feedback_positive.mp3")
@@ -838,6 +843,7 @@ PennController("practice6",
     ,
     newSelector("choice")
       .settings.add( getImage("happy") , getImage("sad") )
+      .settings.log()
       .wait()
     ,
     newAudio("positive", "practice6_feedback_positive.mp3")
@@ -894,6 +900,7 @@ PennController.Template("premiseA.image1.csv", //premise A - image 1
           .print()
         ,
         newAudio("domain sentence", row.DomainIntro)
+    .settings.log()
           .play() // Immediately play the audio file
           .wait()
         ,
@@ -904,6 +911,7 @@ PennController.Template("premiseA.image1.csv", //premise A - image 1
             .remove()
         ,
         newAudio("test sentence", row.Premises)
+    .settings.log()
           .play() // Immediately play the audio file
           .wait() // Wait to display images until after audio file is finished
         ,
@@ -932,6 +940,7 @@ PennController.Template("premiseA.image1.csv", //premise A - image 1
         ,
         newSelector("choice")
           .settings.add( getImage("happy") , getImage("sad") )
+      .settings.log()
           .wait()
     )
   );
@@ -961,12 +970,13 @@ PennController.Template("premiseC.image1.csv", //premise C - image 1
           .settings.add(   30,    20, getImage("domainImage1") )
           .settings.add(   126,   20, getImage("domainImage2") )
           .settings.add(   222,   20, getImage("domainImage3") )
-          .settings.add(   394,   10, getImage("domainImage4") )
-          .settings.add(   490,   10, getImage("domainImage5") )
+          .settings.add(   338,   20, getImage("domainImage4") )
+          .settings.add(   434,   20, getImage("domainImage5") )
           .settings.css("border", "solid 2px black")
           .print()
         ,
         newAudio("domain sentence", row.DomainIntro)
+    .settings.log()
           .play() // Immediately play the audio file
           .wait()
         ,
@@ -977,6 +987,7 @@ PennController.Template("premiseC.image1.csv", //premise C - image 1
             .remove()
         ,
         newAudio("test sentence", row.Premises)
+    .settings.log()
           .play() // Immediately play the audio file
           .wait() // Wait to display images until after audio file is finished
         ,
@@ -1005,6 +1016,7 @@ PennController.Template("premiseC.image1.csv", //premise C - image 1
         ,
         newSelector("choice")
           .settings.add( getImage("happy") , getImage("sad") )
+      .settings.log()
           .wait()
     )
   );
@@ -1040,6 +1052,7 @@ PennController.Template("premiseD.image1.csv", //premise D - image 1
           .print()
         ,
         newAudio("domain sentence", row.DomainIntro)
+    .settings.log()
           .play() // Immediately play the audio file
           .wait()
         ,
@@ -1050,6 +1063,7 @@ PennController.Template("premiseD.image1.csv", //premise D - image 1
             .remove()
         ,
         newAudio("test sentence", row.Premises)
+    .settings.log()
           .play() // Immediately play the audio file
           .wait() // Wait to display images until after audio file is finished
         ,
@@ -1078,6 +1092,7 @@ PennController.Template("premiseD.image1.csv", //premise D - image 1
         ,
         newSelector("choice")
           .settings.add( getImage("happy") , getImage("sad") )
+      .settings.log()
           .wait()
     )
   );
@@ -1113,6 +1128,7 @@ PennController.Template("premiseE.image1.csv", //premise E - image 1
           .print()
         ,
         newAudio("domain sentence", row.DomainIntro)
+    .settings.log()
           .play() // Immediately play the audio file
           .wait()
         ,
@@ -1123,6 +1139,7 @@ PennController.Template("premiseE.image1.csv", //premise E - image 1
             .remove()
         ,
         newAudio("test sentence", row.Premises)
+    .settings.log()
           .play() // Immediately play the audio file
           .wait() // Wait to display images until after audio file is finished
         ,
@@ -1151,6 +1168,7 @@ PennController.Template("premiseE.image1.csv", //premise E - image 1
         ,
         newSelector("choice")
           .settings.add( getImage("happy") , getImage("sad") )
+      .settings.log()
           .wait()
     )
   );
@@ -1186,6 +1204,7 @@ PennController.Template("premiseA.image2.csv", //premise A - image 2
           .print()
         ,
         newAudio("domain sentence", row.DomainIntro)
+    .settings.log()
           .play() // Immediately play the audio file
           .wait()
         ,
@@ -1196,6 +1215,7 @@ PennController.Template("premiseA.image2.csv", //premise A - image 2
             .remove()
         ,
         newAudio("test sentence", row.Premises)
+    .settings.log()
           .play() // Immediately play the audio file
           .wait() // Wait to display images until after audio file is finished
         ,
@@ -1224,6 +1244,7 @@ PennController.Template("premiseA.image2.csv", //premise A - image 2
         ,
         newSelector("choice")
           .settings.add( getImage("happy") , getImage("sad") )
+      .settings.log()
           .wait()
     )
   );
@@ -1259,6 +1280,7 @@ PennController.Template("premiseC.image2.csv", //premise C - image 2
           .print()
         ,
         newAudio("domain sentence", row.DomainIntro)
+    .settings.log()
           .play() // Immediately play the audio file
           .wait()
         ,
@@ -1269,6 +1291,7 @@ PennController.Template("premiseC.image2.csv", //premise C - image 2
             .remove()
         ,
         newAudio("test sentence", row.Premises)
+    .settings.log()
           .play() // Immediately play the audio file
           .wait() // Wait to display images until after audio file is finished
         ,
@@ -1297,6 +1320,7 @@ PennController.Template("premiseC.image2.csv", //premise C - image 2
         ,
         newSelector("choice")
           .settings.add( getImage("happy") , getImage("sad") )
+      .settings.log()
           .wait()
     )
   );
@@ -1332,6 +1356,7 @@ PennController.Template("premiseD.image2.csv", //premise D - image 2
           .print()
         ,
         newAudio("domain sentence", row.DomainIntro)
+    .settings.log()
           .play() // Immediately play the audio file
           .wait()
         ,
@@ -1342,6 +1367,7 @@ PennController.Template("premiseD.image2.csv", //premise D - image 2
             .remove()
         ,
         newAudio("test sentence", row.Premises)
+    .settings.log()
           .play() // Immediately play the audio file
           .wait() // Wait to display images until after audio file is finished
         ,
@@ -1370,6 +1396,7 @@ PennController.Template("premiseD.image2.csv", //premise D - image 2
         ,
         newSelector("choice")
           .settings.add( getImage("happy") , getImage("sad") )
+      .settings.log()
           .wait()
     )
   );
@@ -1405,6 +1432,7 @@ PennController.Template("premiseE.image2.csv", //premise E - image 2
           .print()
         ,
         newAudio("domain sentence", row.DomainIntro)
+    .settings.log()
           .play() // Immediately play the audio file
           .wait()
         ,
@@ -1415,6 +1443,7 @@ PennController.Template("premiseE.image2.csv", //premise E - image 2
             .remove()
         ,
         newAudio("test sentence", row.Premises)
+    .settings.log()
           .play() // Immediately play the audio file
           .wait() // Wait to display images until after audio file is finished
         ,
@@ -1443,6 +1472,7 @@ PennController.Template("premiseE.image2.csv", //premise E - image 2
         ,
         newSelector("choice")
           .settings.add( getImage("happy") , getImage("sad") )
+      .settings.log()
           .wait()
     )
   );
@@ -1478,6 +1508,7 @@ PennController.Template("premiseA.image3.csv", //premise A - image 3
           .print()
         ,
         newAudio("domain sentence", row.DomainIntro)
+    .settings.log()
           .play() // Immediately play the audio file
           .wait()
         ,
@@ -1488,6 +1519,7 @@ PennController.Template("premiseA.image3.csv", //premise A - image 3
             .remove()
         ,
         newAudio("test sentence", row.Premises)
+    .settings.log()
           .play() // Immediately play the audio file
           .wait() // Wait to display images until after audio file is finished
         ,
@@ -1524,6 +1556,7 @@ PennController.Template("premiseA.image3.csv", //premise A - image 3
         ,
         newSelector("choice")
           .settings.add( getImage("happy") , getImage("sad") )
+      .settings.log()
           .wait()
     )
   );
@@ -1559,6 +1592,7 @@ PennController.Template("premiseB.image3.12of4.csv", //premise B - image 3
           .print()
         ,
         newAudio("domain sentence", row.DomainIntro)
+    .settings.log()
           .play() // Immediately play the audio file
           .wait()
         ,
@@ -1569,6 +1603,7 @@ PennController.Template("premiseB.image3.12of4.csv", //premise B - image 3
             .remove()
         ,
         newAudio("test sentence", row.Premises)
+    .settings.log()
           .play() // Immediately play the audio file
           .wait() // Wait to display images until after audio file is finished
         ,
@@ -1605,6 +1640,7 @@ PennController.Template("premiseB.image3.12of4.csv", //premise B - image 3
         ,
         newSelector("choice")
           .settings.add( getImage("happy") , getImage("sad") )
+      .settings.log()
           .wait()
     )
   );
@@ -1640,6 +1676,7 @@ PennController.Template("premiseB.image3.34of4.csv", //premise B - image 3
           .print()
         ,
         newAudio("domain sentence", row.DomainIntro)
+    .settings.log()
           .play() // Immediately play the audio file
           .wait()
         ,
@@ -1650,6 +1687,7 @@ PennController.Template("premiseB.image3.34of4.csv", //premise B - image 3
             .remove()
         ,
         newAudio("test sentence", row.Premises)
+    .settings.log()
           .play() // Immediately play the audio file
           .wait() // Wait to display images until after audio file is finished
         ,
@@ -1686,6 +1724,7 @@ PennController.Template("premiseB.image3.34of4.csv", //premise B - image 3
         ,
         newSelector("choice")
           .settings.add( getImage("happy") , getImage("sad") )
+      .settings.log()
           .wait()
     )
   );
@@ -1721,6 +1760,7 @@ PennController.Template("premiseC.image3.csv", //premise C - image 3
           .print()
         ,
         newAudio("domain sentence", row.DomainIntro)
+    .settings.log()
           .play() // Immediately play the audio file
           .wait()
         ,
@@ -1731,6 +1771,7 @@ PennController.Template("premiseC.image3.csv", //premise C - image 3
             .remove()
         ,
         newAudio("test sentence", row.Premises)
+    .settings.log()
           .play() // Immediately play the audio file
           .wait() // Wait to display images until after audio file is finished
         ,
@@ -1767,6 +1808,7 @@ PennController.Template("premiseC.image3.csv", //premise C - image 3
         ,
         newSelector("choice")
           .settings.add( getImage("happy") , getImage("sad") )
+      .settings.log()
           .wait()
     )
   );
@@ -1802,6 +1844,7 @@ PennController.Template("premiseD.image3.csv", //premise D - image 3
           .print()
         ,
         newAudio("domain sentence", row.DomainIntro)
+    .settings.log()
           .play() // Immediately play the audio file
           .wait()
         ,
@@ -1812,6 +1855,7 @@ PennController.Template("premiseD.image3.csv", //premise D - image 3
             .remove()
         ,
         newAudio("test sentence", row.Premises)
+    .settings.log()
           .play() // Immediately play the audio file
           .wait() // Wait to display images until after audio file is finished
         ,
@@ -1848,6 +1892,7 @@ PennController.Template("premiseD.image3.csv", //premise D - image 3
         ,
         newSelector("choice")
           .settings.add( getImage("happy") , getImage("sad") )
+      .settings.log()
           .wait()
     )
   );
@@ -1883,6 +1928,7 @@ PennController.Template("premiseE.image3.csv", //premise E - image 3
           .print()
         ,
         newAudio("domain sentence", row.DomainIntro)
+    .settings.log()
           .play() // Immediately play the audio file
           .wait()
         ,
@@ -1893,6 +1939,7 @@ PennController.Template("premiseE.image3.csv", //premise E - image 3
             .remove()
         ,
         newAudio("test sentence", row.Premises)
+    .settings.log()
           .play() // Immediately play the audio file
           .wait() // Wait to display images until after audio file is finished
         ,
@@ -1929,6 +1976,7 @@ PennController.Template("premiseE.image3.csv", //premise E - image 3
         ,
         newSelector("choice")
           .settings.add( getImage("happy") , getImage("sad") )
+      .settings.log()
           .wait()
     )
   );
@@ -1964,6 +2012,7 @@ PennController.Template("premiseA.image4.csv", //premise A - image 4
           .print()
         ,
         newAudio("domain sentence", row.DomainIntro)
+    .settings.log()
           .play() // Immediately play the audio file
           .wait()
         ,
@@ -1974,6 +2023,7 @@ PennController.Template("premiseA.image4.csv", //premise A - image 4
             .remove()
         ,
         newAudio("test sentence", row.Premises)
+    .settings.log()
           .play() // Immediately play the audio file
           .wait() // Wait to display images until after audio file is finished
         ,
@@ -1998,6 +2048,7 @@ PennController.Template("premiseA.image4.csv", //premise A - image 4
         ,
         newSelector("choice")
           .settings.add( getImage("happy") , getImage("sad") )
+      .settings.log()
           .wait()
     )
   );
@@ -2033,6 +2084,7 @@ PennController.Template("premiseC.image4.csv", //premise C - image 4
           .print()
         ,
         newAudio("domain sentence", row.DomainIntro)
+    .settings.log()
           .play() // Immediately play the audio file
           .wait()
         ,
@@ -2043,6 +2095,7 @@ PennController.Template("premiseC.image4.csv", //premise C - image 4
             .remove()
         ,
         newAudio("test sentence", row.Premises)
+    .settings.log()
           .play() // Immediately play the audio file
           .wait() // Wait to display images until after audio file is finished
         ,
@@ -2067,6 +2120,7 @@ PennController.Template("premiseC.image4.csv", //premise C - image 4
         ,
         newSelector("choice")
           .settings.add( getImage("happy") , getImage("sad") )
+      .settings.log()
           .wait()
     )
   );
@@ -2102,6 +2156,7 @@ PennController.Template("premiseD.image4.csv", //premise D - image 4
           .print()
         ,
         newAudio("domain sentence", row.DomainIntro)
+    .settings.log()
           .play() // Immediately play the audio file
           .wait()
         ,
@@ -2112,6 +2167,7 @@ PennController.Template("premiseD.image4.csv", //premise D - image 4
             .remove()
         ,
         newAudio("test sentence", row.Premises)
+    .settings.log()
           .play() // Immediately play the audio file
           .wait() // Wait to display images until after audio file is finished
         ,
@@ -2136,6 +2192,7 @@ PennController.Template("premiseD.image4.csv", //premise D - image 4
         ,
         newSelector("choice")
           .settings.add( getImage("happy") , getImage("sad") )
+      .settings.log()
           .wait()
     )
   );
@@ -2171,6 +2228,7 @@ PennController.Template("premiseE.image4.csv", //premise E - image 4
           .print()
         ,
         newAudio("domain sentence", row.DomainIntro)
+    .settings.log()
           .play() // Immediately play the audio file
           .wait()
         ,
@@ -2181,6 +2239,7 @@ PennController.Template("premiseE.image4.csv", //premise E - image 4
             .remove()
         ,
         newAudio("test sentence", row.Premises)
+    .settings.log()
           .play() // Immediately play the audio file
           .wait() // Wait to display images until after audio file is finished
         ,
@@ -2205,6 +2264,7 @@ PennController.Template("premiseE.image4.csv", //premise E - image 4
         ,
         newSelector("choice")
           .settings.add( getImage("happy") , getImage("sad") )
+      .settings.log()
           .wait()
     )
   );
@@ -2240,6 +2300,7 @@ PennController.Template("premiseA.image5.csv", //premise A - image 5
           .print()
         ,
         newAudio("domain sentence", row.DomainIntro)
+    .settings.log()
           .play() // Immediately play the audio file
           .wait()
         ,
@@ -2250,6 +2311,7 @@ PennController.Template("premiseA.image5.csv", //premise A - image 5
             .remove()
         ,
         newAudio("test sentence", row.Premises)
+    .settings.log()
           .play() // Immediately play the audio file
           .wait() // Wait to display images until after audio file is finished
         ,
@@ -2282,6 +2344,7 @@ PennController.Template("premiseA.image5.csv", //premise A - image 5
         ,
         newSelector("choice")
           .settings.add( getImage("happy") , getImage("sad") )
+      .settings.log()
           .wait()
     )
   );
@@ -2317,6 +2380,7 @@ PennController.Template("premiseC.image5.csv", //premise C - image 5
           .print()
         ,
         newAudio("domain sentence", row.DomainIntro)
+    .settings.log()
           .play() // Immediately play the audio file
           .wait()
         ,
@@ -2327,6 +2391,7 @@ PennController.Template("premiseC.image5.csv", //premise C - image 5
             .remove()
         ,
         newAudio("test sentence", row.Premises)
+    .settings.log()
           .play() // Immediately play the audio file
           .wait() // Wait to display images until after audio file is finished
         ,
@@ -2359,6 +2424,7 @@ PennController.Template("premiseC.image5.csv", //premise C - image 5
         ,
         newSelector("choice")
           .settings.add( getImage("happy") , getImage("sad") )
+      .settings.log()
           .wait()
     )
   );
@@ -2394,6 +2460,7 @@ PennController.Template("premiseD.image5.csv", //premise D - image 5
           .print()
         ,
         newAudio("domain sentence", row.DomainIntro)
+    .settings.log()
           .play() // Immediately play the audio file
           .wait()
         ,
@@ -2404,6 +2471,7 @@ PennController.Template("premiseD.image5.csv", //premise D - image 5
             .remove()
         ,
         newAudio("test sentence", row.Premises)
+    .settings.log()
           .play() // Immediately play the audio file
           .wait() // Wait to display images until after audio file is finished
         ,
@@ -2436,6 +2504,7 @@ PennController.Template("premiseD.image5.csv", //premise D - image 5
         ,
         newSelector("choice")
           .settings.add( getImage("happy") , getImage("sad") )
+      .settings.log()
           .wait()
     )
   );
@@ -2471,6 +2540,7 @@ PennController.Template("premiseE.image5.csv", //premise E - image 5
           .print()
         ,
         newAudio("domain sentence", row.DomainIntro)
+    .settings.log()
           .play() // Immediately play the audio file
           .wait()
         ,
@@ -2481,6 +2551,7 @@ PennController.Template("premiseE.image5.csv", //premise E - image 5
             .remove()
         ,
         newAudio("test sentence", row.Premises)
+    .settings.log()
           .play() // Immediately play the audio file
           .wait() // Wait to display images until after audio file is finished
         ,
@@ -2513,6 +2584,7 @@ PennController.Template("premiseE.image5.csv", //premise E - image 5
         ,
         newSelector("choice")
           .settings.add( getImage("happy") , getImage("sad") )
+      .settings.log()
           .wait()
     )
   );
