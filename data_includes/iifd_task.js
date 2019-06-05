@@ -875,7 +875,7 @@ PennController("practice6",
                 .wait()
         )
     ,
-    newButton("next", "Commencer le jeu!")
+    newButton("next", "Continuer")
         .settings.center()
         .print()
         .wait()
