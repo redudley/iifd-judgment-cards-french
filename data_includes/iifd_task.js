@@ -2,15 +2,15 @@
 // See the documentation for more information:
 // 		https://lab.florianschwarz.net/PennController/wiki/documentation/
 
-
+var progressBarText = "progrès"
 PennController.ResetPrefix(null);
-PennController.SetCounter();
 // PennController.PreloadZip("https://web-risc.ens.fr/~rdudley/public_html/iifd/judgment/cards/audiofiles.zip");
 // PennController.PreloadZip("https://web-risc.ens.fr/~rdudley/public_html/iifd/judgment/cards/imagefiles.zip");
-var progressBarText = "progrès"
+
 
 
 PennController.AddHost("http://web-risc.ens.fr/~rdudley/iifd/judgment/");
+PennController.SetCounter();
 PennController.Sequence( "welcome", "intro1", "intro2", "intro3","intro4","intro5", "intro6","intro8", "intro9", "intro10","intro7", "practice1", "practice2", "practice3", "practice4", "practice5", "practice6", "intro11",
                   rshuffle("trialE5",
                            "trialC5",
