@@ -924,14 +924,14 @@ PennController("practice6",
         .wait()
 );
 PennController.Template("premiseA.image1.csv",
-  newTimer("trial_length_a1", 60000)
-    .start()
-  ,
-  getTimer("trial_length_a1")
-      .test.ended()
-      .success( end() )
-  ,
     row => PennController("trialA1",
+        newTimer("trial_length.a1", 60000)
+          .start()
+        ,
+        getTimer("trial_length.a1")
+            .test.ended()
+            .success( end() )
+        ,
         newImage("domainImage1", row.domainImage1)
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
@@ -1019,14 +1019,14 @@ PennController.Template("premiseA.image1.csv",
         .log( "target response", row.TargetResponse)
   );
 PennController.Template("premiseC.image1.csv",
-  newTimer("trial_length_c1", 60000)
-    .start()
-  ,
-  getTimer("trial_length_c1")
-      .test.ended()
-      .success( end() )
-  ,
     row => PennController("trialC1",
+        newTimer("trial_length.c1", 60000)
+          .start()
+        ,
+        getTimer("trial_length.c1")
+            .test.ended()
+            .success( end() )
+        ,
         newImage("domainImage1", row.domainImage1)
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
@@ -1116,14 +1116,14 @@ PennController.Template("premiseC.image1.csv",
         .log( "target response", row.TargetResponse)
   );
 PennController.Template("premiseD.image1.csv",
-  newTimer("trial_length_d1", 60000)
-    .start()
-  ,
-  getTimer("trial_length_d1")
-      .test.ended()
-      .success( end() )
-  ,
     row => PennController("trialD1",
+        newTimer("trial_length.d1", 60000)
+          .start()
+        ,
+        getTimer("trial_length.d1")
+            .test.ended()
+            .success( end() )
+        ,
         newImage("domainImage1", row.domainImage1)
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
@@ -1213,14 +1213,14 @@ PennController.Template("premiseD.image1.csv",
         .log( "target response", row.TargetResponse)
   );
 PennController.Template("premiseE.image1.csv",
-  newTimer("trial_length_e1", 60000)
-    .start()
-  ,
-  getTimer("trial_length_e1")
-      .test.ended()
-      .success( end() )
-  ,
     row => PennController("trialE1",
+        newTimer("trial_length.e1", 60000)
+          .start()
+        ,
+        getTimer("trial_length.e1")
+            .test.ended()
+            .success( end() )
+        ,
         newImage("domainImage1", row.domainImage1)
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
@@ -1310,14 +1310,14 @@ PennController.Template("premiseE.image1.csv",
         .log( "target response", row.TargetResponse)
   );
 PennController.Template("premiseA.image2.csv",
-  newTimer("trial_length_a2", 60000)
-    .start()
-  ,
-  getTimer("trial_length_a2")
-      .test.ended()
-      .success( end() )
-  ,
     row => PennController("trialA2",
+        newTimer("trial_length.a2", 60000)
+          .start()
+        ,
+        getTimer("trial_length.a2")
+            .test.ended()
+            .success( end() )
+        ,
         newImage("domainImage1", row.domainImage1)
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
@@ -1407,14 +1407,14 @@ PennController.Template("premiseA.image2.csv",
         .log( "target response", row.TargetResponse)
   );
 PennController.Template("premiseC.image2.csv",
-  newTimer("trial_length_c2", 60000)
-    .start()
-  ,
-  getTimer("trial_length_c2")
-      .test.ended()
-      .success( end() )
-  ,
     row => PennController("trialC2",
+        newTimer("trial_length.c2", 60000)
+          .start()
+        ,
+        getTimer("trial_length.c2")
+            .test.ended()
+            .success( end() )
+        ,
         newImage("domainImage1", row.domainImage1)
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
@@ -1504,14 +1504,14 @@ PennController.Template("premiseC.image2.csv",
         .log( "target response", row.TargetResponse)
   );
 PennController.Template("premiseD.image2.csv",
-  newTimer("trial_length_d2", 60000)
-    .start()
-  ,
-  getTimer("trial_length_d2")
-      .test.ended()
-      .success( end() )
-  ,
     row => PennController("trialD2",
+        newTimer("trial_length.d2", 60000)
+          .start()
+        ,
+        getTimer("trial_length.d2")
+            .test.ended()
+            .success( end() )
+        ,
         newImage("domainImage1", row.domainImage1)
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
@@ -1601,14 +1601,14 @@ PennController.Template("premiseD.image2.csv",
         .log( "target response", row.TargetResponse)
   );
 PennController.Template("premiseE.image2.csv",
-  newTimer("trial_length_e2", 60000)
-    .start()
-  ,
-  getTimer("trial_length_e2")
-      .test.ended()
-      .success( end() )
-  ,
     row => PennController("trialE2",
+        newTimer("trial_length.e2", 60000)
+          .start()
+        ,
+        getTimer("trial_length.e2")
+            .test.ended()
+            .success( end() )
+        ,
         newImage("domainImage1", row.domainImage1)
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
@@ -1698,14 +1698,14 @@ PennController.Template("premiseE.image2.csv",
         .log( "target response", row.TargetResponse)
   );
 PennController.Template("premiseA.image3.csv",
-  newTimer("trial_length_a3", 60000)
-    .start()
-  ,
-  getTimer("trial_length_a3")
-      .test.ended()
-      .success( end() )
-  ,
     row => PennController("trialA3",
+        newTimer("trial_length.a3", 60000)
+          .start()
+        ,
+        getTimer("trial_length.a3")
+            .test.ended()
+            .success( end() )
+        ,
         newImage("domainImage1", row.domainImage1)
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
@@ -1805,14 +1805,14 @@ PennController.Template("premiseA.image3.csv",
         .log( "target response", row.TargetResponse)
   );
 PennController.Template("premiseB.image3.12of4.csv",
-  newTimer("trial_length_b3a", 60000)
-    .start()
-  ,
-  getTimer("trial_length_b3a")
-      .test.ended()
-      .success( end() )
-  ,
     row => PennController("trialB3-a",
+        newTimer("trial_length.b3a", 60000)
+          .start()
+        ,
+        getTimer("trial_length.b3a")
+            .test.ended()
+            .success( end() )
+        ,
         newImage("domainImage1", row.domainImage1)
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
@@ -1912,14 +1912,14 @@ PennController.Template("premiseB.image3.12of4.csv",
         .log( "target response", row.TargetResponse)
   );
 PennController.Template("premiseB.image3.34of4.csv",
-  newTimer("trial_length_b3b", 60000)
-    .start()
-  ,
-  getTimer("trial_length_b3b")
-      .test.ended()
-      .success( end() )
-  ,
     row => PennController("trialB3-b",
+        newTimer("trial_length.b3b", 60000)
+          .start()
+        ,
+        getTimer("trial_length.b3b")
+            .test.ended()
+            .success( end() )
+        ,
         newImage("domainImage1", row.domainImage1)
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
@@ -2019,14 +2019,14 @@ PennController.Template("premiseB.image3.34of4.csv",
         .log( "target response", row.TargetResponse)
   );
 PennController.Template("premiseC.image3.csv",
-  newTimer("trial_length_c3", 60000)
-    .start()
-  ,
-  getTimer("trial_length_c3")
-      .test.ended()
-      .success( end() )
-  ,
     row => PennController("trialC3",
+        newTimer("trial_length.c3", 60000)
+          .start()
+        ,
+        getTimer("trial_length.c3")
+            .test.ended()
+            .success( end() )
+        ,
         newImage("domainImage1", row.domainImage1)
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
@@ -2126,14 +2126,14 @@ PennController.Template("premiseC.image3.csv",
         .log( "target response", row.TargetResponse)
   );
 PennController.Template("premiseD.image3.csv",
-  newTimer("trial_length_d3", 60000)
-    .start()
-  ,
-  getTimer("trial_length_d3")
-      .test.ended()
-      .success( end() )
-  ,
     row => PennController("trialD3",
+        newTimer("trial_length.d3", 60000)
+          .start()
+        ,
+        getTimer("trial_length.d3")
+            .test.ended()
+            .success( end() )
+        ,
         newImage("domainImage1", row.domainImage1)
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
@@ -2233,14 +2233,14 @@ PennController.Template("premiseD.image3.csv",
         .log( "target response", row.TargetResponse)
   );
 PennController.Template("premiseE.image3.csv",
-  newTimer("trial_length_e3", 60000)
-    .start()
-  ,
-  getTimer("trial_length_e3")
-      .test.ended()
-      .success( end() )
-  ,
     row => PennController("trialE3",
+        newTimer("trial_length.e3", 60000)
+          .start()
+        ,
+        getTimer("trial_length.e3")
+            .test.ended()
+            .success( end() )
+        ,
         newImage("domainImage1", row.domainImage1)
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
@@ -2340,14 +2340,14 @@ PennController.Template("premiseE.image3.csv",
         .log( "target response", row.TargetResponse)
   );
 PennController.Template("premiseA.image4.csv",
-  newTimer("trial_length_a5", 60000)
-    .start()
-  ,
-  getTimer("trial_length_a5")
-      .test.ended()
-      .success( end() )
-  ,
     row => PennController("trialA4",
+        newTimer("trial_length.a5", 60000)
+          .start()
+        ,
+        getTimer("trial_length.a5")
+            .test.ended()
+            .success( end() )
+        ,
         newImage("domainImage1", row.domainImage1)
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
@@ -2432,14 +2432,14 @@ PennController.Template("premiseA.image4.csv",
         .log( "target response", row.TargetResponse)
   );
 PennController.Template("premiseC.image4.csv",
-  newTimer("trial_length_c5", 60000)
-    .start()
-  ,
-  getTimer("trial_length_c5")
-      .test.ended()
-      .success( end() )
-  ,
     row => PennController("trialC4",
+        newTimer("trial_length.c5", 60000)
+          .start()
+        ,
+        getTimer("trial_length.c5")
+            .test.ended()
+            .success( end() )
+        ,
         newImage("domainImage1", row.domainImage1)
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
@@ -2524,14 +2524,14 @@ PennController.Template("premiseC.image4.csv",
         .log( "target response", row.TargetResponse)
   );
 PennController.Template("premiseD.image4.csv",
-  newTimer("trial_length_d4", 60000)
-    .start()
-  ,
-  getTimer("trial_length_d4")
-      .test.ended()
-      .success( end() )
-  ,
     row => PennController("trialD4",
+        newTimer("trial_length.d4", 60000)
+          .start()
+        ,
+        getTimer("trial_length.d4")
+            .test.ended()
+            .success( end() )
+        ,
         newImage("domainImage1", row.domainImage1)
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
@@ -2616,14 +2616,14 @@ PennController.Template("premiseD.image4.csv",
         .log( "target response", row.TargetResponse)
   );
 PennController.Template("premiseE.image4.csv",
-  newTimer("trial_length_e4", 60000)
-    .start()
-  ,
-  getTimer("trial_length_e4")
-      .test.ended()
-      .success( end() )
-  ,
     row => PennController("trialE4",
+        newTimer("trial_length.e4", 60000)
+          .start()
+        ,
+        getTimer("trial_length.e4")
+            .test.ended()
+            .success( end() )
+        ,
         newImage("domainImage1", row.domainImage1)
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
@@ -2708,14 +2708,14 @@ PennController.Template("premiseE.image4.csv",
         .log( "target response", row.TargetResponse)
   );
 PennController.Template("premiseA.image5.csv",
-  newTimer("trial_length_a5", 60000)
-    .start()
-  ,
-  getTimer("trial_length_a5")
-      .test.ended()
-      .success( end() )
-  ,
     row => PennController("trialA5",
+        newTimer("trial_length.a5", 60000)
+          .start()
+        ,
+        getTimer("trial_length.a5")
+            .test.ended()
+            .success( end() )
+        ,
         newImage("domainImage1", row.domainImage1)
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
@@ -2810,14 +2810,14 @@ PennController.Template("premiseA.image5.csv",
         .log( "target response", row.TargetResponse)
   );
 PennController.Template("premiseC.image5.csv",
-  newTimer("trial_length_c5", 60000)
-    .start()
-  ,
-  getTimer("trial_length_c5")
-      .test.ended()
-      .success( end() )
-  ,
     row => PennController("trialC5",
+        newTimer("trial_length.c5", 60000)
+          .start()
+        ,
+        getTimer("trial_length.c5")
+            .test.ended()
+            .success( end() )
+        ,
         newImage("domainImage1", row.domainImage1)
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
@@ -2912,14 +2912,14 @@ PennController.Template("premiseC.image5.csv",
         .log( "target response", row.TargetResponse)
   );
 PennController.Template("premiseD.image5.csv",
-  newTimer("trial_length_d5", 60000)
-    .start()
-  ,
-  getTimer("trial_length_d5")
-      .test.ended()
-      .success( end() )
-  ,
     row => PennController("trialD5",
+        newTimer("trial_length.d5", 60000)
+          .start()
+        ,
+        getTimer("trial_length.d5")
+            .test.ended()
+            .success( end() )
+        ,
         newImage("domainImage1", row.domainImage1)
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
@@ -3014,14 +3014,14 @@ PennController.Template("premiseD.image5.csv",
         .log( "target response", row.TargetResponse)
   );
 PennController.Template("premiseE.image5.csv",
-  newTimer("trial_length_e5", 60000)
-    .start()
-  ,
-  getTimer("trial_length_e5")
-      .test.ended()
-      .success( end() )
-  ,
     row => PennController("trialE5",
+        newTimer("trial_length.e5", 60000)
+          .start()
+        ,
+        getTimer("trial_length.e5")
+            .test.ended()
+            .success( end() )
+        ,
         newImage("domainImage1", row.domainImage1)
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
