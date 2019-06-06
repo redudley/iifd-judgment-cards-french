@@ -324,10 +324,10 @@ PennController("intro12",
       .wait()
 );
 PennController("practice1",
-    newTimer("trial_length", 60000)
+    newTimer("trial_length1", 60000)
       .start()
     ,
-    getTimer("trial_length")
+    getTimer("trial_length1")
         .test.ended()
         .success( end() )
     ,
@@ -419,10 +419,10 @@ PennController("practice1",
         .wait()
 );
 PennController("practice2",
-    newTimer("trial_length", 60000)
+    newTimer("trial_length2", 60000)
       .start()
     ,
-    getTimer("trial_length")
+    getTimer("trial_length2")
         .test.ended()
         .success( end() )
     ,
@@ -519,10 +519,10 @@ PennController("practice2",
         .wait()
 );
 PennController("practice3",
-    newTimer("trial_length", 60000)
+    newTimer("trial_length3", 60000)
       .start()
     ,
-    getTimer("trial_length")
+    getTimer("trial_length3")
         .test.ended()
         .success( end() )
     ,
@@ -624,10 +624,10 @@ PennController("practice3",
         .wait()
 );
 PennController("practice4",
-    newTimer("trial_length", 60000)
+    newTimer("trial_length4", 60000)
       .start()
     ,
-    getTimer("trial_length")
+    getTimer("trial_length4")
         .test.ended()
         .success( end() )
     ,
@@ -724,10 +724,10 @@ PennController("practice4",
         .wait()
 );
 PennController("practice5",
-    newTimer("trial_length", 60000)
+    newTimer("trial_length5", 60000)
       .start()
     ,
-    getTimer("trial_length")
+    getTimer("trial_length5")
         .test.ended()
         .success( end() )
     ,
@@ -819,10 +819,10 @@ PennController("practice5",
         .wait()
 );
 PennController("practice6",
-    newTimer("trial_length", 60000)
+    newTimer("trial_length6", 60000)
       .start()
     ,
-    getTimer("trial_length")
+    getTimer("trial_length6")
         .test.ended()
         .success( end() )
     ,
@@ -924,10 +924,10 @@ PennController("practice6",
         .wait()
 );
 PennController.Template("premiseA.image1.csv",
-  newTimer("trial_length", 60000)
+  newTimer("trial_length_a1", 60000)
     .start()
   ,
-  getTimer("trial_length")
+  getTimer("trial_length_a1")
       .test.ended()
       .success( end() )
   ,
@@ -1019,10 +1019,10 @@ PennController.Template("premiseA.image1.csv",
         .log( "target response", row.TargetResponse)
   );
 PennController.Template("premiseC.image1.csv",
-  newTimer("trial_length", 60000)
+  newTimer("trial_length_c1", 60000)
     .start()
   ,
-  getTimer("trial_length")
+  getTimer("trial_length_c1")
       .test.ended()
       .success( end() )
   ,
@@ -1116,10 +1116,10 @@ PennController.Template("premiseC.image1.csv",
         .log( "target response", row.TargetResponse)
   );
 PennController.Template("premiseD.image1.csv",
-  newTimer("trial_length", 60000)
+  newTimer("trial_length_d1", 60000)
     .start()
   ,
-  getTimer("trial_length")
+  getTimer("trial_length_d1")
       .test.ended()
       .success( end() )
   ,
@@ -1213,10 +1213,10 @@ PennController.Template("premiseD.image1.csv",
         .log( "target response", row.TargetResponse)
   );
 PennController.Template("premiseE.image1.csv",
-  newTimer("trial_length", 60000)
+  newTimer("trial_length_e1", 60000)
     .start()
   ,
-  getTimer("trial_length")
+  getTimer("trial_length_e1")
       .test.ended()
       .success( end() )
   ,
@@ -1310,10 +1310,10 @@ PennController.Template("premiseE.image1.csv",
         .log( "target response", row.TargetResponse)
   );
 PennController.Template("premiseA.image2.csv",
-  newTimer("trial_length", 60000)
+  newTimer("trial_length_a2", 60000)
     .start()
   ,
-  getTimer("trial_length")
+  getTimer("trial_length_a2")
       .test.ended()
       .success( end() )
   ,
@@ -1407,10 +1407,10 @@ PennController.Template("premiseA.image2.csv",
         .log( "target response", row.TargetResponse)
   );
 PennController.Template("premiseC.image2.csv",
-  newTimer("trial_length", 60000)
+  newTimer("trial_length_c2", 60000)
     .start()
   ,
-  getTimer("trial_length")
+  getTimer("trial_length_c2")
       .test.ended()
       .success( end() )
   ,
@@ -1504,10 +1504,10 @@ PennController.Template("premiseC.image2.csv",
         .log( "target response", row.TargetResponse)
   );
 PennController.Template("premiseD.image2.csv",
-  newTimer("trial_length", 60000)
+  newTimer("trial_length_d2", 60000)
     .start()
   ,
-  getTimer("trial_length")
+  getTimer("trial_length_d2")
       .test.ended()
       .success( end() )
   ,
@@ -1601,10 +1601,10 @@ PennController.Template("premiseD.image2.csv",
         .log( "target response", row.TargetResponse)
   );
 PennController.Template("premiseE.image2.csv",
-  newTimer("trial_length", 60000)
+  newTimer("trial_length_e2", 60000)
     .start()
   ,
-  getTimer("trial_length")
+  getTimer("trial_length_e2")
       .test.ended()
       .success( end() )
   ,
@@ -1698,10 +1698,10 @@ PennController.Template("premiseE.image2.csv",
         .log( "target response", row.TargetResponse)
   );
 PennController.Template("premiseA.image3.csv",
-  newTimer("trial_length", 60000)
+  newTimer("trial_length_a3", 60000)
     .start()
   ,
-  getTimer("trial_length")
+  getTimer("trial_length_a3")
       .test.ended()
       .success( end() )
   ,
@@ -1805,10 +1805,10 @@ PennController.Template("premiseA.image3.csv",
         .log( "target response", row.TargetResponse)
   );
 PennController.Template("premiseB.image3.12of4.csv",
-  newTimer("trial_length", 60000)
+  newTimer("trial_length_b3a", 60000)
     .start()
   ,
-  getTimer("trial_length")
+  getTimer("trial_length_b3a")
       .test.ended()
       .success( end() )
   ,
@@ -1912,10 +1912,10 @@ PennController.Template("premiseB.image3.12of4.csv",
         .log( "target response", row.TargetResponse)
   );
 PennController.Template("premiseB.image3.34of4.csv",
-  newTimer("trial_length", 60000)
+  newTimer("trial_length_b3b", 60000)
     .start()
   ,
-  getTimer("trial_length")
+  getTimer("trial_length_b3b")
       .test.ended()
       .success( end() )
   ,
@@ -2019,10 +2019,10 @@ PennController.Template("premiseB.image3.34of4.csv",
         .log( "target response", row.TargetResponse)
   );
 PennController.Template("premiseC.image3.csv",
-  newTimer("trial_length", 60000)
+  newTimer("trial_length_c3", 60000)
     .start()
   ,
-  getTimer("trial_length")
+  getTimer("trial_length_c3")
       .test.ended()
       .success( end() )
   ,
@@ -2126,10 +2126,10 @@ PennController.Template("premiseC.image3.csv",
         .log( "target response", row.TargetResponse)
   );
 PennController.Template("premiseD.image3.csv",
-  newTimer("trial_length", 60000)
+  newTimer("trial_length_d3", 60000)
     .start()
   ,
-  getTimer("trial_length")
+  getTimer("trial_length_d3")
       .test.ended()
       .success( end() )
   ,
@@ -2233,10 +2233,10 @@ PennController.Template("premiseD.image3.csv",
         .log( "target response", row.TargetResponse)
   );
 PennController.Template("premiseE.image3.csv",
-  newTimer("trial_length", 60000)
+  newTimer("trial_length_e3", 60000)
     .start()
   ,
-  getTimer("trial_length")
+  getTimer("trial_length_e3")
       .test.ended()
       .success( end() )
   ,
@@ -2340,10 +2340,10 @@ PennController.Template("premiseE.image3.csv",
         .log( "target response", row.TargetResponse)
   );
 PennController.Template("premiseA.image4.csv",
-  newTimer("trial_length", 60000)
+  newTimer("trial_length_a5", 60000)
     .start()
   ,
-  getTimer("trial_length")
+  getTimer("trial_length_a5")
       .test.ended()
       .success( end() )
   ,
@@ -2432,10 +2432,10 @@ PennController.Template("premiseA.image4.csv",
         .log( "target response", row.TargetResponse)
   );
 PennController.Template("premiseC.image4.csv",
-  newTimer("trial_length", 60000)
+  newTimer("trial_length_c5", 60000)
     .start()
   ,
-  getTimer("trial_length")
+  getTimer("trial_length_c5")
       .test.ended()
       .success( end() )
   ,
@@ -2524,10 +2524,10 @@ PennController.Template("premiseC.image4.csv",
         .log( "target response", row.TargetResponse)
   );
 PennController.Template("premiseD.image4.csv",
-  newTimer("trial_length", 60000)
+  newTimer("trial_length_d4", 60000)
     .start()
   ,
-  getTimer("trial_length")
+  getTimer("trial_length_d4")
       .test.ended()
       .success( end() )
   ,
@@ -2616,10 +2616,10 @@ PennController.Template("premiseD.image4.csv",
         .log( "target response", row.TargetResponse)
   );
 PennController.Template("premiseE.image4.csv",
-  newTimer("trial_length", 60000)
+  newTimer("trial_length_e4", 60000)
     .start()
   ,
-  getTimer("trial_length")
+  getTimer("trial_length_e4")
       .test.ended()
       .success( end() )
   ,
@@ -2708,10 +2708,10 @@ PennController.Template("premiseE.image4.csv",
         .log( "target response", row.TargetResponse)
   );
 PennController.Template("premiseA.image5.csv",
-  newTimer("trial_length", 60000)
+  newTimer("trial_length_a5", 60000)
     .start()
   ,
-  getTimer("trial_length")
+  getTimer("trial_length_a5")
       .test.ended()
       .success( end() )
   ,
@@ -2810,10 +2810,10 @@ PennController.Template("premiseA.image5.csv",
         .log( "target response", row.TargetResponse)
   );
 PennController.Template("premiseC.image5.csv",
-  newTimer("trial_length", 60000)
+  newTimer("trial_length_c5", 60000)
     .start()
   ,
-  getTimer("trial_length")
+  getTimer("trial_length_c5")
       .test.ended()
       .success( end() )
   ,
@@ -2912,10 +2912,10 @@ PennController.Template("premiseC.image5.csv",
         .log( "target response", row.TargetResponse)
   );
 PennController.Template("premiseD.image5.csv",
-  newTimer("trial_length", 60000)
+  newTimer("trial_length_d5", 60000)
     .start()
   ,
-  getTimer("trial_length")
+  getTimer("trial_length_d5")
       .test.ended()
       .success( end() )
   ,
@@ -3014,10 +3014,10 @@ PennController.Template("premiseD.image5.csv",
         .log( "target response", row.TargetResponse)
   );
 PennController.Template("premiseE.image5.csv",
-  newTimer("trial_length", 60000)
+  newTimer("trial_length_e5", 60000)
     .start()
   ,
-  getTimer("trial_length")
+  getTimer("trial_length_e5")
       .test.ended()
       .success( end() )
   ,
