@@ -361,7 +361,7 @@ PennController("practice1",
       .print()
     ,
     newAudio("practice1domain", "DentistRGY_NannyYR.mp3")
-      .play() // Immediately play the audio file
+      .play()
       .wait()
     ,
     newButton("ready", "Cliquer ici pour l'indice")
@@ -372,8 +372,8 @@ PennController("practice1",
     ,
           //ACTION: change this to french
     newAudio("practice1clue", "NannyYellow.mp3")
-      .play() // Immediately play the audio file
-      .wait() // Wait to display images until after audio file is finished
+      .play()
+      .wait()
     ,
     newImage("happy", "smile.png")
       .settings.size(96,96)
@@ -456,7 +456,7 @@ PennController("practice2",
       .print()
     ,
     newAudio("practice2domain", "DetectiveRGY_DentistRY.mp3")
-      .play() // Immediately play the audio file
+      .play()
       .wait()
     ,
     newButton("ready", "Cliquer ici pour l'indice")
@@ -467,8 +467,8 @@ PennController("practice2",
     ,
           //ACTION: change this to french
     newAudio("practice2clue", "DetectiveGreen.mp3")
-      .play() // Immediately play the audio file
-      .wait() // Wait to display images until after audio file is finished
+      .play()
+      .wait()
     ,
     newImage("happy", "smile.png")
       .settings.size(96,96)
@@ -556,7 +556,7 @@ PennController("practice3",
       .print()
     ,
     newAudio("practice3domain", "ReporterBYR_FiremanGR.mp3")
-      .play() // Immediately play the audio file
+      .play()
       .wait()
     ,
     newButton("ready", "Cliquer ici pour l'indice")
@@ -567,8 +567,8 @@ PennController("practice3",
     ,
           //ACTION: change this to french
     newAudio("practice3clue", "ReporterRed.mp3")
-      .play() // Immediately play the audio file
-      .wait() // Wait to display images until after audio file is finished
+      .play()
+      .wait()
     ,
     newImage("happy", "smile.png")
       .settings.size(96,96)
@@ -661,7 +661,7 @@ PennController("practice4",
       .print()
     ,
     newAudio("practice4domain", "NannyGRB_DetectiveYB.mp3")
-      .play() // Immediately play the audio file
+      .play()
       .wait()
     ,
     newButton("ready", "Cliquer ici pour l'indice")
@@ -672,8 +672,8 @@ PennController("practice4",
     ,
           //ACTION: change this to french
     newAudio("practice4clue", "NannyOrDetective.mp3")
-      .play() // Immediately play the audio file
-      .wait() // Wait to display images until after audio file is finished
+      .play()
+      .wait()
     ,
     newImage("happy", "smile.png")
       .settings.size(96,96)
@@ -761,7 +761,7 @@ PennController("practice5",
       .print()
     ,
     newAudio("practice5domain", "DentistYGB_FiremanRY.mp3")
-      .play() // Immediately play the audio file
+      .play()
       .wait()
     ,
     newButton("ready", "Cliquer ici pour l'indice")
@@ -772,8 +772,8 @@ PennController("practice5",
     ,
           //ACTION: change this to french
     newAudio("practice5clue", "DentistOrFireman.mp3")
-      .play() // Immediately play the audio file
-      .wait() // Wait to display images until after audio file is finished
+      .play()
+      .wait()
     ,
     newImage("happy", "smile.png")
       .settings.size(96,96)
@@ -856,7 +856,7 @@ PennController("practice6",
       .print()
     ,
     newAudio("practice6domain", "ReporterGBY_NannyRB.mp3")
-      .play() // Immediately play the audio file
+      .play()
       .wait()
     ,
     newButton("ready", "Cliquer ici pour l'indice")
@@ -867,8 +867,8 @@ PennController("practice6",
     ,
           //ACTION: change this to french
     newAudio("practice6clue", "ReporterGreen_AlsoNannyRed.mp3")
-      .play() // Immediately play the audio file
-      .wait() // Wait to display images until after audio file is finished
+      .play()
+      .wait()
     ,
     newImage("happy", "smile.png")
       .settings.size(96,96)
@@ -928,6 +928,9 @@ PennController.Template("premiseA.image1.csv",
         newTimer("trial_length.a1", 60000)
           .start()
         ,
+        newButton("timeout", "Continuer")
+          .settings.center()
+        ,
         newImage("domainImage1", row.domainImage1)
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
@@ -958,12 +961,8 @@ PennController.Template("premiseA.image1.csv",
           .print()
         ,
         newAudio("domain sentence", row.DomainIntro)
-          .play() // Immediately play the audio file
+          .play()
           .wait()
-        ,
-        getTimer("trial_length.a1")
-          .test.ended()
-          .success( end() )
         ,
         newButton("ready", "Cliquer ici pour l'indice")
             .settings.center()
@@ -972,8 +971,8 @@ PennController.Template("premiseA.image1.csv",
             .remove()
         ,
         newAudio("test sentence", row.Premises)
-          .play() // Immediately play the audio file
-          .wait() // Wait to display images until after audio file is finished
+          .play()
+          .wait()
         ,
         newImage("happy", "smile.png")
           .settings.size(96,96)
@@ -1002,6 +1001,10 @@ PennController.Template("premiseA.image1.csv",
           .settings.add( getImage("happy") , getImage("sad") )
           .settings.log()
           .wait()
+        ,
+        getTimer("trial_length.a1")
+          .test.ended()
+          .success( getButton("timeout").print().wait() )
     )
         .log( "item type" , row.Item)
         .log( "group", row.Group)
@@ -1057,8 +1060,7 @@ PennController.Template("premiseC.image1.csv",
           .print()
         ,
         newAudio("domain sentence", row.DomainIntro)
-    .settings.log()
-          .play() // Immediately play the audio file
+          .play()
           .wait()
         ,
         newButton("ready", "Cliquer ici pour l'indice")
@@ -1068,9 +1070,8 @@ PennController.Template("premiseC.image1.csv",
             .remove()
         ,
         newAudio("test sentence", row.Premises)
-    .settings.log()
-          .play() // Immediately play the audio file
-          .wait() // Wait to display images until after audio file is finished
+          .play()
+          .wait()
         ,
         newImage("happy", "smile.png")
           .settings.size(96,96)
@@ -1154,8 +1155,7 @@ PennController.Template("premiseD.image1.csv",
           .print()
         ,
         newAudio("domain sentence", row.DomainIntro)
-          .settings.log()
-          .play() // Immediately play the audio file
+          .play()
           .wait()
         ,
         newButton("ready", "Cliquer ici pour l'indice")
@@ -1165,9 +1165,8 @@ PennController.Template("premiseD.image1.csv",
             .remove()
         ,
         newAudio("test sentence", row.Premises)
-          .settings.log()
-          .play() // Immediately play the audio file
-          .wait() // Wait to display images until after audio file is finished
+          .play()
+          .wait()
         ,
         newImage("happy", "smile.png")
           .settings.size(96,96)
@@ -1251,8 +1250,7 @@ PennController.Template("premiseE.image1.csv",
           .print()
         ,
         newAudio("domain sentence", row.DomainIntro)
-          .settings.log()
-          .play() // Immediately play the audio file
+          .play()
           .wait()
         ,
         newButton("ready", "Cliquer ici pour l'indice")
@@ -1262,9 +1260,8 @@ PennController.Template("premiseE.image1.csv",
             .remove()
         ,
         newAudio("test sentence", row.Premises)
-          .settings.log()
-          .play() // Immediately play the audio file
-          .wait() // Wait to display images until after audio file is finished
+          .play()
+          .wait()
         ,
         newImage("happy", "smile.png")
           .settings.size(96,96)
@@ -1348,8 +1345,7 @@ PennController.Template("premiseA.image2.csv",
           .print()
         ,
         newAudio("domain sentence", row.DomainIntro)
-          .settings.log()
-          .play() // Immediately play the audio file
+          .play()
           .wait()
         ,
         newButton("ready", "Cliquer ici pour l'indice")
@@ -1359,9 +1355,8 @@ PennController.Template("premiseA.image2.csv",
             .remove()
         ,
         newAudio("test sentence", row.Premises)
-          .settings.log()
-          .play() // Immediately play the audio file
-          .wait() // Wait to display images until after audio file is finished
+          .play()
+          .wait()
         ,
         newImage("happy", "smile.png")
           .settings.size(96,96)
@@ -1445,8 +1440,7 @@ PennController.Template("premiseC.image2.csv",
           .print()
         ,
         newAudio("domain sentence", row.DomainIntro)
-          .settings.log()
-          .play() // Immediately play the audio file
+          .play()
           .wait()
         ,
         newButton("ready", "Cliquer ici pour l'indice")
@@ -1456,9 +1450,8 @@ PennController.Template("premiseC.image2.csv",
             .remove()
         ,
         newAudio("test sentence", row.Premises)
-          .settings.log()
-          .play() // Immediately play the audio file
-          .wait() // Wait to display images until after audio file is finished
+          .play()
+          .wait()
         ,
         newImage("happy", "smile.png")
           .settings.size(96,96)
@@ -1542,8 +1535,7 @@ PennController.Template("premiseD.image2.csv",
           .print()
         ,
         newAudio("domain sentence", row.DomainIntro)
-          .settings.log()
-          .play() // Immediately play the audio file
+          .play()
           .wait()
         ,
         newButton("ready", "Cliquer ici pour l'indice")
@@ -1553,9 +1545,8 @@ PennController.Template("premiseD.image2.csv",
             .remove()
         ,
         newAudio("test sentence", row.Premises)
-          .settings.log()
-          .play() // Immediately play the audio file
-          .wait() // Wait to display images until after audio file is finished
+          .play()
+          .wait()
         ,
         newImage("happy", "smile.png")
           .settings.size(96,96)
@@ -1639,8 +1630,7 @@ PennController.Template("premiseE.image2.csv",
           .print()
         ,
         newAudio("domain sentence", row.DomainIntro)
-          .settings.log()
-          .play() // Immediately play the audio file
+          .play()
           .wait()
         ,
         newButton("ready", "Cliquer ici pour l'indice")
@@ -1650,9 +1640,8 @@ PennController.Template("premiseE.image2.csv",
             .remove()
         ,
         newAudio("test sentence", row.Premises)
-          .settings.log()
-          .play() // Immediately play the audio file
-          .wait() // Wait to display images until after audio file is finished
+          .play()
+          .wait()
         ,
         newImage("happy", "smile.png")
           .settings.size(96,96)
@@ -1736,8 +1725,7 @@ PennController.Template("premiseA.image3.csv",
           .print()
         ,
         newAudio("domain sentence", row.DomainIntro)
-          .settings.log()
-          .play() // Immediately play the audio file
+          .play()
           .wait()
         ,
         newButton("ready", "Cliquer ici pour l'indice")
@@ -1747,9 +1735,8 @@ PennController.Template("premiseA.image3.csv",
             .remove()
         ,
         newAudio("test sentence", row.Premises)
-          .settings.log()
-          .play() // Immediately play the audio file
-          .wait() // Wait to display images until after audio file is finished
+          .play()
+          .wait()
         ,
         newImage("happy", "smile.png")
           .settings.size(96,96)
@@ -1843,8 +1830,7 @@ PennController.Template("premiseB.image3.12of4.csv",
           .print()
         ,
         newAudio("domain sentence", row.DomainIntro)
-          .settings.log()
-          .play() // Immediately play the audio file
+          .play()
           .wait()
         ,
         newButton("ready", "Cliquer ici pour l'indice")
@@ -1854,9 +1840,8 @@ PennController.Template("premiseB.image3.12of4.csv",
             .remove()
         ,
         newAudio("test sentence", row.Premises)
-          .settings.log()
-          .play() // Immediately play the audio file
-          .wait() // Wait to display images until after audio file is finished
+          .play()
+          .wait()
         ,
         newImage("happy", "smile.png")
           .settings.size(96,96)
@@ -1950,8 +1935,7 @@ PennController.Template("premiseB.image3.34of4.csv",
           .print()
         ,
         newAudio("domain sentence", row.DomainIntro)
-          .settings.log()
-          .play() // Immediately play the audio file
+          .play()
           .wait()
         ,
         newButton("ready", "Cliquer ici pour l'indice")
@@ -1961,9 +1945,8 @@ PennController.Template("premiseB.image3.34of4.csv",
             .remove()
         ,
         newAudio("test sentence", row.Premises)
-          .settings.log()
-          .play() // Immediately play the audio file
-          .wait() // Wait to display images until after audio file is finished
+          .play()
+          .wait()
         ,
         newImage("happy", "smile.png")
           .settings.size(96,96)
@@ -2057,8 +2040,7 @@ PennController.Template("premiseC.image3.csv",
           .print()
         ,
         newAudio("domain sentence", row.DomainIntro)
-          .settings.log()
-          .play() // Immediately play the audio file
+          .play()
           .wait()
         ,
         newButton("ready", "Cliquer ici pour l'indice")
@@ -2068,9 +2050,8 @@ PennController.Template("premiseC.image3.csv",
             .remove()
         ,
         newAudio("test sentence", row.Premises)
-          .settings.log()
-          .play() // Immediately play the audio file
-          .wait() // Wait to display images until after audio file is finished
+          .play()
+          .wait()
         ,
         newImage("happy", "smile.png")
           .settings.size(96,96)
@@ -2164,8 +2145,7 @@ PennController.Template("premiseD.image3.csv",
           .print()
         ,
         newAudio("domain sentence", row.DomainIntro)
-          .settings.log()
-          .play() // Immediately play the audio file
+          .play()
           .wait()
         ,
         newButton("ready", "Cliquer ici pour l'indice")
@@ -2175,9 +2155,8 @@ PennController.Template("premiseD.image3.csv",
             .remove()
         ,
         newAudio("test sentence", row.Premises)
-          .settings.log()
-          .play() // Immediately play the audio file
-          .wait() // Wait to display images until after audio file is finished
+          .play()
+          .wait()
         ,
         newImage("happy", "smile.png")
           .settings.size(96,96)
@@ -2271,8 +2250,7 @@ PennController.Template("premiseE.image3.csv",
           .print()
         ,
         newAudio("domain sentence", row.DomainIntro)
-          .settings.log()
-          .play() // Immediately play the audio file
+          .play()
           .wait()
         ,
         newButton("ready", "Cliquer ici pour l'indice")
@@ -2282,9 +2260,8 @@ PennController.Template("premiseE.image3.csv",
             .remove()
         ,
         newAudio("test sentence", row.Premises)
-          .settings.log()
-          .play() // Immediately play the audio file
-          .wait() // Wait to display images until after audio file is finished
+          .play()
+          .wait()
         ,
         newImage("happy", "smile.png")
           .settings.size(96,96)
@@ -2378,8 +2355,7 @@ PennController.Template("premiseA.image4.csv",
           .print()
         ,
         newAudio("domain sentence", row.DomainIntro)
-          .settings.log()
-          .play() // Immediately play the audio file
+          .play()
           .wait()
         ,
         newButton("ready", "Cliquer ici pour l'indice")
@@ -2389,9 +2365,8 @@ PennController.Template("premiseA.image4.csv",
             .remove()
         ,
         newAudio("test sentence", row.Premises)
-          .settings.log()
-          .play() // Immediately play the audio file
-          .wait() // Wait to display images until after audio file is finished
+          .play()
+          .wait()
         ,
         newImage("happy", "smile.png")
           .settings.size(96,96)
@@ -2470,8 +2445,7 @@ PennController.Template("premiseC.image4.csv",
           .print()
         ,
         newAudio("domain sentence", row.DomainIntro)
-          .settings.log()
-          .play() // Immediately play the audio file
+          .play()
           .wait()
         ,
         newButton("ready", "Cliquer ici pour l'indice")
@@ -2481,9 +2455,8 @@ PennController.Template("premiseC.image4.csv",
             .remove()
         ,
         newAudio("test sentence", row.Premises)
-          .settings.log()
-          .play() // Immediately play the audio file
-          .wait() // Wait to display images until after audio file is finished
+          .play()
+          .wait()
         ,
         newImage("happy", "smile.png")
           .settings.size(96,96)
@@ -2562,8 +2535,7 @@ PennController.Template("premiseD.image4.csv",
           .print()
         ,
         newAudio("domain sentence", row.DomainIntro)
-          .settings.log()
-          .play() // Immediately play the audio file
+          .play()
           .wait()
         ,
         newButton("ready", "Cliquer ici pour l'indice")
@@ -2573,9 +2545,8 @@ PennController.Template("premiseD.image4.csv",
             .remove()
         ,
         newAudio("test sentence", row.Premises)
-          .settings.log()
-          .play() // Immediately play the audio file
-          .wait() // Wait to display images until after audio file is finished
+          .play()
+          .wait()
         ,
         newImage("happy", "smile.png")
           .settings.size(96,96)
@@ -2654,8 +2625,7 @@ PennController.Template("premiseE.image4.csv",
           .print()
         ,
         newAudio("domain sentence", row.DomainIntro)
-          .settings.log()
-          .play() // Immediately play the audio file
+          .play()
           .wait()
         ,
         newButton("ready", "Cliquer ici pour l'indice")
@@ -2665,9 +2635,8 @@ PennController.Template("premiseE.image4.csv",
             .remove()
         ,
         newAudio("test sentence", row.Premises)
-          .settings.log()
-          .play() // Immediately play the audio file
-          .wait() // Wait to display images until after audio file is finished
+          .play()
+          .wait()
         ,
         newImage("happy", "smile.png")
           .settings.size(96,96)
@@ -2746,8 +2715,7 @@ PennController.Template("premiseA.image5.csv",
           .print()
         ,
         newAudio("domain sentence", row.DomainIntro)
-          .settings.log()
-          .play() // Immediately play the audio file
+          .play()
           .wait()
         ,
         newButton("ready", "Cliquer ici pour l'indice")
@@ -2757,9 +2725,8 @@ PennController.Template("premiseA.image5.csv",
             .remove()
         ,
         newAudio("test sentence", row.Premises)
-          .settings.log()
-          .play() // Immediately play the audio file
-          .wait() // Wait to display images until after audio file is finished
+          .play()
+          .wait()
         ,
         newImage("happy", "smile.png")
           .settings.size(96,96)
@@ -2848,8 +2815,7 @@ PennController.Template("premiseC.image5.csv",
           .print()
         ,
         newAudio("domain sentence", row.DomainIntro)
-          .settings.log()
-          .play() // Immediately play the audio file
+          .play()
           .wait()
         ,
         newButton("ready", "Cliquer ici pour l'indice")
@@ -2859,9 +2825,8 @@ PennController.Template("premiseC.image5.csv",
             .remove()
         ,
         newAudio("test sentence", row.Premises)
-          .settings.log()
-          .play() // Immediately play the audio file
-          .wait() // Wait to display images until after audio file is finished
+          .play()
+          .wait()
         ,
         newImage("happy", "smile.png")
           .settings.size(96,96)
@@ -2950,8 +2915,7 @@ PennController.Template("premiseD.image5.csv",
           .print()
         ,
         newAudio("domain sentence", row.DomainIntro)
-          .settings.log()
-          .play() // Immediately play the audio file
+          .play()
           .wait()
         ,
         newButton("ready", "Cliquer ici pour l'indice")
@@ -2961,9 +2925,8 @@ PennController.Template("premiseD.image5.csv",
             .remove()
         ,
         newAudio("test sentence", row.Premises)
-          .settings.log()
-          .play() // Immediately play the audio file
-          .wait() // Wait to display images until after audio file is finished
+          .play()
+          .wait()
         ,
         newImage("happy", "smile.png")
           .settings.size(96,96)
@@ -3052,8 +3015,7 @@ PennController.Template("premiseE.image5.csv",
           .print()
         ,
         newAudio("domain sentence", row.DomainIntro)
-          .settings.log()
-          .play() // Immediately play the audio file
+          .play()
           .wait()
         ,
         newButton("ready", "Cliquer ici pour l'indice")
@@ -3063,9 +3025,8 @@ PennController.Template("premiseE.image5.csv",
             .remove()
         ,
         newAudio("test sentence", row.Premises)
-          .settings.log()
-          .play() // Immediately play the audio file
-          .wait() // Wait to display images until after audio file is finished
+          .play()
+          .wait()
         ,
         newImage("happy", "smile.png")
           .settings.size(96,96)
