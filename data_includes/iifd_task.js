@@ -4,7 +4,7 @@
 
 
 PennController.ResetPrefix(null);
-
+PennController.SetCounter();
 // PennController.PreloadZip("https://web-risc.ens.fr/~rdudley/public_html/iifd/judgment/cards/audiofiles.zip");
 // PennController.PreloadZip("https://web-risc.ens.fr/~rdudley/public_html/iifd/judgment/cards/imagefiles.zip");
 
