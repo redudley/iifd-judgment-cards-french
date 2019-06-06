@@ -36,7 +36,6 @@ PennController.Sequence( "welcome", "intro1", "intro2", "intro3","intro4","intro
                            "trialA2",
                            "trialC4"), "intro12", "subject_info", "send"
 );
-PennController.CheckPreloaded();
 PennController.SendResults( "send" );
 PennController( "subject_info" ,
     newTextInput( "name" , "ton prenom")
@@ -419,9 +418,9 @@ PennController("practice1",
     newButton("timeout", "Continuer")
         .settings.center()
     ,
-    getTimer("trial_length")
-      .test.ended()
-      .success( getButton("timeout").print())
+    //getTimer("trial_length")
+      //.test.ended()
+      //.success( getButton("timeout").print())
 );
 PennController("practice2",
     newTimer("trial_length", 60000)
@@ -522,9 +521,9 @@ PennController("practice2",
     newButton("timeout", "Continuer")
         .settings.center()
     ,
-    getTimer("trial_length")
-      .test.ended()
-      .success( getButton("timeout").print())
+    //getTimer("trial_length")
+      //.test.ended()
+      //.success( getButton("timeout").print())
 );
 PennController("practice3",
     newTimer("trial_length", 60000)
@@ -630,9 +629,9 @@ PennController("practice3",
     newButton("timeout", "Continuer")
         .settings.center()
     ,
-    getTimer("trial_length")
-      .test.ended()
-      .success( getButton("timeout").print())
+    //getTimer("trial_length")
+      //.test.ended()
+      //.success( getButton("timeout").print())
 );
 PennController("practice4",
     newTimer("trial_length", 60000)
@@ -733,9 +732,9 @@ PennController("practice4",
     newButton("timeout", "Continuer")
         .settings.center()
     ,
-    getTimer("trial_length")
-      .test.ended()
-      .success( getButton("timeout").print())
+    //getTimer("trial_length")
+      //.test.ended()
+      //.success( getButton("timeout").print())
 );
 PennController("practice5",
     newTimer("trial_length", 60000)
@@ -831,9 +830,9 @@ PennController("practice5",
     newButton("timeout", "Continuer")
         .settings.center()
     ,
-    getTimer("trial_length")
-      .test.ended()
-      .success( getButton("timeout").print())
+    //getTimer("trial_length")
+      //.test.ended()
+      //.success( getButton("timeout").print())
 );
 PennController("practice6",
     newTimer("trial_length", 60000)
@@ -939,9 +938,9 @@ PennController("practice6",
     newButton("timeout", "Continuer")
         .settings.center()
     ,
-    getTimer("trial_length")
-      .test.ended()
-      .success( getButton("timeout").print())
+    //getTimer("trial_length")
+      //.test.ended()
+      //.success( getButton("timeout").print())
 );
 PennController.Template("premiseA.image1.csv",
   newTimer("trial_length", 60000)
@@ -1022,9 +1021,9 @@ PennController.Template("premiseA.image1.csv",
       newButton("timeout", "Continuer")
           .settings.center()
       ,
-      getTimer("trial_length")
-        .test.ended()
-        .success( getButton("timeout").print())
+      //getTimer("trial_length")
+        //.test.ended()
+        //.success( getButton("timeout").print())
     )
         .log( "Item" , row.Item)
         .log( "Group", row.Group)
@@ -1122,9 +1121,9 @@ PennController.Template("premiseC.image1.csv",
         newButton("timeout", "Continuer")
             .settings.center()
         ,
-        getTimer("trial_length")
-          .test.ended()
-          .success( getButton("timeout").print())
+        //getTimer("trial_length")
+          //.test.ended()
+          //.success( getButton("timeout").print())
     )
         .log( "Item" , row.Item)
         .log( "Group", row.Group)
@@ -1222,9 +1221,9 @@ PennController.Template("premiseD.image1.csv",
         newButton("timeout", "Continuer")
             .settings.center()
         ,
-        getTimer("trial_length")
-          .test.ended()
-          .success( getButton("timeout").print())
+        //getTimer("trial_length")
+          //.test.ended()
+          //.success( getButton("timeout").print())
     )
         .log( "Item" , row.Item)
         .log( "Group", row.Group)
@@ -1322,9 +1321,9 @@ PennController.Template("premiseE.image1.csv",
         newButton("timeout", "Continuer")
             .settings.center()
         ,
-        getTimer("trial_length")
-          .test.ended()
-          .success( getButton("timeout").print())
+        //getTimer("trial_length")
+          //.test.ended()
+          //.success( getButton("timeout").print())
     )
         .log( "Item" , row.Item)
         .log( "Group", row.Group)
@@ -1422,9 +1421,9 @@ PennController.Template("premiseA.image2.csv",
         newButton("timeout", "Continuer")
             .settings.center()
         ,
-        getTimer("trial_length")
-          .test.ended()
-          .success( getButton("timeout").print())
+        //getTimer("trial_length")
+          //.test.ended()
+          //.success( getButton("timeout").print())
     )
         .log( "Item" , row.Item)
         .log( "Group", row.Group)
@@ -1522,9 +1521,9 @@ PennController.Template("premiseC.image2.csv",
         newButton("timeout", "Continuer")
             .settings.center()
         ,
-        getTimer("trial_length")
-          .test.ended()
-          .success( getButton("timeout").print())
+        //getTimer("trial_length")
+          //.test.ended()
+          //.success( getButton("timeout").print())
     )
         .log( "Item" , row.Item)
         .log( "Group", row.Group)
@@ -1622,9 +1621,9 @@ PennController.Template("premiseD.image2.csv",
         newButton("timeout", "Continuer")
             .settings.center()
         ,
-        getTimer("trial_length")
-          .test.ended()
-          .success( getButton("timeout").print())
+        //getTimer("trial_length")
+          //.test.ended()
+          //.success( getButton("timeout").print())
     )
         .log( "Item" , row.Item)
         .log( "Group", row.Group)
@@ -1722,9 +1721,9 @@ PennController.Template("premiseE.image2.csv",
         newButton("timeout", "Continuer")
             .settings.center()
         ,
-        getTimer("trial_length")
-          .test.ended()
-          .success( getButton("timeout").print())
+        //getTimer("trial_length")
+          //.test.ended()
+          //.success( getButton("timeout").print())
     )
         .log( "Item" , row.Item)
         .log( "Group", row.Group)
@@ -1830,9 +1829,9 @@ PennController.Template("premiseA.image3.csv",
         newButton("timeout", "Continuer")
             .settings.center()
         ,
-        getTimer("trial_length")
-          .test.ended()
-          .success( getButton("timeout").print())
+        //getTimer("trial_length")
+          //.test.ended()
+          //.success( getButton("timeout").print())
     )
         .log( "Item" , row.Item)
         .log( "Group", row.Group)
@@ -1940,9 +1939,9 @@ PennController.Template("premiseB.image3.12of4.csv",
         newButton("timeout", "Continuer")
             .settings.center()
         ,
-        getTimer("trial_length")
-          .test.ended()
-          .success( getButton("timeout").print())
+        //getTimer("trial_length")
+          //.test.ended()
+          //.success( getButton("timeout").print())
     )
         .log( "Item" , row.Item)
         .log( "Group", row.Group)
@@ -2050,9 +2049,9 @@ PennController.Template("premiseB.image3.34of4.csv",
         newButton("timeout", "Continuer")
             .settings.center()
         ,
-        getTimer("trial_length")
-          .test.ended()
-          .success( getButton("timeout").print())
+        //getTimer("trial_length")
+          //.test.ended()
+          //.success( getButton("timeout").print())
     )
         .log( "Item" , row.Item)
         .log( "Group", row.Group)
@@ -2160,9 +2159,9 @@ PennController.Template("premiseC.image3.csv",
         newButton("timeout", "Continuer")
             .settings.center()
         ,
-        getTimer("trial_length")
-          .test.ended()
-          .success( getButton("timeout").print())
+        //getTimer("trial_length")
+          //.test.ended()
+          //.success( getButton("timeout").print())
     )
         .log( "Item" , row.Item)
         .log( "Group", row.Group)
@@ -2270,9 +2269,9 @@ PennController.Template("premiseD.image3.csv",
         newButton("timeout", "Continuer")
             .settings.center()
         ,
-        getTimer("trial_length")
-          .test.ended()
-          .success( getButton("timeout").print())
+        //getTimer("trial_length")
+          //.test.ended()
+          //.success( getButton("timeout").print())
     )
         .log( "Item" , row.Item)
         .log( "Group", row.Group)
@@ -2380,9 +2379,9 @@ PennController.Template("premiseE.image3.csv",
         newButton("timeout", "Continuer")
             .settings.center()
         ,
-        getTimer("trial_length")
-          .test.ended()
-          .success( getButton("timeout").print())
+        //getTimer("trial_length")
+          //.test.ended()
+          //.success( getButton("timeout").print())
     )
         .log( "Item" , row.Item)
         .log( "Group", row.Group)
@@ -2478,9 +2477,9 @@ PennController.Template("premiseA.image4.csv",
         newButton("timeout", "Continuer")
             .settings.center()
         ,
-        getTimer("trial_length")
-          .test.ended()
-          .success( getButton("timeout").print())
+        //getTimer("trial_length")
+          //.test.ended()
+          //.success( getButton("timeout").print())
     )
         .log( "Item" , row.Item)
         .log( "Group", row.Group)
@@ -2573,9 +2572,9 @@ PennController.Template("premiseC.image4.csv",
         newButton("timeout", "Continuer")
             .settings.center()
         ,
-        getTimer("trial_length")
-          .test.ended()
-          .success( getButton("timeout").print())
+        //getTimer("trial_length")
+          //.test.ended()
+          //.success( getButton("timeout").print())
     )
         .log( "Item" , row.Item)
         .log( "Group", row.Group)
@@ -2668,9 +2667,9 @@ PennController.Template("premiseD.image4.csv",
         newButton("timeout", "Continuer")
             .settings.center()
         ,
-        getTimer("trial_length")
-          .test.ended()
-          .success( getButton("timeout").print())
+        //getTimer("trial_length")
+          //.test.ended()
+          //.success( getButton("timeout").print())
     )
         .log( "Item" , row.Item)
         .log( "Group", row.Group)
@@ -2763,9 +2762,9 @@ PennController.Template("premiseE.image4.csv",
         newButton("timeout", "Continuer")
             .settings.center()
         ,
-        getTimer("trial_length")
-          .test.ended()
-          .success( getButton("timeout").print())
+        //getTimer("trial_length")
+          //.test.ended()
+          //.success( getButton("timeout").print())
     )
         .log( "Item" , row.Item)
         .log( "Group", row.Group)
@@ -2866,9 +2865,9 @@ PennController.Template("premiseA.image5.csv",
         newButton("timeout", "Continuer")
             .settings.center()
         ,
-        getTimer("trial_length")
-          .test.ended()
-          .success( getButton("timeout").print())
+        //getTimer("trial_length")
+          //.test.ended()
+          //.success( getButton("timeout").print())
     )
         .log( "Item" , row.Item)
         .log( "Group", row.Group)
@@ -2971,9 +2970,9 @@ PennController.Template("premiseC.image5.csv",
         newButton("timeout", "Continuer")
             .settings.center()
         ,
-        getTimer("trial_length")
-          .test.ended()
-          .success( getButton("timeout").print())
+        //getTimer("trial_length")
+          //.test.ended()
+          //.success( getButton("timeout").print())
     )
         .log( "Item" , row.Item)
         .log( "Group", row.Group)
@@ -3076,9 +3075,9 @@ PennController.Template("premiseD.image5.csv",
         newButton("timeout", "Continuer")
             .settings.center()
         ,
-        getTimer("trial_length")
-          .test.ended()
-          .success( getButton("timeout").print())
+        //getTimer("trial_length")
+          //.test.ended()
+          //.success( getButton("timeout").print())
     )
         .log( "Item" , row.Item)
         .log( "Group", row.Group)
@@ -3181,9 +3180,9 @@ PennController.Template("premiseE.image5.csv",
         newButton("timeout", "Continuer")
             .settings.center()
         ,
-        getTimer("trial_length")
-          .test.ended()
-          .success( getButton("timeout").print())
+        //getTimer("trial_length")
+          //.test.ended()
+          //.success( getButton("timeout").print())
     )
         .log( "Item" , row.Item)
         .log( "Group", row.Group)
