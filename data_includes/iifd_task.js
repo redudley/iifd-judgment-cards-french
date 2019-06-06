@@ -1,7 +1,4 @@
-PennController("practice4",
-    newTimer("trial_length", 60000)
-      .start()
-    ,// Include this line at the top of your scripts
+// Include this line at the top of your scripts
 // See the documentation for more information:
 // 		https://lab.florianschwarz.net/PennController/wiki/documentation/
 
