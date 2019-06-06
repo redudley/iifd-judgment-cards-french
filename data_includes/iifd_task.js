@@ -5,7 +5,9 @@
 
 PennController.ResetPrefix(null);
 
-PennController.PreloadZip("https://web-risc.ens.fr/~rdudley/public_html/iifd/judgment/cards/zipped.zip");
+PennController.PreloadZip("https://web-risc.ens.fr/~rdudley/public_html/iifd/judgment/cards/audiofiles.zip");
+PennController.PreloadZip("https://web-risc.ens.fr/~rdudley/public_html/iifd/judgment/cards/imagefiles.zip");
+
 
 //PennController.AddHost("http://web-risc.ens.fr/~rdudley/iifd/judgment/");
           //ACTION: make sure files can be acquired in zipped version
@@ -34,6 +36,7 @@ PennController.Sequence( "welcome", "intro1", "intro2", "intro3","intro4","intro
                            "trialA2",
                            "trialC4"), "intro12", "subject_info", "send"
 );
+PennController.CheckPreloaded();
 PennController.SendResults( "send" );
 PennController( "subject_info" ,
     newTextInput( "name" , "ton prenom")
