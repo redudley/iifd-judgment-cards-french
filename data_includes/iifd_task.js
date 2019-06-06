@@ -12,26 +12,26 @@ PennController.ResetPrefix(null);
 PennController.AddHost("http://web-risc.ens.fr/~rdudley/iifd/judgment/");
 PennController.Sequence( "counter","welcome",//"intro1", "intro2", "intro3","intro4","intro5", "intro6","intro8", "intro9", "intro10","intro7", "practice1", "practice2", "practice3", "practice4", "practice5", "practice6", "intro11",
                   rshuffle("trialE5",
-                           "trialC5",
-                           "trialD3",
-                           "trialD1",
-                           "trialA4",
-                           "trialB3-b",
-                           "trialA3",
-                           "trialE2",
-                           "trialA5",
+                           // "trialC5",
+                           // "trialD3",
+                           // "trialD1",
+                           // "trialA4",
+                           // "trialB3-b",
+                           // "trialA3",
+                           // "trialE2",
+                           // "trialA5",
                            "trialA1",
-                           "trialC3",
-                           "trialE3",
-                           "trialE1",
-                           "trialD5",
-                           "trialC1",
-                           "trialB3-a",
-                           "trialC2",
-                           "trialE4",
-                           "trialD4",
-                           "trialD2",
-                           "trialA2",
+                           // "trialC3",
+                           // "trialE3",
+                           // "trialE1",
+                           // "trialD5",
+                           // "trialC1",
+                           // "trialB3-a",
+                           // "trialC2",
+                           // "trialE4",
+                           // "trialD4",
+                           // "trialD2",
+                           // "trialA2",
                            "trialC4"), "intro12", "subject_info", "send"
 );
 PennController.SetCounter("counter");
@@ -928,10 +928,6 @@ PennController.Template("premiseA.image1.csv",
         newTimer("trial_length.a1", 60000)
           .start()
         ,
-        getTimer("trial_length.a1")
-            .test.ended()
-            .success( end() )
-        ,
         newImage("domainImage1", row.domainImage1)
           .settings.size(96,120)
           .settings.css("border", "solid 1px black")
@@ -964,6 +960,10 @@ PennController.Template("premiseA.image1.csv",
         newAudio("domain sentence", row.DomainIntro)
           .play() // Immediately play the audio file
           .wait()
+        ,
+        getTimer("trial_length.a1")
+          .test.ended()
+          .success( end() )
         ,
         newButton("ready", "Cliquer ici pour l'indice")
             .settings.center()
