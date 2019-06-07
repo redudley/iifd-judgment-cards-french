@@ -939,12 +939,15 @@ PennController.Template("premiseA.image1.csv",
           .settings.size(96,96)
         ,
         newImage("judgmentImage1", row.judgmentImage1)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newImage("judgmentImage2", row.judgmentImage2)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newImage("judgmentImage3", row.judgmentImage3)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newCanvas("judgment", 596, 220)
@@ -1028,12 +1031,15 @@ PennController.Template("premiseC.image1.csv",
           .settings.size(96,96)
         ,
         newImage("judgmentImage1", row.judgmentImage1)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newImage("judgmentImage2", row.judgmentImage2)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newImage("judgmentImage3", row.judgmentImage3)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newCanvas("judgment", 596, 220)
@@ -1117,12 +1123,15 @@ PennController.Template("premiseD.image1.csv",
           .settings.size(96,96)
         ,
         newImage("judgmentImage1", row.judgmentImage1)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newImage("judgmentImage2", row.judgmentImage2)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newImage("judgmentImage3", row.judgmentImage3)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newCanvas("judgment", 596, 220)
@@ -1206,12 +1215,15 @@ PennController.Template("premiseE.image1.csv",
           .settings.size(96,96)
         ,
         newImage("judgmentImage1", row.judgmentImage1)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newImage("judgmentImage2", row.judgmentImage2)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newImage("judgmentImage3", row.judgmentImage3)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newCanvas("judgment", 596, 220)
@@ -1295,12 +1307,15 @@ PennController.Template("premiseA.image2.csv",
           .settings.size(96,96)
         ,
         newImage("judgmentImage1", row.judgmentImage1)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newImage("judgmentImage2", row.judgmentImage2)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newImage("judgmentImage3", row.judgmentImage3)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newCanvas("judgment", 596, 220)
@@ -1384,12 +1399,15 @@ PennController.Template("premiseC.image2.csv",
           .settings.size(96,96)
         ,
         newImage("judgmentImage1", row.judgmentImage1)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newImage("judgmentImage2", row.judgmentImage2)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newImage("judgmentImage3", row.judgmentImage3)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newCanvas("judgment", 596, 220)
@@ -1473,12 +1491,15 @@ PennController.Template("premiseD.image2.csv",
           .settings.size(96,96)
         ,
         newImage("judgmentImage1", row.judgmentImage1)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newImage("judgmentImage2", row.judgmentImage2)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newImage("judgmentImage3", row.judgmentImage3)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newCanvas("judgment", 596, 220)
@@ -1562,12 +1583,15 @@ PennController.Template("premiseE.image2.csv",
           .settings.size(96,96)
         ,
         newImage("judgmentImage1", row.judgmentImage1)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newImage("judgmentImage2", row.judgmentImage2)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newImage("judgmentImage3", row.judgmentImage3)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newCanvas("judgment", 596, 220)
@@ -1651,18 +1675,23 @@ PennController.Template("premiseA.image3.csv",
           .settings.size(96,96)
         ,
         newImage("judgmentImage1", row.judgmentImage1)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newImage("judgmentImage2", row.judgmentImage2)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newImage("judgmentImage3", row.judgmentImage3)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newImage("judgmentImage4", row.judgmentImage4)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newImage("judgmentImage5", row.judgmentImage5)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newCanvas("judgment", 596, 220)
@@ -1750,18 +1779,23 @@ PennController.Template("premiseB.image3.12of4.csv",
           .settings.size(96,96)
         ,
         newImage("judgmentImage1", row.judgmentImage1)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newImage("judgmentImage2", row.judgmentImage2)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newImage("judgmentImage3", row.judgmentImage3)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newImage("judgmentImage4", row.judgmentImage4)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newImage("judgmentImage5", row.judgmentImage5)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newCanvas("judgment", 596, 220)
@@ -1849,18 +1883,23 @@ PennController.Template("premiseB.image3.34of4.csv",
           .settings.size(96,96)
         ,
         newImage("judgmentImage1", row.judgmentImage1)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newImage("judgmentImage2", row.judgmentImage2)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newImage("judgmentImage3", row.judgmentImage3)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newImage("judgmentImage4", row.judgmentImage4)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newImage("judgmentImage5", row.judgmentImage5)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newCanvas("judgment", 596, 220)
@@ -1948,18 +1987,23 @@ PennController.Template("premiseC.image3.csv",
           .settings.size(96,96)
         ,
         newImage("judgmentImage1", row.judgmentImage1)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newImage("judgmentImage2", row.judgmentImage2)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newImage("judgmentImage3", row.judgmentImage3)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newImage("judgmentImage4", row.judgmentImage4)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newImage("judgmentImage5", row.judgmentImage5)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newCanvas("judgment", 596, 220)
@@ -2047,18 +2091,23 @@ PennController.Template("premiseD.image3.csv",
           .settings.size(96,96)
         ,
         newImage("judgmentImage1", row.judgmentImage1)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newImage("judgmentImage2", row.judgmentImage2)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newImage("judgmentImage3", row.judgmentImage3)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newImage("judgmentImage4", row.judgmentImage4)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newImage("judgmentImage5", row.judgmentImage5)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newCanvas("judgment", 596, 220)
@@ -2146,18 +2195,23 @@ PennController.Template("premiseE.image3.csv",
           .settings.size(96,96)
         ,
         newImage("judgmentImage1", row.judgmentImage1)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newImage("judgmentImage2", row.judgmentImage2)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newImage("judgmentImage3", row.judgmentImage3)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newImage("judgmentImage4", row.judgmentImage4)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newImage("judgmentImage5", row.judgmentImage5)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newCanvas("judgment", 596, 220)
@@ -2245,9 +2299,11 @@ PennController.Template("premiseA.image4.csv",
           .settings.size(96,96)
         ,
         newImage("judgmentImage1", row.judgmentImage1)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newImage("judgmentImage2", row.judgmentImage2)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newCanvas("judgment", 596, 220)
@@ -2329,9 +2385,11 @@ PennController.Template("premiseC.image4.csv",
           .settings.size(96,96)
         ,
         newImage("judgmentImage1", row.judgmentImage1)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newImage("judgmentImage2", row.judgmentImage2)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newCanvas("judgment", 596, 220)
@@ -2413,9 +2471,11 @@ PennController.Template("premiseD.image4.csv",
           .settings.size(96,96)
         ,
         newImage("judgmentImage1", row.judgmentImage1)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newImage("judgmentImage2", row.judgmentImage2)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newCanvas("judgment", 596, 220)
@@ -2497,9 +2557,11 @@ PennController.Template("premiseE.image4.csv",
           .settings.size(96,96)
         ,
         newImage("judgmentImage1", row.judgmentImage1)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newImage("judgmentImage2", row.judgmentImage2)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newCanvas("judgment", 596, 220)
@@ -2581,15 +2643,19 @@ PennController.Template("premiseA.image5.csv",
           .settings.size(96,96)
         ,
         newImage("judgmentImage1", row.judgmentImage1)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newImage("judgmentImage2", row.judgmentImage2)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newImage("judgmentImage3", row.judgmentImage3)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newImage("judgmentImage4", row.judgmentImage4)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newCanvas("judgment", 596, 220)
@@ -2675,15 +2741,19 @@ PennController.Template("premiseC.image5.csv",
           .settings.size(96,96)
         ,
         newImage("judgmentImage1", row.judgmentImage1)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newImage("judgmentImage2", row.judgmentImage2)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newImage("judgmentImage3", row.judgmentImage3)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newImage("judgmentImage4", row.judgmentImage4)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newCanvas("judgment", 596, 220)
@@ -2769,15 +2839,19 @@ PennController.Template("premiseD.image5.csv",
           .settings.size(96,96)
         ,
         newImage("judgmentImage1", row.judgmentImage1)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newImage("judgmentImage2", row.judgmentImage2)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newImage("judgmentImage3", row.judgmentImage3)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newImage("judgmentImage4", row.judgmentImage4)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newCanvas("judgment", 596, 220)
@@ -2863,15 +2937,19 @@ PennController.Template("premiseE.image5.csv",
           .settings.size(96,96)
         ,
         newImage("judgmentImage1", row.judgmentImage1)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newImage("judgmentImage2", row.judgmentImage2)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newImage("judgmentImage3", row.judgmentImage3)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newImage("judgmentImage4", row.judgmentImage4)
+          .settings.css("border", "solid 1px black")
           .settings.size(96,120)
         ,
         newCanvas("judgment", 596, 220)
