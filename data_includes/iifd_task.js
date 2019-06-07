@@ -365,6 +365,7 @@ PennController("practice1",
     ,
           //ACTION: change this to french
     newAudio("practice1clue", "NannyYellow.mp3")
+      .settings.log()
       .play()
       .wait()
     ,
@@ -453,6 +454,7 @@ PennController("practice2",
     ,
           //ACTION: change this to french
     newAudio("practice2clue", "DetectiveGreen.mp3")
+      .settings.log()
       .play()
       .wait()
     ,
@@ -546,6 +548,7 @@ PennController("practice3",
     ,
           //ACTION: change this to french
     newAudio("practice3clue", "ReporterRed.mp3")
+      .settings.log()
       .play()
       .wait()
     ,
@@ -644,6 +647,7 @@ PennController("practice4",
     ,
           //ACTION: change this to french
     newAudio("practice4clue", "NannyOrDetective.mp3")
+      .settings.log()
       .play()
       .wait()
     ,
@@ -737,6 +741,7 @@ PennController("practice5",
     ,
           //ACTION: change this to french
     newAudio("practice5clue", "DentistOrFireman.mp3")
+      .settings.log()
       .play()
       .wait()
     ,
@@ -923,6 +928,7 @@ PennController.Template("premiseA.image1.csv",
             .remove()
         ,
         newAudio("test sentence", row.Premises)
+          .settings.log()
           .play()
           .wait()
         ,
@@ -1011,6 +1017,7 @@ PennController.Template("premiseC.image1.csv",
             .remove()
         ,
         newAudio("test sentence", row.Premises)
+          .settings.log()
           .play()
           .wait()
         ,
@@ -1099,6 +1106,7 @@ PennController.Template("premiseD.image1.csv",
             .remove()
         ,
         newAudio("test sentence", row.Premises)
+          .settings.log()
           .play()
           .wait()
         ,
@@ -1187,6 +1195,7 @@ PennController.Template("premiseE.image1.csv",
             .remove()
         ,
         newAudio("test sentence", row.Premises)
+          .settings.log()
           .play()
           .wait()
         ,
@@ -1275,6 +1284,7 @@ PennController.Template("premiseA.image2.csv",
             .remove()
         ,
         newAudio("test sentence", row.Premises)
+          .settings.log()
           .play()
           .wait()
         ,
@@ -1363,6 +1373,7 @@ PennController.Template("premiseC.image2.csv",
             .remove()
         ,
         newAudio("test sentence", row.Premises)
+          .settings.log()
           .play()
           .wait()
         ,
@@ -1451,6 +1462,7 @@ PennController.Template("premiseD.image2.csv",
             .remove()
         ,
         newAudio("test sentence", row.Premises)
+          .settings.log()
           .play()
           .wait()
         ,
@@ -1539,6 +1551,7 @@ PennController.Template("premiseE.image2.csv",
             .remove()
         ,
         newAudio("test sentence", row.Premises)
+          .settings.log()
           .play()
           .wait()
         ,
@@ -1627,6 +1640,7 @@ PennController.Template("premiseA.image3.csv",
             .remove()
         ,
         newAudio("test sentence", row.Premises)
+          .settings.log()
           .play()
           .wait()
         ,
@@ -1725,6 +1739,7 @@ PennController.Template("premiseB.image3.12of4.csv",
             .remove()
         ,
         newAudio("test sentence", row.Premises)
+          .settings.log()
           .play()
           .wait()
         ,
@@ -1823,6 +1838,7 @@ PennController.Template("premiseB.image3.34of4.csv",
             .remove()
         ,
         newAudio("test sentence", row.Premises)
+          .settings.log()
           .play()
           .wait()
         ,
@@ -1921,6 +1937,7 @@ PennController.Template("premiseC.image3.csv",
             .remove()
         ,
         newAudio("test sentence", row.Premises)
+          .settings.log()
           .play()
           .wait()
         ,
@@ -2019,6 +2036,7 @@ PennController.Template("premiseD.image3.csv",
             .remove()
         ,
         newAudio("test sentence", row.Premises)
+          .settings.log()
           .play()
           .wait()
         ,
@@ -2117,6 +2135,7 @@ PennController.Template("premiseE.image3.csv",
             .remove()
         ,
         newAudio("test sentence", row.Premises)
+          .settings.log()
           .play()
           .wait()
         ,
@@ -2215,6 +2234,7 @@ PennController.Template("premiseA.image4.csv",
             .remove()
         ,
         newAudio("test sentence", row.Premises)
+          .settings.log()
           .play()
           .wait()
         ,
@@ -2298,6 +2318,7 @@ PennController.Template("premiseC.image4.csv",
             .remove()
         ,
         newAudio("test sentence", row.Premises)
+          .settings.log()
           .play()
           .wait()
         ,
@@ -2381,6 +2402,7 @@ PennController.Template("premiseD.image4.csv",
             .remove()
         ,
         newAudio("test sentence", row.Premises)
+          .settings.log()
           .play()
           .wait()
         ,
@@ -2464,6 +2486,7 @@ PennController.Template("premiseE.image4.csv",
             .remove()
         ,
         newAudio("test sentence", row.Premises)
+          .settings.log()
           .play()
           .wait()
         ,
@@ -2547,6 +2570,7 @@ PennController.Template("premiseA.image5.csv",
             .remove()
         ,
         newAudio("test sentence", row.Premises)
+          .settings.log()
           .play()
           .wait()
         ,
@@ -2640,6 +2664,7 @@ PennController.Template("premiseC.image5.csv",
             .remove()
         ,
         newAudio("test sentence", row.Premises)
+          .settings.log()
           .play()
           .wait()
         ,
@@ -2733,6 +2758,7 @@ PennController.Template("premiseD.image5.csv",
             .remove()
         ,
         newAudio("test sentence", row.Premises)
+          .settings.log()
           .play()
           .wait()
         ,
@@ -2826,6 +2852,7 @@ PennController.Template("premiseE.image5.csv",
             .remove()
         ,
         newAudio("test sentence", row.Premises)
+          .settings.log()
           .play()
           .wait()
         ,
