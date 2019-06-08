@@ -38,7 +38,7 @@ PennController.SetCounter("counter");
 PennController.SendResults( "send" );
 PennController( "subject_info" ,
     newTextInput( "name" , "ton prenom")
-        .settings.log() // Record the participant's feedback
+        .settings.log()
         .settings.lines(0) // Unlimited number of lines
         .print()
     ,
@@ -363,7 +363,6 @@ PennController("practice1",
         .wait()
         .remove()
     ,
-          //ACTION: change this to french
     newAudio("practice1clue", "NannyYellow.mp3")
       .settings.log()
       .play()
@@ -452,7 +451,6 @@ PennController("practice2",
         .wait()
         .remove()
     ,
-          //ACTION: change this to french
     newAudio("practice2clue", "DetectiveGreen.mp3")
       .settings.log()
       .play()
@@ -546,7 +544,6 @@ PennController("practice3",
         .wait()
         .remove()
     ,
-          //ACTION: change this to french
     newAudio("practice3clue", "ReporterRed.mp3")
       .settings.log()
       .play()
@@ -645,7 +642,6 @@ PennController("practice4",
         .wait()
         .remove()
     ,
-          //ACTION: change this to french
     newAudio("practice4clue", "NannyOrDetective.mp3")
       .settings.log()
       .play()
@@ -739,7 +735,6 @@ PennController("practice5",
         .wait()
         .remove()
     ,
-          //ACTION: change this to french
     newAudio("practice5clue", "DentistOrFireman.mp3")
       .settings.log()
       .play()
@@ -828,7 +823,6 @@ PennController("practice6",
         .wait()
         .remove()
     ,
-          //ACTION: change this to french
     newAudio("practice6clue", "ReporterGreen_AlsoNannyRed.mp3")
       .play()
       .wait()
