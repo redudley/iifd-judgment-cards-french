@@ -47,7 +47,7 @@ PennController( "subject_info" ,
         .wait()
 );
 PennController( "welcome" ,
-    newText( "message1" , "Aujourd'hui vous nous aiderez en servant de comparatif adulte à la compréhension du langage chez les enfants.")
+    newText( "message1" , "Aujourd'hui vous nous aiderez en servant de comparatif adulte à un expérience de la compréhension du langage chez les enfants.")
         .settings.center()
         .print()
     ,
