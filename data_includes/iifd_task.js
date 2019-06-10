@@ -10,7 +10,7 @@ PennController.ResetPrefix(null);
 
 
 PennController.AddHost("http://web-risc.ens.fr/~rdudley/iifd/judgment/");
-PennController.Sequence( "counter","welcome","intro1", "intro2", "intro3","intro4","intro5", "intro6","intro8", "intro9", "intro10","intro7", "practice1", "practice2", "practice3", "practice4", "practice5", "practice6", "intro11",
+PennController.Sequence( "welcome","intro1", "intro2", "intro3","intro4","intro5", "intro6","intro8", "intro9", "intro10","intro7", "practice1", "practice2", "practice3", "practice4", "practice5", "practice6", "intro11",
                   rshuffle("trialE5",
                            "trialC5",
                            "trialD3",
@@ -34,7 +34,6 @@ PennController.Sequence( "counter","welcome","intro1", "intro2", "intro3","intro
                            "trialA2",
                            "trialC4"), "intro12", "subject_info", "send"
 );
-PennController.SetCounter("counter");
 PennController.SendResults( "send" );
 PennController( "subject_info" ,
     newTextInput( "name" , "ton prenom")
