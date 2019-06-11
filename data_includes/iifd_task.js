@@ -180,6 +180,10 @@ PennController("intro2",
       .settings.add(   232,  0, getImage("snowman_yellow") )
       .print()
     ,
+    newTimer("delay.8c", 800)
+      .start()
+      .wait()
+    ,
     newButton("start", "Apprendre le jeu")
         .settings.center()
         .print()
